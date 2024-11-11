@@ -1,0 +1,12 @@
+CommonEvent 1348
+Name = "会話：黒のアリス"
+
+  999([1348])
+  ControlVariables([25, 25, 0, 0, 0])
+  ShowTextAttributes(["alice8th_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Вместо того, чтобы болтать, давай насладимся"])
+  ShowText(["этой битвой..."])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Черная Алиса отказывается разговаривать!"])
+  ExitEventProcessing([])
+  Empty([])

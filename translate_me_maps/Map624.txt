@@ -1,0 +1,1914 @@
+Display Name = "Большой Театр"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 625, 7, 13, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 625, 7, 13, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Пианист\\C[0]>Ахх, моя душа горит...! Мои пальцы реагируют на сердце"])
+      ShowText(["Саки-чан...!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Пианист\\C[0]>Гориииииит! Моя душа гориииииит!"])
+      ShowText(["Саки-чааан! АААА, САКИ-ЧАААААН!!!"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Пианист\\C[0]>Моя душа не горит, а мои пальцы больше не реагируют"])
+      ShowText(["ни на чье сердце... Я могу просто обычно играть на пианино,"])
+      ShowText(["следуя в такт музыке..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ControlVariables([1037, 1037, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мэри\\C[0]>Чем больше я пью, тем сильнее становлюсь..."])
+    ShowText(["*Бульк* *Бульк*"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Это наша овечка..."])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мэри\\C[0]>Уехехехехе..."])
+    ShowTextAttributes(["hituzi_fc1", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Мэри\\C[0]>*Бульк* *Бульк* *Бульк*"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мэри\\C[0]>Уехехехехе..."])
+    ControlSwitches([31, 31, 0])
+    ConditionalBranch([6, -1, 6])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Empty([])
+
+    BranchEnd([])
+    GatherFollowers([])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    CallCommonEvent([312])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=28, @parameters=[31])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=28, @parameters=[31])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    CallCommonEvent([313])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Танцовщица\\C[0]>Что такое с этой девчонкой Саки?!"])
+    ShowText(["Сегодня эта сцена должна была быть моей!!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["111"])
+    ShowTextAttributes(["suika_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мелон\\C[0]>Съешь арбуза и остынь..."])
+    ExitEventProcessing([])
+    Label(["142"])
+    ShowTextAttributes(["bander_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Баначи\\C[0]>Всякий раз, когда кто-то добивается успеха, всегда"])
+    ShowText(["есть тот, кто будет скрежетать зубами в тени..."])
+    ShowText(["...Хотя, наверное, это немного другой случай."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Танцовщица\\C[0]>Я первый раз вижу, чтобы столько посетителей так плохо"])
+    ShowText(["реагировали на выступления..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["100"])
+    ShowTextAttributes(["rahure_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Флезия\\C[0]>Может, мне всех разогреть своим цветочным ароматом...?"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Извините☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>\"Саки-чан\"-\"Саки-чан\", хмф..."])
+    ShowText(["Все мужчины в этом мире ослепли!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["99"])
+    ShowTextAttributes(["namazu_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гиги\\C[0]>Если бы только она могла бы превратить этот"])
+    ShowText(["гнев в силу... Я уверена, что направляла бы"])
+    ShowText(["ее для саботажа других."])
+    ExitEventProcessing([])
+    Label(["163"])
+    ShowTextAttributes(["lily_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Зависть так уродлива..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([1, 1001, 0, 29, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка\\C[0]>Я понимаю это теперь, когда Саки-чан ушла..."])
+      ShowText(["Я завидовала этой девушке."])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["99"])
+      ShowTextAttributes(["namazu_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гиги\\C[0]>Факт того, что ты осознала свой недостаток"])
+      ShowText(["может означать, что ты повзрослела."])
+      ExitEventProcessing([])
+      Label(["120"])
+      ShowTextAttributes(["page257_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Ёко\\C[0]>А разве зависть это не здорово...?"])
+      ShowText(["Если бы не зависть, то романтические новеллы"])
+      ShowText(["потеряли бы половину интересного содержания."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 30, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка\\C[0]>Этот театр совсем не меняется со временем."])
+      ShowText(["Все здесь хотят забыть о проблемах мира..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Торговец\\C[0]>Может, мне начать продавать билеты на рукопожатия Саки-чан..."])
+      ShowText(["Отличная идея, она наверняка сработает...!"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Торговец\\C[0]>Билеты на рукопожатия Саки-чан... Я много их продал,"])
+      ShowText(["но сама Саки ушла..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Торговец\\C[0]>...У меня нет другого выбора, кроме как пожимать их руки"])
+      ShowText(["самому, верно?"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["102"])
+      ShowTextAttributes(["youko_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Это превратится в бунт..."])
+      ExitEventProcessing([])
+      Label(["155"])
+      ShowTextAttributes(["saki_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Я не помню, чтобы этого разрешала..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 625, 7, 13, 0, 0])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 337, 29, 44, 0, 0])
+    ControlSwitches([31, 31, 1])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 337, 30, 44, 0, 0])
+    ControlSwitches([31, 31, 1])
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    ShowPicture([5, "ct_saki2", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([2, "A", 1])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Обниму тебя ♪"])
+      ShowText(["И твое сердце у меня ♪"])
+      ShowText(["Обниму тебя ♪"])
+      ShowText(["Украду твой поцелуй ♪"])
+      ShowPicture([5, "ct_saki1", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Я возьму тебя ♪ И унесу на небо ♪"])
+      ShowText(["Я заберу тебя ♪ В океан мечты ♪"])
+      ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>...Эй, что такое? Не трогать...!"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Эм, не могла бы ты прекратить занимать сцену...?"])
+      ShowText(["Ты причиняешь проблемы Менеджеру и всем"])
+      ShowText(["остальным."])
+      ShowPicture([5, "80_saki_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Я никому не причиняю проблем, правильно?"])
+      ShowText(["Все поддерживают Саки, правильно? ♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Фанат А\\C[0]>УОООААА!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Фанат В\\C[0]>САКИ-ЧААААН!"])
+      ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Видишь? Все меня поддерживают."])
+      ShowText(["Ты хочешь вмешаться, несмотря на это?"])
+      ShowChoices([["Вмешаться", "Не вмешиваться", "\"САКИ-ЧАААААН!!\""], 2])
+      When([0, "Вмешаться"])
+        ShowTextAttributes(["saki_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Саки\\C[0]>Что ты за проблемный человек..."])
+        ShowText(["Может, ты преследуешь Саки?"])
+        ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Саки\\C[0]>Ну что ж, тогда Саки тебя побьет ♪"])
+        ShowText(["Мои фанаты, поддержите меня☆"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Фанат А\\C[0]>УОООООО!!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Фанат В\\C[0]>Саки-чааааан!"])
+        ConditionalBranch([4, 155, 0])
+          ShowTextAttributes(["saki_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>О? Двойник Саки?"])
+          ShowTextAttributes(["saki_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Ты тоже Саки, так что... ты, наверное, знаешь,"])
+          ShowText(["двойник ли я или нет, верно?"])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Конечно, ничто не может обмануть глаза Саки."])
+          ShowText(["Ты не подделка, а реальная Саки-чан☆"])
+          ShowTextAttributes(["saki_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Давай сделаем дуэт двух Саки☆"])
+          Empty([])
+        BranchEnd([])
+        ErasePicture([5])
+        ChangeBattleBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+        ControlSwitches([22, 22, 0])
+        BattleProcessing([0, 251, false, false])
+        ControlSwitches([22, 22, 1])
+        ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+        PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+        ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ControlSelfSwitch(["A", 0])
+        Script(["gain_medal(27)"])
+        ShowTextAttributes(["saki_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Саки\\C[0]>Саки проиграла..."])
+        ShowText(["Простите, мои фанаты..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Фанат А\\C[0]>УОООООО!!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Фанат В\\C[0]>Саки-чааааан!"])
+        ShowTextAttributes(["saki_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Саки\\C[0]>Саки мечтала о том, чтобы стать самым популярным"])
+        ShowText(["идолом в мире, и все же... Подумать только, что"])
+        ShowText(["моя мечта окончится здесь..."])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Соня\\C[0]>Это не такое уж и большое событие..."])
+          ShowText(["Мы просто хотим, чтобы ты прекратила"])
+          ShowText(["оккупировать сцену."])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Лука\\C[0]>Незачем так преувеличивать..."])
+          ShowText(["Все, что мы хотим, это чтобы ты прекратила"])
+          ShowText(["оккупировать сцену."])
+          Empty([])
+        BranchEnd([])
+        ShowPicture([5, "80_saki_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Саки\\C[0]>Эй, а вы же путешественники, верно?"])
+        ShowText(["Вы возьмете Саки с собой?"])
+        Label(["仲間"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Эмм..."])
+        ShowChoices([["Взять ее с собой", "Отказаться"], 2])
+        When([0, "Взять ее с собой"])
+          ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Саки очень-очень рада☆"])
+          ShowText(["С этого момента позаботьтесь обо мне."])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(155)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Саки присоединяется к группе!"])
+          Wait([60])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Фанат А\\C[0]>Не может быть..."])
+          ShowText(["Выступления Саки-чан подошли к концу..."])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Фанат В\\C[0]>Нет, это только начало! Саки-чан станет легендой во время"])
+          ShowText(["ее кругосветного тура!"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Фанат С\\C[0]>УООООО!"])
+          ShowText(["Я последую за тобой куда угодно!"])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Спасибо вам всем за поддержку☆"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Все Фанаты\\C[0]>УООООООООО!"])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Соня\\C[0]>...Ну, тогда, может, пойдем?"])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Лука\\C[0]>...Ну, тогда идем."])
+            Empty([])
+          BranchEnd([])
+          ControlVariables([1030, 1030, 0, 0, 2])
+          PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+          TransferPlayer([0, 337, 29, 44, 2, 0])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "Отказаться"])
+          ShowPicture([5, "80_saki_st03", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["saki_fc1", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Не может быыыыть..."])
+          ShowText(["Это заставляет Саки грустиииить..."])
+          PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+          ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Я превращу эту грусть в песню!"])
+          ShowText(["...*Всхлип* этой ночью ♪"])
+          ShowTextAttributes(["saki_fc1", 3, 0, 2])
+          ShowText(["\\n<\\C[6]Саки\\C[0]>Внутри моих слез ♪ *Всхлип* этой ночью ♪"])
+          ShowText(["Под ночными звездами..."])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+            ShowText(["\\n<\\C[6]Соня\\C[0]>Эй! Ты собираешься продолжить занимать сцену?!"])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Лука\\C[0]>Ты собираешься продолжить занимать сцену...?"])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Фанат А\\C[0]>УОООООО!!"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Фанат В\\C[0]>Саки-чааааан!"])
+          ErasePicture([5])
+          ExitEventProcessing([])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      When([1, "Не вмешиваться"])
+        ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Саки\\C[0]>Саки рада, что ты понимаешь ♪"])
+        ShowText(["Я была бы рада, если бы ты поддерживал"])
+        ShowText(["меня вместе со всеми остальными☆"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      When([2, "\"САКИ-ЧАААААН!!\""])
+        ShowPicture([5, "80_saki_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["saki_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Саки\\C[0]>Спасибо за поддержку ♪"])
+        ShowText(["Но пожалуйста, не заходи на сцену ♪"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        PlayBGM(["RPG::BGM(@name=\"saki\", @volume=100, @pitch=100)"])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Обниму тебя ♪"])
+      ShowText(["И твое сердце у меня ♪"])
+      ShowText(["Обниму тебя ♪"])
+      ShowText(["Украду твой поцелуй ♪"])
+      ShowPicture([5, "80_saki_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["saki_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>...А, это снова вы."])
+      ShowText(["Вы возьмете Саки в кругосветный тур?"])
+      JumpToLabel(["仲間"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Танцовщица\\C[0]>Пусть мое сердце достииигнет всех вас... *Блеск☆*"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Похоже, твоему сердцу чего-то не хватает...?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Танцовщица\\C[0]>Освоив профессии \\C[2]Танцовщицы\\C[0] и \\C[2]Менестреля\\C[0], можно стать"])
+    ShowText(["\\C[2]Суперзвездой\\C[0]. Они выучивают множество полезных"])
+    ShowText(["танцев и песен."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Танцовщица\\C[0]>Я так восхищена и очарована ими..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["59"])
+    ShowTextAttributes(["mdg_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рагора\\C[0]>Суперзвезды! Я тоже восхищаюсь ими..."])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Конечно же, Саки-чан уже \\C[2]Суперзвезда\\C[0]☆"])
+    ShowText(["Я буду поддерживать всех танцами и песнями ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 181
+Name = "EV181"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Саки-чаааан!"])
+    ShowText(["*Нюх* *Нюх*"])
+    ShowText(["Саки-чааааан!!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 182
+Name = "EV182"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Саки-чааан! Хаа, хааа, Саки-чааАААААн!!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 183
+Name = "EV183"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>УОооооо! Саки-чаааан!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>УОооооо! Саки-чаааан!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>...Я знаю, Саки-чан здесь больше нет..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Я прямо здесь☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Воууууу...! Саки-чан!!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 184
+Name = "EV184"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Богатый Джентльмен\\C[0]>Порази мое сердце! Саки-чааааан!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Богатый Джентльмен\\C[0]>Пора мне отправиться домой..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Как грубо уходить в середине шоу."])
+    ShowText(["Смотри его внимательно до конца☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Богатый Джентльмен\\C[0]>Ооо... Саки-чаааан!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 185
+Name = "EV185"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Кьяяя! Чудесно!!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 186
+Name = "EV186"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Грубиян\\C[0]>ООООООООО...! Саки-чаааааааааан!!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Грубиян\\C[0]>Саки-чааааааан!! Вернииииииииись!!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Я вернулась☆"])
+    ShowText(["Хотя я здесь просто, чтобы показаться..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Грубиян\\C[0]>Я буду болеть за тебя!"])
+    ShowText(["Я обязательно приду сюда на твой следующий концерт!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 187
+Name = "EV187"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Саки-чааааан! ААААААААААаааааааааа! АААа!"])
+    ShowText(["Са-СаСаСаСаки-чаааааААААААн!!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Эх, никто больше не рад этому..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Это правда, никто не выглядит восторженным..."])
+    ShowText(["Я чувствую, что немного в ответе за это."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 188
+Name = "EV188"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менестрель\\C[0]>Это чувство разрывает меня на части!"])
+    ShowText(["Саки-чан разрывает меня на части!!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 189
+Name = "EV189"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Жрец\\C[0]>Саки-чан - истинная Богиня!"])
+    ShowText(["О Богиня! Ты истинная Саки-чан!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["26"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Богиня прямо здесь. Вот, погляди..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 190
+Name = "EV190"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Саки-чааааан! САКИ-ЧААААААААААаааан!!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Я жду, жду того дня, когда Саки-чан вернется..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Позаботьтесь обо мне во время моего следующего"])
+    ShowText(["концерта☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>К-конечно! Я буду здесь, даже если придется продать"])
+    ShowText(["лавку моей жены, чтобы купить билет!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 191
+Name = "EV191"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Саки-чаааан! ВУУУОООООО!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Саки-чан..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Ты недостаточно жизнерадостный☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>ХООООААААА!! ЭТО САКИ-ЧААААН!!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 192
+Name = "EV192"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Вор\\C[0]>Саки-чаааан! Саки-чааан!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 193
+Name = "EV193"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Саки-чан *Блеск☆*"])
+    ShowText(["*Блеск☆* *Блескблескблеск☆*"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>*Блеск☆* *Б-блеск☆* *Блескблескблеск☆*"])
+    ShowText(["*Блескблескблескблескблеск☆☆☆☆☆☆*"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Его глаза пусты..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Я слишком сильно его очаровала...?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 194
+Name = "EV194"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Саки-чан это посланница Богини..."])
+    ShowText(["УООО, такая божественная..."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 195
+Name = "EV195"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Достигните Саки-чан, чувства мои!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 196
+Name = "EV196"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>ОООООооооо...! УООООООО!!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Оооо...ooo..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Взбодрись, у меня будут еще здесь концерты☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>ОООООооооо...! УООООООО!!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 197
+Name = "EV197"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мальчик\\C[0]>Я люблю тебя, Саки-чан!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["118"])
+    ShowTextAttributes(["meia_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Мейя\\C[0]>Вижу, она популярна даже среди детей..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 198
+Name = "EV198"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мечник\\C[0]>УОООООООООО!!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мечник\\C[0]>Это меня не разогревает..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Хочешь, чтобы я тебя разогрела...?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мечник\\C[0]>ООООООооооо!! Я весь в огне!!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 199
+Name = "EV199"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Саки-чан действительно лучшая!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 200
+Name = "EV200"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Я чувствую пылающий пафос!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Это неплохо, но... по сравнению с Саки-чан, это..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Саки это Саки, также как и эта девушка ♪"])
+    ShowText(["Смотри на нее, не сравнивая со мной☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Это правда... Я перекрывал образ этой девушки образом"])
+    ShowText(["Саки-чан... Эта девушка не Саки-чан, она просто иллюзия,"])
+    ShowText(["которую я преследовал!"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Отвратительно!!"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 202
+Name = "EV202"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менеджер\\C[0]>Я менеджер этого Большого Театра, который имеет богатую"])
+    ShowText(["историю. Но в последнее время я провожу каждый день"])
+    ShowText(["за выпивкой..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менеджер\\C[0]>Из-за того, что даже всем стражникам промыло мозги,"])
+    ShowText(["все закончилось этим. В расписании бардак, я по уши"])
+    ShowText(["в гневе и угрозах."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менеджер\\C[0]>Путешественники, пожалуйста, сделайте что-нибудь с Саки-чан,"])
+    ShowText(["даже если силой...! Ах... только, пожалуйста, не устраивайте"])
+    ShowText(["кровопролитие на сцене."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["57"])
+    ShowTextAttributes(["inp_fc3", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Руми\\C[0]>Мы сосредоточим весь урон на ее теле,"])
+    ShowText(["мы не тронем ее лицо..."])
+    ExitEventProcessing([])
+    Label(["141"])
+    ShowTextAttributes(["mino_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Мина\\C[0]>Как мы сможем превратить ее в кровавое"])
+    ShowText(["месиво, не устраивая кровопролития...?"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менеджер\\C[0]>После того, как Саки-чан ушла, количество посетителей"])
+    ShowText(["снизилось... В итоге, все что мне остается, это проводить"])
+    ShowText(["свои дни за выпивкой..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ахх, вот бы Саки-чан вернулась..."])
+    ShowText(["Если бы только она не занимала сцену все время,"])
+    ShowText(["то была бы величайшей звездой среди них всех..."])
+    ConditionalBranch([4, 155, 0])
+      ShowTextAttributes(["saki_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Если ты так говоришь, то я могу сделать чудесное"])
+      ShowText(["возвращение☆ Саки-чан сделает все возможное,"])
+      ShowText(["чтобы помочь ♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ооо, Саки-чаааан!"])
+      ShowText(["Тебе всегдаааа здесь рады!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Менеджер\\C[0]>А также, друзья-путешественники Саки-чан..."])
+      ShowText(["Если среди вас есть те, кто может выступать,"])
+      ShowText(["то я приготовлю для вас сцену."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Э? И для нас тоже?!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Менеджер\\C[0]>Саки-чан, я хочу спросить у тебя еще одну вещь..."])
+      ShowText(["Ты будешь проводить то ночное представление снова?"])
+      ShowTextAttributes(["saki_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Саки\\C[0]>Под \"тем\" ты имеешь в виду ночную жизнь?"])
+      ShowText(["Да, предоставь это мне☆"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Что за ночная жизнь...?"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Группа теперь может выступать на сцене!"])
+      ShowText(["Также, теперь Саки может давать представление \"Ночная Жизнь\"!"])
+      ControlVariables([1030, 1030, 0, 0, 3])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Менеджер хочет, чтобы Саки вернулась..."])
+      ShowText(["Давайте приведем ее сюда."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    ControlSwitches([601, 700, 1])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    ControlSwitches([34, 34, 1])
+    ControlSwitches([35, 35, 1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менеджер\\C[0]>Вы хотите выступить?"])
+    ShowText(["Или же насладиться \"Ночной Жизнью Саки-чан\"?"])
+    Script(["unlimited_choices(11, [\"Выступления 1\","])
+    ScriptMore(["\"Выступления 2\",\"Выступления 3\",\"Выступления 4\","])
+    ScriptMore(["\"Выступления 5\", \"Выступления 6\", \"Выступления 7\", \"Выступления 8\", "])
+    ScriptMore(["\"Ночная Жизнь Саки-чан\", \"Не важно\"])"])
+    ConditionalBranch([1, 11, 0, 0, 0])
+      CallCommonEvent([121])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 1, 0])
+      CallCommonEvent([122])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 2, 0])
+      CallCommonEvent([123])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 3, 0])
+      CallCommonEvent([124])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 4, 0])
+      CallCommonEvent([125])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 5, 0])
+      CallCommonEvent([126])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 6, 0])
+      CallCommonEvent([127])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 7, 0])
+      CallCommonEvent([128])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 8, 0])
+      ConditionalBranch([0, 25, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Данные сцены отсутствуют в демо-версии."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ShowChoices([["Секретный Курс (100G)", "Игривый Курс (500G)", "Главный Курс (1000G)", "Не важно"], 4])
+      When([0, "Секретный Курс (100G)"])
+        ConditionalBranch([8, 527])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Менеджер\\C[0]>О, у тебя есть пропуск Саки-чан?"])
+          ShowText(["В таком случае, я не возьму с тебя денег."])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ну что ж, пожалуйста, наслаждайся Ночной Жизнью Саки-чан!"])
+          FadeoutBGM([1])
+          Script(["call_novel_scene(319)"])
+          ExitEventProcessing([])
+          Empty([])
+        Else([])
+          ConditionalBranch([7, 100, 0])
+            ChangeGold([1, 0, 100])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ну что ж, пожалуйста, наслаждайся Ночной Жизнью Саки-чан!"])
+            FadeoutBGM([1])
+            Script(["call_novel_scene(319)"])
+            ExitEventProcessing([])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ох, у тебя недостаточно денег..."])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([1, "Игривый Курс (500G)"])
+        ConditionalBranch([8, 527])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Менеджер\\C[0]>О, у тебя есть пропуск Саки-чан?"])
+          ShowText(["В таком случае, я не возьму с тебя денег."])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ну что ж, пожалуйста, наслаждайся Ночной Жизнью Саки-чан!"])
+          FadeoutBGM([1])
+          Script(["call_novel_scene(320)"])
+          ExitEventProcessing([])
+          Empty([])
+        Else([])
+          ConditionalBranch([7, 500, 0])
+            ChangeGold([1, 0, 500])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ну что ж, пожалуйста, наслаждайся Ночной Жизнью Саки-чан!"])
+            FadeoutBGM([1])
+            Script(["call_novel_scene(320)"])
+            ExitEventProcessing([])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ох, у тебя недостаточно денег..."])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([2, "Главный Курс (1000G)"])
+        ConditionalBranch([8, 527])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Менеджер\\C[0]>О, у тебя есть пропуск Саки-чан?"])
+          ShowText(["В таком случае, я не возьму с тебя денег."])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ну что ж, пожалуйста, наслаждайся Ночной Жизнью Саки-чан!"])
+          FadeoutBGM([1])
+          Script(["call_novel_scene(321)"])
+          ExitEventProcessing([])
+          Empty([])
+        Else([])
+          ConditionalBranch([7, 1000, 0])
+            ChangeGold([1, 0, 1000])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ну что ж, пожалуйста, наслаждайся Ночной Жизнью Саки-чан!"])
+            FadeoutBGM([1])
+            Script(["call_novel_scene(321)"])
+            ExitEventProcessing([])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Менеджер\\C[0]>Ох, у тебя недостаточно денег..."])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([3, "Не важно"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 9, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 203
+Name = "EV203"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 337, 29, 44, 0, 0])
+    ControlSwitches([31, 31, 1])
+    Empty([])
+
+CommonEvent 204
+Name = "EV204"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик\\C[0]>Саки-чан *Блеск☆*"])
+    Empty([])
+
+CommonEvent 205
+Name = "EV205"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Кролик\\C[0]>Выступление Саки-чан имеет большой успех..."])
+      ShowText(["Но комедианты и танцовщицы, чьи выступления были"])
+      ShowText(["отменены, очень злятся."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Кролик\\C[0]>Похоже, что у Менеджера проблемы с выплачиванием штрафов"])
+      ShowText(["по контрактам... Надеюсь, Саки-чан хорошо продается."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Кролик\\C[0]>Так как Саки-чан здесь больше нет, театр в упадке..."])
+      ShowText(["Ничего не становится лучше в этом мире..."])
+      Empty([])
+
+    BranchEnd([])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ева\\C[0]>Мне как-то даже легче, видеть, когда у людей"])
+    ShowText(["проблемы."])
+    ExitEventProcessing([])
+    Label(["181"])
+    ShowTextAttributes(["gaistvine_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лиза\\C[0]>Из того, что я вижу, древний Большой Театр..."])
+    ShowText(["не может рассматриваться с коммерческой"])
+    ShowText(["точки зрения."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 206
+Name = "EV206"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик\\C[0]>Добро пожаловать, пейте сколько хотите ♪"])
+    ShopProcessing([0, 428, 0, 0, false])
+    ShopItem([0, 431, 0, 0])
+    Empty([])
+
+CommonEvent 207
+Name = "EV207"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Исполнитель\\C[0]>Такими темпами мы станем банкротами..."])
+    ShowText(["Но Саки-чан такая миииилая..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Исполнитель\\C[0]>...Саки-чан *Блеск☆*"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["78"])
+    ShowTextAttributes(["syesta_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Шиста\\C[0]>*Блеск*?"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Исполнитель\\C[0]>...Саки-чан *Блеск☆*"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Похоже, он полностью заражен..."])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Спасибо за поддержку☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 208
+Name = "EV208"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Саки-чан это суккуб, но... она идол, так что она не сосет"])
+    ShowText(["мужскую сперму."])
+    ShowChoices([["\"Согласен.\"", "\"Я так не думаю.\""], 0])
+    When([0, "\"Согласен.\""])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Вместо суккуба, Саки-чан может оказаться ангелом..."])
+      ShowText(["Саки-чан... Ааа... Саки-чан..."])
+      Empty([])
+
+    When([1, "\"Я так не думаю.\""])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Ты ничего не знаешь!"])
+      ShowText(["Ты даже не знаешь, что ничего не знаешь!"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Ахх, Саки-чан..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Ты звал?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Иллюзия... Я вижу прекрасную иллюзию..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 209
+Name = "EV209"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Я чувствую, как мое сердце становится чистым,"])
+    ShowText(["пока я слушаю пение Саки-чан..."])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Я не слышу пение Саки-чан, и теперь мне кажется,"])
+    ShowText(["что мое сердце становится грязным..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Я немного освежу твое сердце☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ахх, я чувствую, что мое сердце очищается..."])
+    ShowText(["Я схожу в церковь и раздам еду бедным..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 210
+Name = "EV210"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Джентльмен\\C[0]>Подумать только, что мое сердце может так биться в этом"])
+    ShowText(["возрасте... не может быть... я влюбился?"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Джентльмен\\C[0]>Я ощущаю потерю, этого чувства..."])
+    ShowText(["Я чувствую себя одиноко даже в своем доме."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>У меня мировое турне, жди моего выступления☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Джентльмен\\C[0]>Конечно я на него приду! Даже если мне придется продать"])
+    ShowText(["все свое имущество!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 211
+Name = "EV211"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Леди\\C[0]>Что такого хорошего в этой девчушке?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Леди\\C[0]>...Саки-чан *Блеск☆*"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Леди\\C[0]>...Саки-чан *Блеск☆*"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Спасибо за поддержку☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 212
+Name = "EV212"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Саки-чан-сама... Ахх, вы чудесны..."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 213
+Name = "EV213"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Саки-чан это падающая звезда, посланная небесами."])
+    ShowText(["Она сияет своим *Блеском☆* и очаровывает нас магией"])
+    ShowText(["счастья..."])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Падающая звезда исчезла в далеком небе. Но магия счастья,"])
+    ShowText(["кажется, не исчезает..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Сейчас я обновлю магию счастья☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Солнце говорит со мной, приняв форму прекрасной девушки..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 214
+Name = "EV214"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Урааааааааааа! Саки-чан *Блеск☆*"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Однажды я тоже буду *Блестеть☆*"])
+    ExitEventProcessing([])
+    Label(["54"])
+    ShowTextAttributes(["bunnyslime_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Уса\\C[0]>Уса уса *Блеск☆*"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 215
+Name = "EV215"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Ураа! Саки-чан *Блеск☆*"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Однажды я тоже буду *Блестеть☆*"])
+    ExitEventProcessing([])
+    Label(["54"])
+    ShowTextAttributes(["bunnyslime_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Уса\\C[0]>Уса уса *Блеск☆*"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 216
+Name = "EV216"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Хаа, хаа, Саки-чан... ХАа ХАа ХАа... унгх!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["109"])
+    ShowTextAttributes(["kani_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Соп\\C[0]>Брызгать в подобном месте, как грязно..."])
+    ShowText(["...Хочешь, я его помою?"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Ёко\\C[0]>Мерзко..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Саки-чан... вернись..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Время от времени я буду возвращаться..."])
+    ShowText(["...А пока будь хорошим мальчиком☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Саки-чааАААААн! Я буду хорошим мальчиком!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 217
+Name = "EV217"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>......"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Он не отвечает. Похоже, из-за перевозбуждения его"])
+    ShowText(["сердце остановилось..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["118"])
+    ShowTextAttributes(["meia_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мейя\\C[0]>Ох, это серьезно."])
+    ExitEventProcessing([])
+    Label(["133"])
+    ShowTextAttributes(["zonbe_fc3", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Зомби\\C[0]>Сородич... сородиииич..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 218
+Name = "EV218"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>ОООООоооооо! Саки-чаааан!!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 219
+Name = "EV219"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Вор\\C[0]>Саки-чан украла мою самую важную вещь...! Мое сердце!!"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Вор\\C[0]>Эти концерты Саки-чан были потрясающими."])
+    ShowText(["У старика даже остановилось сердце от возбуждения."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Вор\\C[0]>Старик...?"])
+    ShowText(["Похоже, его реанимировали."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Это замечательно..."])
+    ShowText(["Я бы не хотела, чтобы кто-нибудь умер на моем"])
+    ShowText(["концерте☆"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 220
+Name = "EV220"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Студент\\C[0]>Меня больше не заботит написание моего доклада!"])
+    ShowText(["Саки-чан гораздо важнее, чем моя жизнь!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 221
+Name = "EV221"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ученый\\C[0]>Университет? Да мне все равно... Саки-чан гораздо важнее!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 222
+Name = "EV222"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ученый\\C[0]>Мои клетки мозга раздуваются...!"])
+    ShowText(["Песни и танцы Саки-чан стимулируют мой мозг...!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["41"])
+    ShowTextAttributes(["stein_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мои клетки мозга ничем не стимулируются..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 223
+Name = "EV223"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менестрель\\C[0]>Я думаю, что сейчас стук моего сердца может облететь весь мир."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 224
+Name = "EV224"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Ахх, я так ей восхищаюсь..."])
+    ShowText(["Я тоже хочу стать как Саки-чан..."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 225
+Name = "EV225"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Горничная\\C[0]>Мировой дебют это не просто мечта."])
+    ShowText(["Песни Саки-чан исцелят этот мир!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 226
+Name = "EV226"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Торговец\\C[0]>У меня есть работа, которую надо делать, но..."])
+    ShowText(["Я просто не могу покинуть этот театр..."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 227
+Name = "EV227"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ахх, я чувствую себя так, будто поднимаюсь в небеса..."])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ну, так себе."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Тогда приходи снова слушать песни Саки."])
+    ShowText(["Я устрою лучший концерт, который когда-либо был☆"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Я ПРИДУ!!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 228
+Name = "EV228"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Силач\\C[0]>Мое сердце поразила Саки-чан."])
+    ShowText(["Теперь оно полно *Блеска*."])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Силач\\C[0]>Этого недостаточно, чтобы достичь моего сердца..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["155"])
+    ShowTextAttributes(["saki_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Саки\\C[0]>Тогда ты снова придешь на концерт Саки?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Силач\\C[0]>ПРИДУ!!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 229
+Name = "EV229"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Грубиян\\C[0]>Это точно превратится в миф..."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 230
+Name = "EV230"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 231
+Name = "EV231"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Этот человек выкрикивал нецензурные слова в сторону"])
+    ShowText(["Саки-чан, так что я наказал его. Не нужно благодарностей,"])
+    ShowText(["я просто сделал, что должен был."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["88"])
+    ShowTextAttributes(["jack_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Кабоча\\C[0]>Он полный энтузиазма, но страшный тоже..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 232
+Name = "EV232"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>...Блин, Саки-чан это божественная сущность."])
+    ShowText(["Как он мог сказать подобные вещи чистому ангелу..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["86"])
+    ShowTextAttributes(["name_s_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Розари\\C[0]>Это уже превратилось в культ. Как грешно..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 233
+Name = "EV233"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Грубиян\\C[0]>Блин, ходит тут, как..."])
+    ShowText(["Не показывайся больше перед Саки-чан."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["122"])
+    ShowTextAttributes(["sisterlamia_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]София\\C[0]>О Богиня... Пожалуйста, даруй спасение этому"])
+    ShowText(["Содому, городу жестокости и деградации..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 235
+Name = "EV235"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Богатый Джентльмен\\C[0]>Вниз по лестнице находится казино."])
+      ShowText(["Как насчет попробовать поиграть, упиваясь песнями Саки-чан?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Богатый Джентльмен\\C[0]>Вниз по лестнице находится казино."])
+      ShowText(["Пожалуйста, наслаждайтесь."])
+      Empty([])
+
+    BranchEnd([])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["103"])
+    ShowTextAttributes(["kamuro_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Камуро\\C[0]>Я надеюсь, играя в подобном месте, мы ничего"])
+    ShowText(["не нарушаем...?"])
+    ExitEventProcessing([])
+    Label(["121"])
+    ShowTextAttributes(["page65537_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Корнелия\\C[0]>Заходим прямо сейчас..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 236
+Name = "EV236"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Жена Менеджера\\C[0]>Сегодня опять много посетителей, я работаю, стараясь изо всех"])
+    ShowText(["сил! ...Пока мой муж занят жалобством."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["64"])
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Пучи\\C[0]>Она прямо как наша хозяйка гостиницы..."])
+    ShowText(["Интересно, может, они родственницы?"])
+    ExitEventProcessing([])
+    Label(["140"])
+    ShowTextAttributes(["taran_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рачура\\C[0]>Я вижу, у нее сильный характер..."])
+    ShowText(["Похоже, что бесхарактерные люди долго"])
+    ShowText(["не продерживаются на подобной работе?"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Жена Менеджера\\C[0]>Жизнь полна взлетов и падений, я буду стараться работать!"])
+    ShowText(["...Пока мой муж, как обычно, занят жалобством."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["64"])
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Пучи\\C[0]>Хозяйка, удачи вам и сегодня с вашей работой!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Жена Менеджера\\C[0]>...Хозяйка?"])
+    ExitEventProcessing([])
+    Label(["103"])
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Камуро\\C[0]>Какие сильные лидерские качества у нее..."])
+    ShowText(["Я не смогу это повторить."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 238
+Name = "EV238"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Горничная\\C[0]>Мадам всегда позитивна. Можно даже сказать, что она"])
+    ShowText(["позитивна настолько, насколько ее муж негативен."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["108"])
+    ShowTextAttributes(["kai_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Шелли\\C[0]>Сделать такого мужа, который бы твердо стоял,"])
+    ShowText(["это хорошее достижение для жены."])
+    ShowText(["Нет, я не имела в виду \"стоять\" в этом смысле..."])
+    ExitEventProcessing([])
+    Label(["141"])
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мина\\C[0]>Блин, какой проблемный муж!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 239
+Name = "EV239"
+
+  Page 0
+    ConditionalBranch([1, 1030, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Горничная\\C[0]>Я мечтаю, что однажды состоится мой дебют...!"])
+      ShowText(["Но пока я теряю себя в этой тяжелой работе."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1030, 0, 2, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Горничная\\C[0]>Теперь, когда Саки-чан здесь больше нет, я могу"])
+      ShowText(["организовать свой эффектный дебют...!"])
+      ShowText(["Нет, еще слишком рано, я еще немного поделаю эту"])
+      ShowText(["тяжелую работу."])
+      Empty([])
+
+    BranchEnd([])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["59"])
+    ShowTextAttributes(["mdg_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рагора\\C[0]>Я также, я трачу свои дни, зарываясь в земле"])
+    ShowText(["и мечтая о дебюте."])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Ева\\C[0]>Я не совсем понимаю, что такого в этой \"тяжелой"])
+    ShowText(["работе\"..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 269
+Name = "EV269"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([428, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 270
+Name = "EV270"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([30, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

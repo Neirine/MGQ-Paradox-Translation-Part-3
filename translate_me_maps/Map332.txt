@@ -1,0 +1,692 @@
+Display Name = "Замок Владыки Монстров 4 Этаж"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 331, 44, 20, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 331, 44, 20, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 331, 44, 20, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    GatherFollowers([])
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_granberia_st61", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Вы добрались..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Гранберия..."])
+      ShowText(["Было очевидно, что ты будешь последней, кто встанет у нас на пути."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Позади меня находится трон Владыки Демонов."])
+      ShowText(["Если вы желаете пройти дальше, вам придётся одолеть меня..."])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Хм... Я не вижу решительности в твоих глазах."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Это будет моей последней битвой."])
+      ShowText(["Даже если я одержу победу, я всё-равно отложу свой меч."])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Даже если ты одержишь победу..?"])
+      ShowText(["Ты звучишь так, словно изначально предполагаешь, что проиграешь."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>. . . . ."])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Похоже, что мне придётся вернуть своего верного рыцаря в норму силой..."])
+      ShowText(["Вперёд, Гранберия!"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Вы добрались..."])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Гранберия..."])
+      ShowText(["Было очевидно, что ты будешь последней, кто встанет у нас на пути."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Позади меня находится трон Владыки Демонов."])
+      ShowText(["Если вы желаете пройти дальше, вам придётся одолеть меня..."])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Я не вижу решительности в твоих глазах."])
+      ShowText(["Ты вправду считаешь, что можешь победить нас в таком состоянии?"])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я действительно терпела поражение за поражением..."])
+      ShowText(["Но в этот раз, я одержу победу!"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>У нас есть причины, по которым мы не можем сдаться!"])
+    ShowText(["Вперёд, Гранберия!"])
+    ConditionalBranch([4, 15, 0])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Что же, я покажу тебе свою силу ещё раз!"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 16, 0])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["【グランベリア’】"])
+      ShowText(["過去の私よ、見せてやろう……"])
+      ShowText(["お前の目指すべき先を！"])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["【グランベリア】"])
+      ShowText(["な、なんという闘気……！？"])
+      ShowText(["私がこんな、信じられん……！"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 17, 0])
+      ShowTextAttributes(["granberia_fc4", 4, 0, 2])
+      ShowText(["【グランベリア】"])
+      ShowText(["まじかる☆ぐらんべりあ～♪"])
+      ShowTextAttributes(["granberia_fc3", 5, 0, 2])
+      ShowText(["【グランベリア】"])
+      ShowText(["な……！？　あ……！？　う、ぁ……？"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss_sitenno\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 1504, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_granberia_st63", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Кх... Я вновь проиграла..."])
+    ConditionalBranch([4, 19, 0])
+      ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Альма Эльма\\C[0]>Ты изначально не имела шансов победить меня..."])
+      ShowText(["Но в этот раз ты сражалась ещё хуже, чем обычно."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Что с тобой случилось, Гранберия..?"])
+      ShowText(["Куда исчезло твоё фехтовальное мастерство, способное пошатнуть даже меня"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>С каждым нашим сражением ты становишься лишь слабее."])
+      ShowText(["Может тебе стоит начать тренироваться с нуля..?"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>......"])
+    PlayBGM(["RPG::BGM(@name=\"scene_odayaka2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Моя госпожа, Алисфиз 16-ая, была смещена с трона Владыки Монстров без моего ведома..."])
+    ShowText(["Её Величество 15-ая стала моей новой госпожой."])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Четыре Небесных Рыцаря армии Владыки Монстров служат, естественно, Владыке Монстров."])
+    ShowText(["Но та, кому я присягнула на верность, Её Величество 16-ая, теперь скитается."])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Должна ли я теперь служить полноправной Владыке Монстров, Её Величеству 15-ой, или должна ли я последовать за изгнанной 16-ой?"])
+    ShowText(["Моё сердце одолевали сомнения."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>......"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["eden_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Эдем\\C[0]>Служить госпоже, которую не ты сама выбрала..."])
+      ShowText(["Я понимаю твои чувства."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Кроме того, приказы 15-ой вводили меня в ступор."])
+    ShowText(["Владыка, которую я не могла понять, приказывала мне лишать жизни невинных."])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Но так как это были приказы моей госпожи, как солдат, я не должна была оспаривать их..."])
+    ShowText(["Но я не могла заставить себя быть мечом такой госпожи."])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Мой меч был полон сомнений и я терпела поражение за поражением."])
+    ShowText(["Моя битва против той, кто назвала себя 17-ой стала первым неоспоримым поражением."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Алисфиз 17-ая, то-есть Нерис?"])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Эта личность почему-то была знакома с моим стилем боя."])
+    ShowText(["Нет, даже не так. Она не только знала мои техники меча, но и освоила их, и развила их ещё сильнее."])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Тогда я ярко почувствовала это..."])
+    ShowText(["Неужели мой меч устарел и стал отставать от других..?"])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>И после, герой Лука, мы не раз скрещивали мечи."])
+    ShowText(["Я почувствовала, что твой меч полон юности и надежды на будущее."])
+    ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>В отличии от тебя, мой меч словно застыл..."])
+    ShowText(["Я чувствовала себя так, словно он в одночасье состарился на десятки лет."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Разве тебе сейчас не немного за двадцать?"])
+      ShowText(["По меркам монстров, ты всё ещё ребёнок."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>А после, случилась та незабываемая ночь."])
+      ShowText(["Ночь, когда человек, известный как Убийца Владык появился перед Владыкой Монстров."])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Убийца Владык... Ты имеешь ввиду Марцелла!?"])
+      FadeoutBGM([1])
+      FadeoutScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["...Он внезапно появился в тронном зале Владыки Монстров."])
+      ShowText(["Казалось, словно он появился из ниоткуда."])
+      ShowPicture([5, "iv_granberia_marcellus1", 0, 0, 0, 0, 100, 100, 255, 0])
+      FadeinScreen([])
+      PlayBGM(["RPG::BGM(@name=\"boss0-4\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Кто ты..!?"])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Алисфиз 15-ая... Твоя жизнь закончится здесь и сейчас."])
+      ShowTextAttributes(["alice15th_fc3", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алисфиз 15-ая\\C[0]>Ох... Так тот шум, что я услышала, это был ты, Убийца Владык?"])
+      ShowText(["Похоже, что моя смерть, предсказанная истинной историей, наконец прибыла."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я не позволю тебе и пальцем коснуться Владыки Монстров..."])
+      PlaySE(["RPG::SE(@name=\"mon_karaburi\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Я немедленно взмахнула своим мечом... но разрезала лишь воздух."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Кх..!"])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Похоже, что мне не придётся использовать Кирина или Корикичо..."])
+      PlaySE(["RPG::SE(@name=\"mon_karaburi\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Я атаковала его дважды, трижды..."])
+      ShowText(["Но все мои выпады не попадали в цель, словно я продолжала бить в никуда."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Кирин? Корикичо? Он имел ввиду техники? Или же он хотел призвать кого-то?"])
+      ShowText(["Он намекал на то, что я была настолько слабее его, что ему не придётся их призывать?"])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Какого чёрта..?"])
+      ShowText(["Я полностью освоила безмятежный разум, но мой меч всё ещё не может даже поцарапать тебя..!"])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Тебе хватает мастерства..."])
+      ShowText(["...Но ты никогда не сражалась с противниками, которые превосходят тебя."])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Ты сражалась лишь с теми, кто слабее тебя?"])
+      ShowText(["Твоя тактика боя слишком проста..."])
+      PlaySE(["RPG::SE(@name=\"mon_fire1\", @pitch=100, @volume=100)"])
+      ShowPicture([5, "iv_granberia_marcellus2", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Кх..! В таком случае, что насчёт моей секретной техники!? Испаряющий..."])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Ты тратишь время на громкие крики во время применения своих техник..."])
+      ShowText(["С таким подходом, ты никогда не сможешь одолеть тех, кто сильнее тебя."])
+      PlaySE(["RPG::SE(@name=\"mon_tuki\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Ему хватило лишь лёгкого взмаха меча, чтобы полностью отразить мою технику."])
+      ShowText(["Его мастерство было невероятным."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["В плане физических способностей, мы скорее всего были равны..."])
+      ShowText(["Нет, говоря лишь о силе, я бы была сильнее его..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Тем не менее, уровень его мастерства был на совершенно другом уровне."])
+      ShowText(["Похоже, что он был поразительно искусен в сражениях с врагами сильнее его самого."])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Если ты хочешь нанести смертельный удар, не буйствуй и не кричи."])
+      ShowText(["Направь его незаметно, словно ты проскальзываешь в разум противника, находя слабое место в его сознании."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Он нанёс непримечательный удар, не вкладывая в это никаких сил..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Нет, всё было не так."])
+      ShowText(["Это и был его смертельный удар!"])
+      PlaySE(["RPG::SE(@name=\"mon_karaburi\", @pitch=100, @volume=100)"])
+      ShowPicture([5, "ct_marcellus1", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Разрыв Измерений..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Это был удар меча, столь небрежный, но столь идеально выверенный..."])
+      ShowText(["Он был за пределами моего восприятия."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Это..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["В тот момент, я не была уверена, стоит ли мне принять удар или постараться уклониться от него."])
+      ShowText(["Его взмах был столь лёгок, что мне казалось, что я могу с легкостью принять его."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Но мои инстинкты кричали."])
+      ShowText(["Не принимай удар на себя, уклоняйся..!"])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Кх..!"])
+      PlaySE(["RPG::SE(@name=\"mon_dassyutu\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Поверив своим инстинктам, я пригнулась, чтобы избежать удара..."])
+      ShowTextAttributes(["marcellus_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Марцелл\\C[0]>Тебе не хватает опыта, но у тебя хорошие инстинкты..."])
+      ShowText(["Прими ты этот удар, ты бы умерла."])
+      ShowAnimation([-1, 1393, false])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Казалось, словно взмах меча рассёк само пространство."])
+      ShowText(["Его атака, рассёкшая пространство-время пронеслась по всему тронному залу."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Защита противника не имела бы значения."])
+      ShowText(["Это был удар за гранью восприятия обычных смертных, способный рассечь само пространство."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Что это была за техника... Огх..!"])
+      PlaySE(["RPG::SE(@name=\"mon_wind4\", @pitch=100, @volume=100)"])
+      FadeoutBGM([1])
+      FadeoutScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Не смотря на то, что я уклонилась от самого меча, по мне попала ударная волна..."])
+      ShowText(["Она была столь сильной, что я вылетела из тронного зала."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Убийца Владык даже не считал меня угрозой себе."])
+      ShowText(["Я была препятствием, которое можно просто откинуть в сторону взмахом меча, даже не утруждая себя."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Когда я смогла подняться и вернуться в тронный зал, всё было уже кончено."])
+      ShowText(["Именно в этот момент я поняла, насколько я была слаба..."])
+      ErasePicture([5])
+      FadeinScreen([])
+      ShowPicture([5, "80_granberia_st61", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      PlayBGM(["RPG::BGM(@name=\"scene_odayaka2\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Даже сейчас, в моей голове стоит образ того взмаха Убийцы Владык."])
+      ShowText(["Взмаха меча, способного рассечь само пространство."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>...Вероятно, это техника меча, относящаяся к хаосу."])
+      ShowText(["Он скорее всего использовал силу хаоса, чтобы воплотить её в своём мече и выпустить во время взмаха."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Этот взмах меча, разрывающий измерения, смог сокрушить даже моё сердце."])
+      ShowText(["Всё, что осталось, так это воин со сломанным мечом..."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>...На этом всё."])
+      ShowText(["Простите, что заставила вас выслушивать такую длинную историю."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я страдала от сомнений, терпела унизительные поражения и не смогла даже защитить свою госпожу..."])
+      ShowText(["Пора завершить жизнь столь жалкого воина..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Эй, ты серьёзно хочешь умереть..?"])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Нет... Я думаю, что я отложу свой меч и начну жить в качестве отшельницы."])
+      ShowText(["Я больше никогда в жизни не возьму в руки меч."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Как воин, я встретила здесь свой конец."])
+      ShowText(["Вполне возможно, что вы больше меня никогда не увидите..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ты точно уверена в своём решении..?"])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я уже сказала тебе, Владыка Монстров."])
+      ShowText(["Одержу ли я победу или нет, это будет моя последняя битва."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Гранберия..."])
+      ShowText(["Ты сказала, что взмах меча Убийцы Владык до сих пор в твоей голове."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Верно, наставница..."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Это доказательство того, что ты всё ещё жива, как воин."])
+      ShowText(["Ты до сих пор хочешь отложить свой меч..?"])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я уже всё решила, наставница."])
+      ShowText(["Я прошу прощения за то, что я столь неопытная ученица..."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Вот оно как... В таком случае, я более ничего не скажу."])
+      ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Владыка Монстров и герой Лука..."])
+      ShowText(["Пусть ваш путь приведёт вас к победам и славе."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>И, прощайте..."])
+      ErasePicture([5])
+      Wait([30])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=27, @parameters=[2487])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=27, @parameters=[2487])"])
+      Wait([60])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Гранберия ушла..."])
+      Wait([60])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_maouzyou\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Она ушла, но... будет ли она в порядке?"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Такой мастер меча, как она, сама решила оставить меч по своей воле."])
+      ShowText(["Это не то, во что должны вмешиваться посторонние."])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Кроме того, у нас итак дел по горло."])
+      ShowText(["Я знаю, что это звучит жестоко, но у нас нет времени беспокоиться о ней."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ты права, на наших плечах судьба всего мира."])
+      ShowText(["Ладно, вперёд!"])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Тронный зал Владыки Монстров наконец прямо перед нами."])
+      ShowText(["Теперь на нашем пути не должно быть ничего более!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Итак, мы добрались до тронного зала Владыки Монстров."])
+      ShowText(["Момент великого выбора неизбежно приближался..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Тебе лишь за двадцать, а ты уже так измотана душевно..?"])
+      ShowText(["Даже если бы ты победила нас, ты бы не смогла продолжать побеждать в таком состоянии."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>. . . . ."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Наставница Саламандра..."])
+      ShowText(["Я хочу, чтобы вы вновь взяли меня в ученицы."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>...Я отказываюсь."])
+      ShowText(["Я говорила тебе ранее, твоя сила уже превосходит мою."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Но..."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Из этой битвы я поняла, что твои навыки в порядке."])
+      ShowText(["В такой ситуации, ты должна сама понимать, чего тебе не хватает."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Да..."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Это то, что ты не можешь найти простым обучением у кого-то."])
+      ShowText(["Ты должна найти ответ в самой себе."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>. . . . ."])
+      ShowTextAttributes(["salamander_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Загляни в своё сердце ещё раз."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я поняла, наставница..."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Раз уж всё зашло так далеко, то я хотела бы высказаться."])
+      ShowText(["Слушай меня внимательно."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Какими бы не были обстоятельства, ты стала совершенно жалкой, Гранберия."])
+      ShowText(["В твоём текущем состоянии, ты слабее любых других ящериц."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>То, что сказала огненная ящерица - чистая правда."])
+      ShowText(["Если у тебя нет проблем с телом или мечом, то проблема скрыта в твоём сердце."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Также, разве в тебе не кроется сила, которую ты презираешь?"])
+      ShowText(["Презирать что-то глубоко в себе значит презирать себя целиком."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Ты имеешь ввиду силу девочки-волшебницы..?"])
+      ShowText(["Может... Может так оно и есть..."])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>О чём ты там бормочешь, дура!?"])
+      ShowText(["Ты не должна отворачиваться от собственной силы!"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Форма силы не имеет значения, она всё равно остаётся частью тебя."])
+      ShowText(["Отказываться от неё значит отказываться от самой себя."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Н-Но..."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Если ты думаешь, что ты столь сильна, что сама можешь выбирать, какую силу использовать, а какую нет..."])
+      ShowText(["То тебе стоит подумать дважды."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Теперь уходи, Гранберия."])
+      ShowText(["И не забудь откинуть свой хвост, как подобает трусливой ящерице."])
+      ShowTextAttributes(["granberia_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Гранберия\\C[0]>Прощайте..."])
+      ErasePicture([5])
+      Wait([30])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=27, @parameters=[2487])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=27, @parameters=[2487])"])
+      Wait([30])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Гранберия ушла..."])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_maouzyou\", @volume=100, @pitch=100)"])
+      ConditionalBranch([4, 171, 0])
+        ShowTextAttributes(["lizardboss_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Миранда\\C[0]>. . . . ."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Она ушла, но... всё ли будет с ней в порядке?"])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Если она вправду послушает меня, разве это не будет забавно?"])
+      ShowText(["Если она примет себя, как девочку-волшебницу?"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Э-Это жестоко..!"])
+      ShowTextAttributes(["salamander_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Саламандра\\C[0]>Может это именно то, что ей сейчас нужно, чтобы вырваться из этой депрессии."])
+      ShowText(["Сейчас она слишком сильно погрязла в собственных неудачах."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>В любом случае, у нас есть ещё дела."])
+      ShowText(["Давайте двигаться вперёд!"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Тронный зал Владыки Монстров находится прямо перед нами."])
+      ShowText(["Давайте подготовимся и направимся внутрь!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Итак, мы добрались до тронного зала Владыки Монстров."])
+      ShowText(["Момент великого выбора неизбежно приближался..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 335, 4, 13, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 334, 3, 15, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    CallCommonEvent([379])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я обычно предпочитаю не атаковать со спины..."])
+    ShowText(["Но это зависит от ситуации."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Аааа!"])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["granberia_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гранберия\\C[0]>Я обычно предпочитаю не атаковать со спины..."])
+    ShowText(["Но это зависит от ситуации."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Аааа!"])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    CallCommonEvent([379])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    CallCommonEvent([379])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])

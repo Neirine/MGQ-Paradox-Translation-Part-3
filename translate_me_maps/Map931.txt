@@ -1,0 +1,1139 @@
+Display Name = "Замок Ту Романс (Уровень 10)"
+Parallax Name = "StarlitSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 930, 52, 45, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 930, 52, 45, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 931, 75, 80, 2, 1])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 931, 59, 101, 2, 1])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 931, 63, 51, 2, 1])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 931, 54, 21, 2, 1])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 932, 19, 29, 8, 1])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    GatherFollowers([])
+    ConditionalBranch([1, 1212, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["По словам Белого Кролика, комната магического снабжения"])
+      ShowText(["прямо за этой дверью."])
+      ShowChoices([["Зайти в комнату", "Не открывать дверь"], 0])
+      When([0, "Зайти в комнату"])
+        JumpToLabel(["妲己END"])
+        Empty([])
+      When([1, "Не открывать дверь"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Однако, я не решился открыть дверь."])
+        ShowText(["Мы не должны это продолжать..."])
+        SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>А? Разве вы не должны пойти вперед?"])
+        ShowText(["Разве ваша цель не за этой дверью?"])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>...Что такое, Лука?"])
+          ShowText(["Тебя что-то беспокоит?"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>...Что не так, Лука?"])
+          ShowText(["Тебя что-то тревожит?"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Этого достаточно, Казуя..."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Да... Как только мы попадем внутрь - все"])
+        ShowText(["будет кончено."])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        ScrollMap([6, 4, 4])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Казуя кивнул и посмотрел на Белого Кролика."])
+        PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Белый Кролик..."])
+        ShowText(["Ты ведь помнишь, что сказала мне при нашей"])
+        ShowText(["первой встрече?"])
+        FadeoutScreen([])
+        ChangeTransparency([0])
+        ChangeMapDisplay([1])
+        TransferPlayer([0, 858, 97, 219, 0, 2])
+        ControlSwitches([39, 39, 0])
+        TintScreen(["Tone(@red=34.0, @green=-34.0, @blue=-68.0, @gray=170.0)", 1, false])
+        FadeinScreen([])
+        ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Как бы то ни было, вы хорошо справляетесь."])
+        ShowText(["Казуя, похоже, снова может пользоваться магией."])
+        FadeoutScreen([])
+        ChangeTransparency([1])
+        TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+        ControlSwitches([39, 39, 1])
+        TransferPlayer([0, 931, 55, 53, 6, 2])
+        SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        FadeinScreen([])
+        ScrollMap([6, 4, 4])
+        Wait([120])
+        ShowPicture([5, "80_sirousagi_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>...Как ты узнала, что я раньше мог пользоваться"])
+        ShowText(["магией?"])
+        ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Эмм, ну..."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Тебе ничего не должно было быть известно"])
+        ShowText(["о других героях. Ты даже не была уверена"])
+        ShowText(["насчет имен людей из других миров."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>И тем не менее, откуда ты столько знаешь обо мне?"])
+        ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>О чем ты хочешь сказать...?"])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Думаю, ответ в том... что ты из моего мира."])
+        ShowText(["Может пора уже перестать ломать комедию?"])
+        ShowTextAttributes(["mukuro_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Мукуро\\C[0]>......"])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Не знаю насчет остальных, но я не в первый раз"])
+        ShowText(["встречаюсь с \"этой ловушкой\"."])
+        FadeoutBGM([1])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Ты реально думала, что я попадусь в нее дважды?"])
+        ShowText(["...\"Дакки\"!!!!"])
+        ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>......"])
+        ErasePicture([5])
+        Wait([30])
+        ShowAnimation([10, 675, false])
+        Wait([60])
+        PlayBGM(["RPG::BGM(@name=\"boss0-4\", @volume=100, @pitch=100)"])
+        ControlSwitches([31, 31, 0])
+        Wait([60])
+        ShowPicture([5, "80_dakki_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Ну и ну, все-таки подловил меня..."])
+        ShowText(["Я действительно не ожидала, что моя маскировка"])
+        ShowText(["посыпется от пары слов."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Хухуху... Признаю. Мне не удалось тебя обмануть."])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc6", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Ч... чего?!"])
+          ShowText(["Ты все это время притворялась Белым Кроликом...?!"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Невероятно...!"])
+          ShowText(["Все это время ты изображала из себя Белого"])
+          ShowText(["Кролика...?!"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Искусство трансформации - это моя специальность."])
+        ShowText(["Хохохо, разве не потрясающе?"])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>...Твоя трансформация превращает тебя в идеальную"])
+        ShowText(["копию, имитирующую не только внешность,"])
+        ShowText(["но и память..."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Таким образом не будет противоречий в том, что ты"])
+        ShowText(["говоришь и делаешь. Даже тот, кто очень хорошо"])
+        ShowText(["знаком с оригиналом, не заметит подделки..."])
+        ShowTextAttributes(["rejeo_fc1", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Риджео\\C[0]>Выходит..."])
+        ShowText(["Белый Кролик, которого мы видели все это время..."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Это все была моя трансформация."])
+        ShowText(["Именно я привела вас сюда."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Комната магического снабжения была просто моей"])
+        ShowText(["уловкой. А вообще, Белый Кролик находится в руках"])
+        ShowText(["Владыки Снов."])
+        ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Рувисса\\C[0]>Как же так... Все это время нас водили за нос!"])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Я надеялась, что доведу вас до самого финала..."])
+        ShowText(["Если бы вы прошли в эту дверь, то встретили свой"])
+        ShowText(["конец в наслаждении."])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Так значит все-таки дверь была ловушкой..."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Там прятались фамильяры Дакки..."])
+        ShowText(["И как только бы мы зашли в ту комнату,"])
+        ShowText(["назад бы мы уже не вышли..."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>В моем мире я сам чуть было не попал в подобную"])
+        ShowText(["ловушку, если бы не помощь близкого друга..."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Хуху... Теперь мне ясно..."])
+        ShowText(["Значит той, кто предупредил тебя о ловушке,"])
+        ShowText(["была я сама."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>...Позволь мне кое-что тебе сказать, Казуя."])
+        ShowText(["В моем мире ты стал моей жертвой."])
+        ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>......!!!"])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Я думала, это было бы весело - трансформироваться"])
+        ShowText(["в тебя и стать героем... К сожалению, мне"])
+        ShowText(["не постичь идеалов мира во всем мире..."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Вкратце, твоя \"магическая сила\" была тоже моей."])
+        ShowText(["А сможешь ли ты победить меня сейчас, став обычным"])
+        ShowText(["человеком?"])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>...Конечно, я обычный человек."])
+        ShowText(["Есть кое-что, прочно прикрепившееся к моей душе,"])
+        ShowText(["но тем не менее."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Однако... Сейчас у меня есть друзья!!"])
+        ShowText(["И не важно, насколько силен враг, мы устоим перед"])
+        ShowText(["ним!!"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Эта союзница Владыки Снов очень сильна..."])
+        ShowText(["Не теряйте бдительности!"])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Вы, иномировые герои, все станете моей добычей..."])
+        ShowText(["Хохохохо, какой богатый выбор жертв!"])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Что же... Начнем."])
+        ShowText(["Давно я никем не \"лакомилась\"♡"])
+        ChangeBattleBGM(["RPG::BGM(@name=\"cb4\", @volume=100, @pitch=105)"])
+        BattleProcessing([0, 1415, false, false])
+        ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+        PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+        ShowTextAttributes(["dakki_fc2", 4, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Значит это и есть сила героев."])
+        ShowText(["Даже мне придется принять поражение."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Я уже говорил тебе, Дакки..."])
+        ShowText(["С прошлого раза ситуация изменилась."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Мы никогда не сдаемся и никогда не проигрываем."])
+        ShowText(["Если ты стоишь у нас на пути, мы покажем тебе"])
+        ShowText(["свою силу."])
+        Wait([60])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Ху... Хухуу..."])
+        ShowText(["По-прежнему дерзок на язык."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Ладно, так тоже неплохо."])
+        ShowText(["Я действительно насладилась этой долгой игрой..."])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Установить настолько коварную ловушку..."])
+          ShowText(["Так значит и все остальное тоже ложь?"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, лисы злобные в любом мире."])
+          ShowText(["Получается, и остальное тоже ложь?"])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Хмпф... Я солгала только насчет комнаты."])
+        ShowText(["Все остальное время я вела вас без обмана."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Избежите ли вы финальной ловушки или нет...?"])
+        ShowText(["Вот какую игру я для вас подготовила."])
+        ShowTextAttributes(["lanpass_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Лампада\\C[0]>Это правда...?"])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>Дакки может и злодейка, но не трусиха."])
+        ShowText(["Даже если в конце она подготовила ловушку,"])
+        ShowText(["ей все еще нужно было нас до нее довести."])
+        ShowTextAttributes(["kazuya_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Казуя\\C[0]>И мы преодолели эту уловку."])
+        ShowText(["А значит, у нее больше нет причин с нами"])
+        ShowText(["сражаться."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["План Дакки потерпел крах."])
+        ShowText(["Так что еще один сильный противник оказался повержен."])
+        ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Хакунен\\C[0]>Даже если и так... Подумать только, что в мире"])
+        ShowText(["Казуи тоже есть Дакки."])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Похоже, девятихвостые лисы есть в каждом мире."])
+          ShowText(["И видимо все они одинаково ужасно коварны..."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, девятихвостые лисы есть в каждом мире."])
+          ShowText(["И при этом они всегда злобные..."])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Хохохо, у меня нет причин беспокоиться о Дакки"])
+        ShowText(["из других миров когда я занята своим миром ♪"])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Не знаю, кто эти другие девятихвостые лисы..."])
+        ShowText(["Но сочту за комплимент от врагов♡"])
+        Wait([60])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Ладно, не думаю, что вам нужно и дальше обо мне"])
+        ShowText(["беспокоиться..."])
+        ErasePicture([5])
+        Wait([30])
+        ShowAnimation([7, 501, false])
+        Wait([30])
+        ControlVariables([1212, 1212, 0, 0, 6])
+        ControlSwitches([31, 31, 1])
+        Wait([60])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Край Ночи за этим магическим кругом."])
+        ShowText(["Там вы найдете огромные врата."])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Это правда, что Символ Коллаборации имеет силу"])
+        ShowText(["разрушить эти врата. Так что, если вы их"])
+        ShowText(["уничтожите - победа будет за вами."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Теперь ей нет нужды нам лгать."])
+        ShowText(["Если мы пройдем через этот магический круг, то врата"])
+        ShowText(["окажутся неподалеку..."])
+        FadeoutBGM([1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Кошмар\\C[0]>Подождите, герои..."])
+        ShowText(["Мы не дадим вам пройти дальше."])
+        PlayBGM(["RPG::BGM(@name=\"kiki3\", @volume=100, @pitch=100)"])
+        ShowAnimation([7, 856, false])
+        Wait([15])
+        ControlVariables([1212, 1212, 0, 0, 6])
+        ControlSwitches([32, 32, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Wait([60])
+        ShowAnimation([7, 856, false])
+        Wait([15])
+        ControlSwitches([33, 33, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Wait([60])
+        ShowAnimation([7, 856, false])
+        Wait([15])
+        ControlSwitches([34, 34, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Wait([60])
+        ShowPicture([5, "80_succubusq_st01", 0, 0, -150, 0, 100, 100, 0, 0])
+        ShowPicture([6, "80_succubusq_st01", 0, 0, 150, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+        MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["rest_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лест\\C[0]>Кхх, враги преследуют нас!"])
+        ShowText(["Их так много...!!"])
+        ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Рувисса\\C[0]>Дакки... Это ведь не твоих рук дело?"])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Как я уже сказала раньше, у меня больше"])
+        ShowText(["нет желания сражаться. Они не имеют ко мне"])
+        ShowText(["никакого отношения."])
+        ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Давайте просто прыгнем в магический круг"])
+        ShowText(["и сбежим от них..."])
+        ShowTextAttributes(["daimeikai_fc1", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Дура! За этим кругом, точно будут еще враги!"])
+        ShowText(["Если мы проигнорируем этих - нас зажмут!"])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc6", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Тогда, получается, нам нужно разобраться с ними."])
+          ShowText(["Но их количество..."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Тогда, получается, нам нужно разобраться с ними."])
+          ShowText(["Однако, их очень много..."])
+          Empty([])
+        BranchEnd([])
+        ErasePicture([5])
+        ErasePicture([6])
+        Wait([30])
+        SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[4, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[4, 0])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Дакки\\C[0]>Какое несчастье, но я не могу вам помочь."])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc6", 1, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Мы вообще от тебя помощи не ждали!"])
+          ShowText(["Делать нечего, даже если нам придется биться"])
+          ShowText(["до истощения..."])
+          Wait([30])
+          FadeoutBGM([1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]???\\C[0]>Стой... Оставь это место мне."])
+          ShowTextAttributes(["alice_fc6", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Что за бред, это же..."])
+          Wait([30])
+          SetMoveRoute([43, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+          ShowAnimation([11, 542, false])
+          Wait([60])
+          ControlSwitches([35, 35, 0])
+          PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+          Wait([60])
+          ShowPicture([5, "80_tamamo_st61b", 0, 0, 0, 0, 100, 100, 0, 0])
+          MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+          ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Тамамо\\C[0]>Одна из Шести Предков, Тамамо-но Маэ..."])
+          ShowText(["Я пришла сюда чтобы помочь вам."])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Лука\\C[0]>Тамамо из мира Темной Богини...?!"])
+          ShowText(["Что ты здесь делаешь...?"])
+          ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Тамамо\\C[0]>Я слышала о бедствии, пришедшем в этот мир"])
+          ShowText(["и пришла помочь. Если этот мир падет, у нас"])
+          ShowText(["тоже будут проблемы..."])
+          ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Тамамо\\C[0]>Отправляйтесь к Владыке Снов, а здесь я"])
+          ShowText(["управлюсь сама. Я пробуду недолго здесь,"])
+          ShowText(["но смогу выиграть вам достаточно времени."])
+          ShowTextAttributes(["alice_fc5", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Никогда бы не подумала, что ты придешь нас"])
+          ShowText(["спасать. Тебе правда можно это доверить?"])
+          ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Тамамо\\C[0]>Положитесь на меня... Такова воля Темной Богини."])
+          ShowText(["Вы ведь прекрасно знаете мою истинную силу, верно?"])
+          ShowTextAttributes(["alice_fc5", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Ладно, я дам тебе о них позаботиться."])
+          ShowText(["Давайте, идем вперед!"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Я не уверен, можно ли доверять этой Тамамо..."])
+          ShowText(["Но у нас нет другого выбора."])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Лука\\C[0]>Спасибо, Тамамо."])
+          ShowText(["А теперь, идем...!!"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Мы на это и не надеялись!"])
+          ShowText(["Не думала, что до этого дойдет, но нам придется"])
+          ShowText(["всех их..."])
+          Wait([30])
+          FadeoutBGM([1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["\\n<\\C[6]???\\C[0]>Пожалуйста, подождите, госпожа Илиас..."])
+          ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Не может быть, ты..."])
+          Wait([30])
+          ShowAnimation([11, 501, false])
+          Wait([30])
+          ControlSwitches([35, 35, 0])
+          PlayBGM(["RPG::BGM(@name=\"boss_nanadaitensi\", @volume=100, @pitch=100)"])
+          Wait([90])
+          ShowPicture([5, "80_rafaera_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+          MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+          ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Рафаэла\\C[0]>Простите, что без приглашения."])
+          ShowText(["Я - одна из Семи Архангелов, Рафаэла."])
+          ShowText(["С этого момента, положитесь на мою помощь."])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Лука\\C[0]>Одна из Семи Архангелов... из другого мира?!"])
+          ShowText(["Что ты здесь делаешь...?"])
+          ShowTextAttributes(["rafaera_fc1", 1, 0, 2])
+          ShowText(["\\n<\\C[6]Рафаэла\\C[0]>Я узнала о бедствии в этом мире и поспешила помочь"])
+          ShowText(["вам. Мы не можем позволить этому миру пасть."])
+          ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Рафаэла\\C[0]>А теперь, госпожа Илиас, прошу, отправляйтесь"])
+          ShowText(["в Край Ночи. Я здесь обо всем позабочусь."])
+          ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Но ведь Кошмары могут быть поражены только"])
+          ShowText(["удовольствием! Не важно, насколько ты сильна..."])
+          ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Рафаэла\\C[0]>Я понимаю..."])
+          ShowText(["Для ангела, уязвимого к удовольствиям, это будет"])
+          ShowText(["невыгодным положением."])
+          ShowTextAttributes(["rafaera_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Рафаэла\\C[0]>Но если это ради госпожи Илиас, я преодолею"])
+          ShowText(["эту слабость. А теперь, прошу, поспешите."])
+          ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>...Хорошо, Рафаэла, я оставлю их на тебя."])
+          ShowText(["Остальные, идем вперед!"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Я не уверен, можно ли ей доверять..."])
+          ShowText(["Но у нас нет другого выбора."])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Лука\\C[0]>Спасибо, Рафаэла."])
+          ShowText(["А теперь, идем...!!"])
+          Empty([])
+        BranchEnd([])
+        ErasePicture([5])
+        Wait([30])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Magic1\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Magic1\\\", @pitch=100, @volume=80)\"])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Wait([60])
+        FadeoutBGM([1])
+        FadeoutScreen([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["И так мы прыгнули в магический круг, ведущий в Край Ночи."])
+        ShowText(["Еще немного, и мы окажемся у цели."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Настала пора решающей битвы с Владыкой Снов, Эст Морн."])
+        ShowText(["Наконец-то все движется к завершению."])
+        Wait([120])
+        ChangeTransparency([0])
+        ControlSwitches([31, 31, 1])
+        ControlSwitches([32, 32, 1])
+        ControlSwitches([33, 33, 1])
+        ControlSwitches([34, 34, 1])
+        ControlSwitches([35, 35, 1])
+        TransferPlayer([0, 948, 0, 0, 0, 2])
+        FadeinScreen([])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1212, 0, 6, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Эта дверь ведет в ловушку Дакки."])
+      ShowText(["Нам нет нужды заходть в нее..."])
+      ShowChoices([["Зайти в комнату", "Не открывать дверь"], 0])
+      When([0, "Зайти в комнату"])
+        JumpToLabel(["妲己END"])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "Не открывать дверь"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["妲己END"])
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>А? Почему здесь кромешная тьма?"])
+    ShowText(["Белый Кролик...?"])
+    ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Хакунен\\C[0]>Вам не кажется, что эта ситуация немного странная?"])
+    ShowText(["Как будто это ловушка..."])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["fulbeua_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Фульбия\\C[0]>Лоурет..."])
+    ShowText(["Теперь ты станешь моим слугой..."])
+    ShowTextAttributes(["lawrat_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Лоурет\\C[0]>......?!"])
+    ShowTextAttributes(["lanpass_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лампада\\C[0]>Ахахаха..."])
+    ShowText(["Давай-ка сделаем много приятного~♪"])
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>С-стой, Лампада..."])
+    ShowText(["Ааааах!!"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Ч-что происходит...?!"])
+    ShowText(["Кхх, я ничего не вижу в этой темноте!!"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>Я как следует изнасилую тебя, Всемогущий"])
+    ShowText(["Мечник. Твои душа и тело принадлежат мне..."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>М-Мюзетта...? Откуда ты здесь?!"])
+    ShowText(["Уваааа!!"])
+    ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Хакунен! Давай займемся сексом!!"])
+    ShowTextAttributes(["byakunen_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Хакунен\\C[0]>Погодите, Даймёкай-сама...?!"])
+    ShowText(["Хьяяяя!!"])
+    ShowTextAttributes(["mistilteinn_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мистелтейнн\\C[0]>Новисса... Дай нам свою энергию."])
+    ShowTextAttributes(["nobissa_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Новисса\\C[0]>......?!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ч-что происходит...?"])
+    ShowText(["Р-ребята...!!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Похоже, мы были атакованы, но я не могу понять всей картины."])
+    ShowText(["Какого черта вокруг происходит...?"])
+    PlayBGM(["RPG::BGM(@name=\"ero1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sonia_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Эй, Лука..."])
+    ShowText(["Мне кое-что пришло в голову. Расслабься..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>С-Соня...?! Что ты..."])
+    ShowTextAttributes(["soniaapoto_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Давай продолжим это вечность..."])
+    ShowText(["В этом мире наслаждений, всегда..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>С-Соня..."])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]???\\C[0]>Хохохо... Все герои попали в мою ловушку."])
+    ShowText(["В битве умов победа за мной..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>У-уаааа..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]???\\C[0]>Хохохохо..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["И так мы все попали в ловушку и были побеждены одним махом."])
+    ShowText(["Нам так и не удалось понять, что все это время нас водили"])
+    ShowText(["за нос."])
+    FadeoutBGM([1])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["......"])
+    CallCommonEvent([3000])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>На этом этаже другая атмосфера."])
+      ShowText(["Неужели здесь..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Этот этаж чувствуется совсем по-другому."])
+      ShowText(["Неужто здесь..."])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([1212, 1212, 0, 0, 5])
+    PlaySE(["RPG::SE(@name=\"mon_tamamo2\", @pitch=100, @volume=80)"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    PlayBGM(["RPG::BGM(@name=\"shirousagi\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Вот именно~♪"])
+    ShowText(["Вы наконец-то достигли цели!"])
+    ScrollMap([4, 6, 5])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Комната магического снабжения прямо за этой"])
+    ShowText(["дверью. Я рада, что вы добрались сюда ♪"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>......"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рувисса\\C[0]>Внутри этой комнаты спит Белый Кролик, так?"])
+    ShowText(["И если мы разбудим ее и уничтожим врата..."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Да, тогда инцидент будет решен!"])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>...Но Владыка Снов наверняка ждет нас."])
+      ShowText(["Нужно быть готовыми к финальной битве как только"])
+      ShowText(["мы откроем дверь."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>То сможем поздравить себя с решением инцидента."])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>...Однако, нам стоит ожидать определенного"])
+      ShowText(["сопротивления от Владыки Снов. Лучше хорошо"])
+      ShowText(["подготовиться, прежде чем открывать эту дверь."])
+      Empty([])
+
+    BranchEnd([])
+    ScrollMap([6, 6, 5])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Когда будете готовы, идите в комнату ♪"])
+    ShowText(["И тогда мы спасем мир!"])
+    ShowTextAttributes(["kazuya_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>\\C[2]...Еще не заметил?"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ControlVariables([1002, 1002, 0, 0, 44])
+    PlayBGM(["RPG::BGM(@name=\"cb1\", @volume=100, @pitch=100)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Что такое?"])
+    ShowText(["Нужная комната прямо за этой дверью."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Дакки\\C[0]>Край Ночи за этим магическим кругом."])
+    ShowText(["Там вы найдете огромные врата."])
+    ShowTextAttributes(["dakki_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Дакки\\C[0]>Это правда, что Символ Коллаборации имеет силу"])
+    ShowText(["разрушить эти врата. Так что, если вы их"])
+    ShowText(["уничтожите - победа будет за вами."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ConditionalBranch([6, -1, 4])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"hand-drum01\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"sanmai\\\", 1])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"hand-drum01\\\", @pitch=100, @volume=100)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"sanmai\", 1])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Sand\\\\\\\", @pitch=150, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"!Flame\\\", 7])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Sand\\\", @pitch=150, @volume=80)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"!Flame\", 7])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+      ShowTextAttributes(["youkosan_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>Мугяяя!\\^\\.\\."])
+      ControlSelfSwitch(["A", 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["youkosan_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лисья Статуя\\C[0]>Фуфуфу... Я - каменная лисья статуя."])
+      ShowText(["Я не уйду, пока не поговоришь со мной \"сзади\"."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2957, 2957, 0])
+    ChangeWeapons([946, 0, 0, 1, false])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Чье это оружие...?"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рувисса\\C[0]>Не надо строить из себя дурочку."])
+    ShowText(["Оно подписано твоим именем."])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>......"])
+    ShowTextAttributes(["daimeikai_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Даймёкай\\C[0]>Ооо, потрясающе!"])
+    ShowText(["Оно может трансформироваться из режима зонтика"])
+    ShowText(["в режимы жезла, веера и лезвия!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Похоже, это оружие может выполнять функции жезла, веера"])
+    ShowText(["и ниндзято одновременно."])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Но кто его сделал...?"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2955, 2955, 0])
+    ChangeArmor([344, 0, 0, 1, false])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Этот ошейник идеально сидит на Лоурете..."])
+    ShowText(["Но кто подготовил его...?"])
+    ShowTextAttributes(["lawrat_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лоурет\\C[0]>......"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([2956, 2956, 0])
+    ChangeArmor([363, 0, 0, 1, false])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Это принцессы Литии...!!"])
+    ShowTextAttributes(["rovissa_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рувисса\\C[0]>О...? Принцессы, да?"])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Хмм, принцессы..."])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>Любовь принцессы, да?"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>П-почему все на меня смотрят...?!"])
+    ShowText(["Все не так!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    CallCommonEvent([499])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    SetMoveRoute([43, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([30])
+    ShowAnimation([44, 542, false])
+    Wait([60])
+    ControlSwitches([31, 31, 0])
+    Wait([60])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    CallCommonEvent([499])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ControlVariables([1229, 1229, 0, 0, 3])
+    ConditionalBranch([0, 2955, 0])
+      ControlVariables([1229, 1229, 2, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2956, 0])
+      ControlVariables([1229, 1229, 2, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2957, 0])
+      ControlVariables([1229, 1229, 2, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1229, 0, 0, 0])
+      ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>Похоже, вы нашли все сокровища на этом уровне."])
+      ShowText(["Поздравляю~♪"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Йоко\\C[0]>На этом уровне еще остался 1 сундук."])
+      ShowText(["Удачи с поисками!!"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

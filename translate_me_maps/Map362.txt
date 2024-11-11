@@ -1,0 +1,369 @@
+Display Name = "Лаборатория Лили"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 361, 48, 12, 4, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 361, 48, 12, 4, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 361, 48, 12, 4, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["明かり設定10320300"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment(["明かり設定1500200"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["明かり設定1500200"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Comment(["明かり設定6500200"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Comment(["明かり設定6500200"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Comment(["明かり設定5320100"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=0.0, @gray=68.0)", 1, true])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Comment(["明かり設定2160400"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Подумать только, вы прошли весь этот путь"])
+    ShowText(["чтобы победить меня... возможно ли,"])
+    ShowText(["что вас спровоцировала Люсия?"])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Вы, наверное, думаете, что утверждения Люсии"])
+    ShowText(["верны. Что, как только магия щупальцев"])
+    ShowText(["распространится, мир погрузится в хаос..."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Но сокрытие техники магии щупальцев означает..."])
+    ShowText(["что только немногие избранные смогут ей"])
+    ShowText(["управлять."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Разве вы не думаете, что это гораздо опаснее?"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Конечно, это может быть так..."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Конечно, это может быть правдой..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Меньшинство будет монополизировать силу..."])
+    ShowText(["Это несомненно породит насилие и гнет..."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>И тогда плачущие голоса не остановятся..."])
+    ShowText(["Послушайте, вы ведь слышите, верно...?"])
+    ShowText(["Голоса, ищущие помощи..."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Я просто хочу, чтобы эти голоса остановились!"])
+    ShowText(["Я уверена, что вы слышите их, голоса угнетенных!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Предложение все еще остается в силе."])
+    ShowText(["Даже сейчас, если вы победите Люсию,"])
+    ShowText(["я стану вашей союзницей."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Хотите победить меня... несмотря на это?"])
+    ShowText(["Растопчете голоса угнетенных и сразите меня?"])
+    ShowChoices([["Сразиться с Лили", "Сразиться с Люсией"], 2])
+    When([0, "Сразиться с Лили"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Конечно, я слышу плач человека, ищущего помощи..."])
+      ShowText(["Это твой голос, Лили."])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Мой...?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ты - та, кто ищет помощи."])
+      ShowText(["Этот голос, скорее всего, исходит из тебя."])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Внутри тебя есть чувство вины, оставшееся после"])
+        ShowText(["устроенной резни. Ты пытаешься переписать это"])
+        ShowText(["чувством миссии по спасению слабых..."])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Ты хочешь скрыть свое разбитое магией"])
+        ShowText(["щупальцев сердце, пытаясь прикрыться"])
+        ShowText(["миссией... Ты даже выдаешь свои собственные"])
+        ShowText(["крики за чьи-то еще..."])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Однажды ты сломаешься, это точно. Ты должна"])
+        ShowText(["взглянуть в глаза собственной душе,"])
+        ShowText(["прежде чем это случится."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Твой разум находится на грани разрушения."])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Даже если ты перепишешь свое раскаяние и вину,"])
+        ShowText(["чувством миссии... что сделано, то сделано,"])
+        ShowText(["и эти голоса не исчезнут."])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Тебе стоит спасти себя, прежде чем спасать"])
+        ShowText(["других. Честно взгляни в лицо крикам своего"])
+        ShowText(["сердца."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Вы ошибаетесь... Я делаю это, чтобы спасти"])
+      ShowText(["угнетенных... чтобы стереть эти голоса...!"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Я имею в виду, они не исчезнут до тех пор, пока"])
+      ShowText(["я не сделаю это...! Эти голоса... голоса..."])
+      ShowText(["голосаааа..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Сила магии щупальцев спасла тебя... это так."])
+      ShowText(["Но теперь, эта же сила тебя ломает."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Я взмахну своим мечом, чтобы сломать эту силу!"])
+      ShowText(["Начнем, Лили!"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Значит, ты тоже будешь нас угнетать..."])
+      ShowText(["Тогда ты будешь страдать, как те мужчины...!"])
+      ShowPicture([5, "80_lily_st04", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 6, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Растоптанный, униженный и претерпевающий кару!"])
+      ShowText(["Я буду поглощать тебя этими щупальцами до тех"])
+      ShowText(["пор, пока ты не иссохнешь...!!"])
+      ConditionalBranch([4, 163, 0])
+        ShowTextAttributes(["lily_fc1", 5, 0, 2])
+        ShowText(["\\n<\\C[6]Лили\\C[0]>......"])
+        ShowTextAttributes(["lily_fc1", 6, 0, 2])
+        ShowText(["\\n<\\C[6]Лили\\C[0]>О, я вижу другую меня..."])
+        ShowText(["Она, должно быть, ищет помощи..."])
+        ShowTextAttributes(["lily_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Лили\\C[0]>Нет, я пришла спасти тебя. Чтобы спасти себя..."])
+        ShowTextAttributes(["lily_fc1", 6, 0, 2])
+        ShowText(["\\n<\\C[6]Лили\\C[0]>Я слышу свой собственный голос..."])
+        ShowText(["Он просит меня о помощи..."])
+        ShowTextAttributes(["lily_fc1", 4, 0, 2])
+        ShowText(["\\n<\\C[6]Лили\\C[0]>...Похоже, я не могу нормально беседовать."])
+        ShowText(["Очень хорошо, я спасу саму себя..."])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 270, false, false])
+      ControlSwitches([22, 22, 1])
+      PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>В итоге растоптали меня..."])
+      ControlSwitches([2096, 2096, 0])
+      ControlSwitches([7017, 7017, 0])
+      PlaySE(["RPG::SE(@name=\"mon_down\", @pitch=100, @volume=100)"])
+      ErasePicture([5])
+      ControlVariables([1029, 1029, 0, 0, 5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Лили потеряла сознание..."])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Так сильно вымоталась, она, наверное, больше"])
+        ShowText(["не сможет какое-то время использовать магию"])
+        ShowText(["щупальцев. Это должно удовлетворить Люсию..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Истощившись до такой степени, она не будет"])
+        ShowText(["способна использовать магию щупальцев"])
+        ShowText(["на какое-то время. К счастью, мы смогли"])
+        ShowText(["разрушить ее злые амбиции."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Было сложно по многим причинам, но все сложилось"])
+        ShowText(["к лучшему, верно...?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Лили сильная личность... освободившись от магии"])
+      ShowText(["щупальцев, я чувствую, что она взглянет в лицо"])
+      ShowText(["своей душе."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>А теперь, давайте сообщим Люсии!"])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_madou\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "Сразиться с Люсией"])
+      ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+      ControlSwitches([2094, 2094, 0])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Значит, вы изменили свое мнение."])
+      ShowText(["Как я и думала, вы слышите их, эти крики..."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Ну хорошо, тогда я буду ждать."])
+      ShowText(["До тех пор, пока вы не победите Люсию..."])
+      ErasePicture([5])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_madou\", @volume=100, @pitch=100)"])
+      ConditionalBranch([0, 2095, 0])
+        Script(["gain_medal(2008)"])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Группа использует круг исцеления..."])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["HP и MP группы полностью восстановлены!"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([5, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

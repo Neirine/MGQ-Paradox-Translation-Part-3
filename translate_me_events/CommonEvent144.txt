@@ -1,0 +1,130 @@
+CommonEvent 144
+Name = "アイテム倉庫"
+
+  999([144])
+  ConditionalBranch([0, 93, 1])
+    ControlVariables([13, 13, 0, 0, 0])
+    Empty([])
+
+  Else([])
+    ControlVariables([13, 13, 0, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  ShowChoices([["Открыть Склад Предметов", "Положить Предметы на Склад", "Забрать Предметы со Склада", "Выход"], 4])
+  When([0, "Открыть Склад Предметов"])
+    Script(["SceneManager.call(Scene_Storehouse)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([1, "Положить Предметы на Склад"])
+    ConditionalBranch([0, 93, 1])
+      ShowChoices([["Положить все Вещи", "Положить всю Экипировку", "Выход"], 3])
+      When([0, "Положить все Вещи"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "Положить всю Экипировку"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "Выход"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowChoices([["Положить все Вещи", "Положить всю Обычную Экипировку", "Положить всю Экипировку Хаоса", "Выход"], 4])
+      When([0, "Положить все Вещи"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "Положить всю Обычную Экипировку"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "Положить всю Экипировку Хаоса"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["keep_all_enchant_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([3, "Выход"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  When([2, "Забрать Предметы со Склада"])
+    ConditionalBranch([0, 93, 1])
+      ShowChoices([["Забрать все Вещи", "Забрать всю Экипировку", "Выход"], 3])
+      When([0, "Забрать все Вещи"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "Забрать всю Экипировку"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "Выход"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowChoices([["Забрать все Вещи", "Забрать всю Обычную Экипировку", "Забрать всю Экипировку Хаоса", "Выход"], 4])
+      When([0, "Забрать все Вещи"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_item"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([1, "Забрать всю Обычную Экипировку"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_normal_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([2, "Забрать всю Экипировку Хаоса"])
+        PlaySE(["RPG::SE(@name=\"Item3\", @pitch=100, @volume=80)"])
+        Script(["take_all_enchant_equip"])
+        ExitEventProcessing([])
+        Empty([])
+
+      When([3, "Выход"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  When([3, "Выход"])
+    ExitEventProcessing([])
+    Empty([])
+
+  ChoicesEnd([])
+  ExitEventProcessing([])
+  Empty([])

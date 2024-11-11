@@ -1,0 +1,1746 @@
+Display Name = "Горы Илиасвиля"
+Parallax Name = "Mountains5"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([0, 2001, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>У меня нет времени возвращаться в деревню!"])
+      ShowText(["Я должен спасти Ханса, пока не станет слишком"])
+      ShowText(["поздно!"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Церемония начнется в любую минуту."])
+      ShowText(["Мне лучше бежать в деревню напрямик..."])
+      ChangeMapDisplay([0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 7, 23, 48, 8, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Храм Илиас прямо на севере."])
+      ShowText(["Должно быть, я уже опоздал..."])
+      ChangeEncounter([1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 296, 350, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Пурупуру!"])
+    ShowText(["Я не плохая слизь!"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>А раз я не плохая слизь, давай я дам тебе"])
+      ShowText(["несколько лечебных трав в знак дружбы ♪"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([1, 0, 0, 3])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Возвращайся, если она закончится!"])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([8, 1])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Сегодня у меня нет лечебной травы."])
+        ShowText(["Подожди, пока мы не соберем еще."])
+        ExitEventProcessing([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>А раз я не плохая слизь, давай я дам тебе"])
+        ShowText(["несколько лечебных трав в знак дружбы ♪"])
+        PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+        ChangeItems([1, 0, 0, 3])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Возвращайся, если она закончится!"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Добро пожаловать в Магазинчик Слизи ♪"])
+    ShopProcessing([0, 1, 0, 0, true])
+    ShopItem([0, 322, 0, 0])
+    ShopItem([1, 657, 0, 0])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Приходите еще ♪"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Рыбка это любимая еда слизей ♪"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Я ловлю рыбку ♪"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Возьми рыбку ♪"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([322, 0, 0, 1])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Рыбку трудно держать в руках..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Рыбка ♪ Рыбка ♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["542"])
+    ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Домейма\\C[0]>Во... да..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Я выращиваю овощи для продажи в деревне."])
+    ShowText(["Зайди туда и купи их. Они супервкусные ♪"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 3, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Если ты пришел за дровосеком, то его унесли"])
+      ShowText(["на вершину горы."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Дровосек вернулся в деревню."])
+      ShowText(["Я рада, что он жив и здоров ♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Сегодня, как обычно, мирный день ♪"])
+      ShowText(["Я люблю мир. Мир это хорошо ♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранг ♪ Бумеранг ♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Я отгоняю птиц, которые едят наши овощи!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["82"])
+    ShowTextAttributes(["suzume_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Чун\\C[0]>Мне тоже нельзя...?"])
+    ShowText(["Вот как..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранг ♪ Бумеранг ♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Мы, слизи, просто обожаем бумеранги! ♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Давайте потанцуем с бумерангами! ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Мы не делали ничего плохого, так что, пожалуйста,"])
+    ShowText(["не обижай нас."])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Будь осторожен."])
+    ShowText(["В этих горах водятся и плохие слизи."])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([1, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([657, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Уса похитила человека."])
+      ShowText(["Уса очень плохая слизь..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ConditionalBranch([4, 54, 0])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Уса, ты вернулась~♪"])
+        ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Уса\\C[0]>Я только на секундочку заглянула."])
+        ShowText(["Сейчас я на задании по спасению мира ♪"])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Классно!"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Уса отправилась в путешествие, чтобы"])
+      ShowText(["осознать, что она сделала... Но она уже сдалась"])
+      ShowText(["и вместо этого ест морковку в поле неподалеку."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeGold([0, 0, 100])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Получено 100G!"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бунь бунь бу~нь ♪"])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранг ♪ Бумеранг ♪"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Быстрее, быстрее ♪"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([51, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>На самом деле, Уса не такая уж плохая слизь."])
+    ShowText(["Просто, она так себя ведет, когда ей одиноко..."])
+    ConditionalBranch([4, 54, 0])
+      ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Уса\\C[0]>Так стыдно... *Плачет*"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бах, клац, бум ♪"])
+    ShowText(["Я слизь-кузнец ♪"])
+    ShowChoices([["Пропустить объяснения", "Прослушать объяснения"], 1])
+    When([0, "Пропустить объяснения"])
+      Empty([])
+
+    When([1, "Прослушать объяснения"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Кузнецы могут создавать оружие и броню"])
+      ShowText(["с помощью синтеза. Просто принеси первоначальную"])
+      ShowText(["вещь и подходящий материал для улучшения."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Давай для примера возьмем мою кузницу."])
+      ShowText(["Если ты принесешь мне бумеранг и рыбку..."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>...тогда ты сделаешь меня очень счастливой ♪"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["【スライム娘】"])
+      ShowText(["あと、装備している武器や防具は合成できなかったけど……"])
+      ShowText(["今は装備したままでも合成できるようになったんだって。"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Конечно, синтез стоит денег."])
+      ShowText(["Хорошо, давай за работу ♪"])
+      Empty([])
+
+    ChoicesEnd([])
+    Script(["call_synthesize(1)"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Приходите еще ♪"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Любимые вещи для слизи, хммм..."])
+    ShowText(["Чистая вода и вкусная рыбка!"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>А еще я люблю сладости,"])
+    ShowText(["которые продают в Илиасвиле ♪"])
+    ShowText(["Я потратила на них все свои деньги ♪"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 3, 2])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Только не снова, Уса! Похищение людей делает"])
+      ShowText(["тебя суперплохой слизью!"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Так держать, Уса! Позволив человеку уйти, ты стала"])
+      ShowText(["суперразумной слизью."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ConditionalBranch([4, 54, 0])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Только не снова, Уса! Похищение людей делает"])
+        ShowText(["тебя суперплохой слизью!"])
+        ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Уса\\C[0]>Я поддалась своим желаниям и свернула с пути"])
+        ShowText(["добра. Теперь я путешествую, чтобы найти пищу"])
+        ShowText(["для осознания содеянного."])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>...Пищу?"])
+        ShowText(["Ты ешь людей?! Ты суперплохая слизь!"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Только не снова, Уса! Похищение людей делает"])
+      ShowText(["тебя суперплохой слизью!"])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Вообще-то, в последнее время я ее не видела."])
+      ShowText(["Хотя где бы она не была, я уверена, что она"])
+      ShowText(["делает что-нибудь оооооочень плохое."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Script(["actor_label_jump"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Вааа, на этом листике слизняк."])
+    ShowText(["Я ненавииижу слизняков..."])
+    ExitEventProcessing([])
+    Label(["55"])
+    ShowTextAttributes(["name_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мерк\\C[0]>......"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Вааа, большой слизняк!"])
+    ShowText(["Уберите ее от меня!"])
+    ShowTextAttributes(["name_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мерк\\C[0]>Я ненавижу слизей..."])
+    ExitEventProcessing([])
+    Label(["85"])
+    ShowTextAttributes(["highslag_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Елизавета\\C[0]>......"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Вааа, большой слизняк!"])
+    ShowText(["Уберите ее от меня!"])
+    ShowTextAttributes(["highslag_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Елизавета\\C[0]>Хмм, интересно, а если ее съесть..."])
+    ExitEventProcessing([])
+    Label(["86"])
+    ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Розари\\C[0]>......"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Вааа, большой слизняк!"])
+    ShowText(["Уберите ее от меня!"])
+    ShowTextAttributes(["name_s_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Розари\\C[0]>Даже здесь меня преследуют..."])
+    ShowText(["Или это потому, что я такая скользкая...?"])
+    ExitEventProcessing([])
+    Label(["85"])
+    ShowTextAttributes(["name2_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Трио Мелти\\C[0]>......"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Вааа, три больших слизняка!"])
+    ShowText(["Уберите их от меня!"])
+    ShowTextAttributes(["name2_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мелти А\\C[0]>Как грубо, мы не ели твои овощи..."])
+    ShowTextAttributes(["name2_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мелти В\\C[0]>*Хрум* *Хрум*"])
+    ShowText(["Сестренка, ты что-то сказала...?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([10])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Уса Уса~! Я тебя съем!"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь А\\C[0]>Ура, давайте съедим его ♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь В\\C[0]>Ура, давайте выжмем его досуха ♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ханс\\C[0]>К-кто-нибудь, спасите!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Стоять! Отойдите от Ханса!"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShowPicture([5, "80_bunnyslime_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Ооо, так ты пришел помочь этому селянину?"])
+    ShowText(["Ты выглядишь гораздо аппетитнее, чем он."])
+    ShowTextAttributes(["bunnyslime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Уса Уса~!"])
+    ShowText(["Я и тебя съем ♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь А\\C[0]>Ура, давайте съедим его ♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь В\\C[0]>Ура, давайте выжмем его досуха ♪"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Черт, похоже, с ними придется сразиться!"])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    ErasePicture([5])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 3, false, false])
+    ShowPicture([10, "sys_black", 0, 0, 0, 0, 100, 100, 255, 0])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 1])
+    ControlSwitches([2001, 2001, 1])
+    SetEventLocation([40, 0, 41, 5, 0])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 12, 41, 6, 8, 2])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ErasePicture([10])
+    Script(["gain_medal(1)"])
+    ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Уааа..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ханс\\C[0]>Спасибо, Лука!"])
+    ShowText(["Никогда бы не подумал, что ты спасешь мою шкуру!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ханс\\C[0]>Я возвращаюсь в деревню."])
+    ShowText(["Еще раз спасибо!"])
+    SetMoveRoute([40, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ControlVariables([1001, 1001, 0, 0, 4])
+    CallCommonEvent([112])
+    ChangeEncounter([0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...Фух, я рад, что все получилось."])
+    ShowText(["Думаю, мне тоже стоит идти."])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["bunnyslime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Ммммнг..."])
+    ShowText(["Теперь я буду хорошей..."])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь А\\C[0]>Ура, давайте съедим его ♪"])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь В\\C[0]>Ура, давайте выжмем его досуха ♪"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([176, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 2, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Что происходит...?"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 5, 2])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Что это было...?"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 7, 1])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Что же упало недавно с неба? Это была звезда?"])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Довольно близко, желейный монстр."])
+        ShowText(["Я так же велика, как звезда."])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Еееей ♪　Еееей ♪"])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Я собираю ветки для бумерангов."])
+    ShowText(["Если у меня получатся хорошие, "])
+    ShowText(["то я смогу похвастаться всем ♪"])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранг ♪ Бумеранг ♪"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Это целебный источник Илиасвиля ♪"])
+    ShowText(["А еще в нем полно рыбы ♪"])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Я люблю бумеранги ♪"])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранги - лучшие друзья слизей ♪"])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранг ♪ Бумеранг ♪"])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Она так классно обращается с бумерангом,"])
+    ShowText(["не так ли...?"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Эй, хочешь я тебе расскажу о бумерангах?"])
+    ShowChoices([["\"Конечно.\"", "\"Нет, спасибо.\""], 2])
+    When([0, "\"Конечно.\""])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Бумеранг это оружие, которое может ударить"])
+      ShowText(["всех врагов за одну атаку. Если ты экипируешься"])
+      ShowText(["таким, то твои атаки станут бить по всем целям,"])
+      ShowText(["а не только по одной."])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Правда, плохо, что их точность не так хороша,"])
+      ShowText(["как у мечей. Ты будешь часто мазать, так что"])
+      ShowText(["будь осторожен."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>При использовании бумерангов очень важна"])
+      ShowText(["сноровка. Их урон зависит и от атаки,"])
+      ShowText(["и от сноровки."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Так что, бумеранги подходят тем, у кого высокая"])
+      ShowText(["сноровка. Этим они отличаются от мечей, которые"])
+      ShowText(["полагаются на силу атаки. Имей это в виду."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Может, я скажу немного не по теме, но некоторое"])
+      ShowText(["оружие может зависеть не только от силы атаки."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Как я говорила, для бумерангов важна сноровка,"])
+      ShowText(["но есть оружие, для которого больше важна"])
+      ShowText(["ловкость."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Не забывай об этом, когда выбираешь себе оружие."])
+      ShowText(["Если захочешь узнать больше, поспрашивай"])
+      ShowText(["в Храме Илиас."])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Наслаждайся своим новым бумерангом!"])
+      Empty([])
+
+    When([1, "Не слушать"])
+      ShowTextAttributes(["slime_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Ну ладно..."])
+      Empty([])
+
+    ChoicesEnd([])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Куд-кудах!"])
+    ShowText(["Я несу вкусные яйца!"])
+    ShopProcessing([0, 340, 0, 0, true])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Приходите еще ♪"])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Куд-кудах!"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Хорошие люди из Храма Илиас научили"])
+    ShowText(["меня разводить кур!"])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курица\\C[0]>Ко-ко-кооо!"])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курица\\C[0]>Ко-ко-кооо!"])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курица\\C[0]>Ко-ко-кооо!"])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Источник этого взрыва должен быть прямо здесь..."])
+    ShotBalloonIcon([-1, 1, false])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...Что это?!"])
+    PlayBGM(["RPG::BGM(@name=\"scene_sinpi\", @volume=100, @pitch=100)"])
+    ShowPicture([1, "iv_iriasu1", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([1, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["В центре кратера, без сознания лежит девушка с крыльями"])
+    ShowText(["ангела. Она очень похожа на Илиас, которая явилась мне"])
+    ShowText(["во сне прошлой ночью..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["...Хотя эта кажется не совсем взрослой."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Э-эй, ты в порядке?!"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]???\\C[0]>Ух... Уууххх..."])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]???\\C[0]>Где..."])
+    ShowText(["Что произошло...?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Ангел, упавший с неба, медленно встает на ноги."])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 12, 63, 34, 0, 2])
+    ControlSwitches([2002, 2002, 0])
+    MovePicture([1, nil, 0, 0, 0, 0, 100, 100, 0, 0, 60, true])
+    ErasePicture([1])
+    PlayBGM(["RPG::BGM(@name=\"irias\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_iriasu_st31", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>...Я - Илиас, Богиня Созидания."])
+    ShowText(["Этот мир был создан моими усилиями."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Не может быть, ты правда Илиас?!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ты гораздо меньше, чем я ожидал..."])
+    ShowPicture([5, "80_iriasu_st38", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>М-меньше...? Какая наглость!"])
+    ShowText(["Я Всемогущая Богиня! Как ты смеешь оскорблять"])
+    ShowText(["меня?"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Испробуй мощь Небес, и увидим, "])
+    ShowText(["насколько ты мал в сравнении со мной!"])
+    Script(["display_skill_name(\"Карающая Гроза\")"])
+    PlaySE(["RPG::SE(@name=\"mon_denpa1\", @pitch=100, @volume=80)"])
+    ShakeScreen([5, 5, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Илиас выпускает силу Небес!"])
+    Script(["clear_skill_name"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ой, ты ударила меня током!"])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_iriasu_st36", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>...а?"])
+    ShowText(["Почему ты не превратился в дымящуюся кучку пепла?"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ну я почувствовал небольшой разряд..."])
+    ShowText(["Хотя не достаточный, чтобы сжечь меня дотла..."])
+    ShowPicture([5, "80_iriasu_st38", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>В этот раз я превращу тебя в уголек!"])
+    ShowText(["Я отдам твое обгоревшее тело сельчанам на топливо."])
+    Script(["display_skill_name(\"Карающая Гроза\")"])
+    PlaySE(["RPG::SE(@name=\"mon_denpa1\", @pitch=100, @volume=80)"])
+    ShakeScreen([5, 5, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Илиас выпускает силу Небес!"])
+    Script(["clear_skill_name"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...ай!"])
+    ShowText(["Что это было? Статическое электричество?"])
+    ShowPicture([5, "80_iriasu_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Почему же, почему мои силы настолько малы?"])
+    ShowText(["Что произошло со мной...?"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>...Зеркальце, зеркальце."])
+    ShowText(["Покажи мне мое драгоценное отражение."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Магическое зеркало внезапно появилась в руке Илиас!"])
+    ShowText(["Кажется, она смотрит в него вечность..."])
+    ShowPicture([5, "80_iriasu_st36", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>...Я маленькая!"])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Что это значит?!"])
+    ShowText(["Не может быть... Великая Печать Шести Предков?"])
+    ShowPicture([5, "80_iriasu_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Ух... Даже моя память не работает нормально..."])
+    ShowText(["Кто мог сделать такое со мной?"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Черная Алиса? Промештейн? Интриги Темной Богини?"])
+    ShowText(["...Ах, слишком много вариантов приходит на ум!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Похоже, таинственный упавший ангел паникует."])
+    ShowText(["Понятия не имею, что с ней происходит..."])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Это бессмысленно. Мне нужно вернуться на Небеса."])
+    ShowText(["Лука, мы закончим этот разговор позже!"])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([5])
+    SetMoveRoute([59, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Она убежала..."])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_urayama\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Кто, черт возьми, этот маленький ангел?"])
+    ShowText(["И откуда она знает мое имя?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Может быть... она и правда Богиня Илиас?"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ха-ха, ага. Быть того не может."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Черт, сейчас не время стоять здесь!"])
+    ShowText(["Мне нужно поторопиться и спасти Ханса!"])
+    ControlVariables([1001, 1001, 0, 0, 3])
+    ControlSwitches([2002, 2002, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    PlayBGM(["RPG::BGM(@name=\"\", @volume=100, @pitch=100)"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 120, true])
+    SetMoveRoute([43, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Wait([180])
+    ShotBalloonIcon([-1, 1, false])
+    ShotBalloonIcon([43, 1, false])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ч-что это было?!"])
+    ShowTextAttributes(["slime_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Наверное, туда что-то упало..."])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_urayama\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Маленький Монстр\\C[0]>Умм, эй, мальчик. Да, ты."])
+    ShowText(["Ты не встречал здесь монстра, похожего на кролика?"])
+    ShowChoices([["\"На вершине.\"", "\"Не думаю.\""], 0])
+    When([0, "\"На вершине.\""])
+      ShowPicture([5, "80_alice_st72", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Маленький Монстр\\C[0]>На вершине? Спасибо."])
+      ShowPicture([5, "80_alice_st71", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Маленький Монстр\\C[0]>Чертов кролик, только попадись мне..."])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+      ErasePicture([5])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+      Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+      Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Что-то странное происходит..."])
+      ShowText(["Сначала маленький ангел, теперь маленький демон."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["У меня такое чувство, что кролик-слизь, с которой я сейчас"])
+      ShowText(["сражался, не тот кролик, которого она ищет."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Может, стоит вернуться и проверить...?"])
+      ControlVariables([1001, 1001, 0, 0, 5])
+      ControlSwitches([2003, 2003, 0])
+      Empty([])
+
+    When([1, "\"Не думаю.\""])
+      ShowPicture([5, "80_alice_st74", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Маленький Монстр\\C[0]>...Серьезно?"])
+      ShowText(["Эти девушки-слизи говорили мне, что видели"])
+      ShowText(["ее здесь."])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+      ErasePicture([5])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Почему это случилось со мной...?"])
+    ShowText(["Я никогда больше не буду плохой..."])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Остановись! Кто-нибудь, помогите!"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Остановись! Кто-нибудь, помогите!"])
+    ShowTextAttributes(["alice_fc6", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Маленький Монстр\\C[0]>Как ты посмела сделать это со мной?!"])
+    ShowText(["Преврати меня обратно сейчас же, идиотка!"])
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Я не знаю, о чем ты говоришь!"])
+    ShowText(["Ты поймала не того кролика!"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetEventLocation([0, 0, 40, 8, 0])
+    ShotBalloonIcon([0, 8, false])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Маленький Монстр\\C[0]>Ммм..."])
+    ShowText(["Вообще-то, ты не похожа на кролика,"])
+    ShowText(["который мне нужен."])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Маленький Монстр\\C[0]>Куда, черт возьми, этот кролик могла пойти?"])
+    ShowText(["Ты не сможешь прятаться от меня вечно!"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Что за фигня...?"])
+    ShowTextAttributes(["bunnyslime_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Кролик-Слизь\\C[0]>Мммнн..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>В любом случае, мне стоит поторопиться."])
+    ShowText(["Почти настало время для моей церемонии"])
+    ShowText(["благословления."])
+    ControlSwitches([2003, 2003, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Освежающая вода имела терапевтический эффект..."])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["HP и MP группы полностью восстановлены!"])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    ControlVariables([1041, 1041, 0, 0, 2])
+    ControlSwitches([2116, 2116, 0])
+    GatherFollowers([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetEventLocation([65, 0, 44, 1, 0])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ChangeMapDisplay([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Рами пришла на вершину для летной практики, но..."])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>......"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Эй, я не собираюсь торчать здесь весь день."])
+      ShowText(["Зачем было приходить сюда, если ты не хочешь"])
+      ShowText(["отсюда взлетать?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Ну что же, приступай к своему самоубийству..."])
+      ShowText(["...то есть, я хотела сказать, к летной практике."])
+      ShowText(["Все будет хорошо, верь мне."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>Подождите, а это не слишком высоко?"])
+    ShowText(["Деревья внизу меня, наверное, не спасут..."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Соберись уже..."])
+      ShowText(["Ты же монстр, ты не умрешь от падения... Наверное."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Поверь всем своим сердцем, и чудо произойдет..."])
+      ShowText(["Давай, я верю, что ты полетишь."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>Хорошо... Ну тогда...!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Рами решилась!"])
+    ShowTextAttributes(["inp_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>ААаАаааа!!"])
+    PlaySE(["RPG::SE(@name=\"mon_fall1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Она совсем не летает!"])
+    ShowText(["Она просто падает!"])
+    PlaySE(["RPG::SE(@name=\"mon_bom2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это было плохо..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Я думала, это будет забавно..."])
+      ShowText(["Но воспоминания о том, что кто-то разбился на этой"])
+      ShowText(["горе, - будут портить мне настроение."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Думаю, стоит подобрать упавшую Рами..."])
+    FadeoutScreen([])
+    Wait([60])
+    TransferPlayer([0, 12, 56, 48, 4, 2])
+    SetEventLocation([65, 0, 55, 48, 6])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    FadeinScreen([])
+    ShowTextAttributes(["inp_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>Ааай, больно~!"])
+    ShowText(["Я набила себе шишку~!"])
+    ShowTextAttributes(["inp_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>Но мои сиськи подействовали как подушка"])
+    ShowText(["безопасности, так что мое тело не пострадало!"])
+    ChangeSkills([0, 56, 0, 544])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Рами получила способность \\I[98]\\C[4]Защита +10%\\C[0]!"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Так эта грудь, разве из-за нее ты не можешь"])
+      ShowText(["летать...?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Скорее всего, ты бы умерла без такой груди..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Но это был совсем не полет."])
+    ShowText(["Собираешься попробовать на более высокой горе?"])
+    ShowTextAttributes(["inp_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>Эм...?"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Лука, не ожидала что ты такой беспощадный..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Ты еще более беспощаден, чем я..."])
+      ShowText(["Как и следовало ожидать от ребенка Люцифины..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...Э?"])
+    ShowTextAttributes(["inp_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>...Я не сдамся!"])
+    ShowText(["Я попробую спрыгнуть с горы повыше!"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Хм..."])
+      ShowText(["Как насчет Святой Горы Амос?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Тогда как насчет Святой Горы Амос?"])
+      ShowText(["Возможно, тебя подхватят мои ангелы."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["inp_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>Хорошо, я постараюсь!"])
+    SetMoveRoute([65, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    SetEventLocation([65, 0, 69, 0, 0])
+    ConditionalBranch([1, 1001, 0, 12, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Священная гора Амос находится на континенте Сентора."])
+      ShowText(["Сейчас мне до нее не добраться, но туда стоит заглянуть,"])
+      ShowText(["когда подвернется возможность..."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Таким образом, нам стоит отвести Рами на вершину Священной"])
+      ShowText(["Горы Амос. Интересно, сможет ли она в этот раз полететь..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])

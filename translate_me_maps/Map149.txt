@@ -1,0 +1,1098 @@
+Display Name = "Северный Подводный Храм: 2 Ярус"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    Empty([])
+
+CommonEvent 84
+Name = "EV084"
+
+  Page 0
+    Empty([])
+
+CommonEvent 85
+Name = "EV085"
+
+  Page 0
+    Empty([])
+
+CommonEvent 86
+Name = "EV086"
+
+  Page 0
+    Empty([])
+
+CommonEvent 87
+Name = "EV087"
+
+  Page 0
+    Empty([])
+
+CommonEvent 88
+Name = "EV088"
+
+  Page 0
+    Empty([])
+
+CommonEvent 89
+Name = "EV089"
+
+  Page 0
+    Empty([])
+
+CommonEvent 90
+Name = "EV090"
+
+  Page 0
+    Empty([])
+
+CommonEvent 91
+Name = "EV091"
+
+  Page 0
+    Empty([])
+
+CommonEvent 92
+Name = "EV092"
+
+  Page 0
+    Empty([])
+
+CommonEvent 93
+Name = "EV093"
+
+  Page 0
+    Empty([])
+
+CommonEvent 94
+Name = "EV094"
+
+  Page 0
+    Empty([])
+
+CommonEvent 95
+Name = "EV095"
+
+  Page 0
+    Empty([])
+
+CommonEvent 96
+Name = "EV096"
+
+  Page 0
+    Empty([])
+
+CommonEvent 97
+Name = "EV097"
+
+  Page 0
+    Empty([])
+
+CommonEvent 98
+Name = "EV098"
+
+  Page 0
+    Empty([])
+
+CommonEvent 99
+Name = "EV099"
+
+  Page 0
+    Empty([])
+
+CommonEvent 100
+Name = "EV100"
+
+  Page 0
+    Empty([])
+
+CommonEvent 101
+Name = "EV101"
+
+  Page 0
+    Empty([])
+
+CommonEvent 102
+Name = "EV102"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 148, 33, 34, 0, 0])
+    Empty([])
+
+CommonEvent 103
+Name = "EV103"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 148, 33, 34, 0, 0])
+    Empty([])
+
+CommonEvent 104
+Name = "EV104"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 148, 33, 34, 0, 0])
+    Empty([])
+
+CommonEvent 105
+Name = "EV105"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1557, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 106
+Name = "EV106"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([57, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 107
+Name = "EV107"
+
+  Page 0
+    ConditionalBranch([1, 1068, 0, 2, 2])
+      PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_poseidones_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+      ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Посейдония\\C[0]>Я - Королева Северных Морей, Посейдония..."])
+      ShowText(["Глава Северного Подводного Храма и правитель"])
+      ShowText(["северной половины океана."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Какая большая. Сильная наверное..."])
+        ShowText(["Мы пришли сюда не драться, так что давай"])
+        ShowText(["ты спокойно нас выслушаешь?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Какая большая и сильная..."])
+        ShowText(["Мы пришли сюда не ради битвы. Выслушай нас."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Посейдония\\C[0]>Тогда отвечайте."])
+      ShowText(["Для чего вы пришли ко мне?"])
+      ConditionalBranch([4, 203, 0])
+        ShowTextAttributes(["tatunoko_k_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Тацуко\\C[0]>Я совру, если скажу, что мне не страшно..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1068, 0, 0, 0])
+        ConditionalBranch([1, 1016, 0, 3, 1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Мы пришли сюда, чтобы вернуть Кракена в норму."])
+          ShowText(["Кстати, мы слышали, что здесь еще есть сокровище..."])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Честно говоря, у нас нет особых причин."])
+          ShowText(["Может сказать так, и сбежать...?"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 1016, 0, 3, 1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Чтобы восстановить Кракена и за Серебряной Сферой..."])
+          ShowText(["Так, что же ответить?"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Мы пришли за Серебряной Сферой..."])
+          ShowText(["Однако, как бы сказать ей подобную вещь?"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ShowChoices([["\"Мы пришли ради кальмара.\"", "\"Мы пришли за Серебряной Сферой\"", "Не важно"], 3])
+      When([0, "\"Мы пришли ради кальмара.\""])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Чего? Я не понимаю, что ты бормочешь..."])
+        ShowText(["Это грешно, приходить сюда, чтобы подразнить меня!"])
+        JumpToLabel(["戦闘"])
+        Empty([])
+      When([1, "\"Мы пришли за Серебряной Сферой\""])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Что? Вы пришли за сферой?!"])
+        ShowText(["Это грешно, изливать свои амбиции предо мной!"])
+        JumpToLabel(["戦闘"])
+        Empty([])
+      When([2, "Ничего"])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>...Если так, то уходи."])
+        ShowText(["Мне нужно следить за северной половиной океана."])
+        ErasePicture([5])
+        PlayBGM(["RPG::BGM(@name=\"dungeon_umi\", @volume=100, @pitch=100)"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Label(["戦闘"])
+      ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Посейдония\\C[0]>За такое своеволие тебя ждет смерть!"])
+      ShowText(["Ну а теперь, тебя нужно наказать!"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 6, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Эй, подожди, Посейдония!"])
+        ShowText(["Послушай же!"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Что за дела, этот осьминог совсем не слушает!"])
+        ShowText(["Давай покажем, что только мы в праве судить!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Посейдония\\C[0]>Если вы считаете, что наказание несправедливо,"])
+      ShowText(["попробуйте оспорить силой! Это закон моря!"])
+      ConditionalBranch([4, 226, 0])
+        ShowTextAttributes(["sirohebisama_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Широхеби\\C[0]>Какой бессмысленный закон..."])
+        ShowText(["Подобное неприемлимо."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Похоже ничего не поделаешь! Мы будем сражаться!"])
+      ConditionalBranch([4, 280, 0])
+        ShowTextAttributes(["poseidones_fc1", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Если посмотреть, в моем теле много вкусных мест."])
+        ShowText(["Крабовое мясо, щупальца осьминога, икра..."])
+        ShowTextAttributes(["poseidones_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Невозможно, ты хочешь сделать миску морепродуктов"])
+        ShowText(["используя мое тело?! Исчезни, та, что думает"])
+        ShowText(["о подобном ужасе!"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 735, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      ControlVariables([1068, 1068, 0, 0, 3])
+      PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_poseidones_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["poseidones_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Посейдония\\C[0]>Пожарите или испечете, что вы сделаете...?"])
+      ShowText(["Вам повезло - мое тело везде вкусное."])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc6", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Это подождет! Сначала выслушай нас!"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Это подождет! Для начала мы поговорим!"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>...Она собралась съесть ее после?!"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>А после ты ее съешь...?!"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1016, 0, 3, 1])
+        ShowTextAttributes(["kraken_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Кракен\\C[0]>Выслушай, Посейдония..."])
+        ShowText(["Ты же знаешь, кто это?"])
+        ShowTextAttributes(["poseidones_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Этот кальмар разговаривает?!"])
+        ShowTextAttributes(["kraken_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Кракен\\C[0]>Все-таки не поняла...?"])
+        ShowText(["Я - Кракен."])
+        ShowTextAttributes(["poseidones_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Вот как, старая подруга!"])
+        ShowText(["Что с твоим видом...?"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Лука объяснил ситуацию..."])
+        ShowPicture([5, "80_poseidones_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Понятно... Какой ужасный суккуб."])
+        ShowText(["Что за силой надо обладать, чтобы высосать"])
+        ShowText(["из тебя все соки."])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>...Увы, но у меня нет силы, способной излечить"])
+        ShowText(["тебя. Я больше воин, а в лечении не очень хороша."])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Тебе стоит просить помощи у Королевы Русалок."])
+        ShowText(["У них есть сила воды, да и в лечении они"])
+        ShowText(["преуспевают... Других вариантов я не вижу."])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Понятно, значит, Королева Русалок?"])
+          ShowText(["Наверняка ей хватит сил вернуть кальмара"])
+          ShowText(["в нормальное состояние."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Королева Русалок...?"])
+          ShowText(["Думаю, она подходит для этого, хоть я"])
+          ShowText(["и не хотела бы полагаться на монстров."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([1, 1071, 0, 0, 0])
+          ConditionalBranch([0, 4, 0])
+            ShowTextAttributes(["alice_fc5", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Алиса\\C[0]>Однако, сейчас местоположение королевы неизвестно."])
+            ShowText(["Она ведь была побеждена Алисой 17-ой и теперь"])
+            ShowText(["где-то прячется?"])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 5, 0])
+            ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+            ShowText(["\\n<\\C[6]Илиас\\C[0]>Однако, неизвестно, где она сейчас."])
+            ShowText(["Мы слышали, что она была побеждена Алисой 17-ой"])
+            ShowText(["и теперь где-то скрывается."])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Посейдония\\C[0]>Я тоже не знаю, где находится Королева Русалок."])
+          ShowText(["Это в ее стиле - полностью стирать следы"])
+          ShowText(["своего присутствия."])
+          ConditionalBranch([4, 14, 0])
+            ShowTextAttributes(["undine_fc1", 2, 0, 2])
+            ShowText(["\\n<\\C[6]Ундина\\C[0]>Довольно неприятно..."])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 4, 0])
+            ShowTextAttributes(["alice_fc5", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Алиса\\C[0]>Извини, но у нас нет времени прочесывать весь мир"])
+            ShowText(["в ее поисках. Придется отложить это на какое-то"])
+            ShowText(["время."])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 5, 0])
+            ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+            ShowText(["\\n<\\C[6]Илиас\\C[0]>У нас пока нет времени на блуждания в ее поисках."])
+            ShowText(["Отложим это дело на какое-то время."])
+            Empty([])
+          BranchEnd([])
+          ShowTextAttributes(["kraken_fc2", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Кракен\\C[0]>Понимаю, я потерплю еще эту форму..."])
+          ShowText(["У вас есть своя миссия."])
+          ConditionalBranch([0, 6, 0])
+            ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Соня\\C[0]>Возможно, по дороге мы узнаем о местонахождении"])
+            ShowText(["Королевы Русалок. Или может даже с ней встретимся."])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Лука\\C[0]>Возможно, по дороге мы узнаем о местонахождении"])
+            ShowText(["Королевы Русалок. Или может даже с ней встретимся."])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([1, 1071, 0, 1, 0])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["В любом случае, нам нужно встретиться с Королевой Русалок."])
+          ShowText(["Нужно как-нибудь убедить ее помочь."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([1, 1071, 0, 2, 1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Королева Русалок должна быть в пещере у водопада."])
+          ShowText(["Нужно с ней встретиться."])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Похоже, вы сделали, что хотели."])
+        ShowText(["Кстати, вы можете взять эту Серебряную Сферу."])
+        Empty([])
+      Else([])
+        ShowPicture([5, "80_poseidones_st01", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Я поняла, о чем вы говорите."])
+        ShowText(["Вот, возьмите Серебряную Сферу..."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Э? Все в порядке...?"])
+      ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Посейдония\\C[0]>Вы победили меня, так что у вас есть право"])
+      ShowText(["ее забрать. Кроме того, наверняка придет время,"])
+      ShowText(["когда она может понадобиться."])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([542, 0, 0, 1])
+      Script(["gain_medal(46)"])
+      ConditionalBranch([1, 1016, 0, 3, 1])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Свою же силу я не могу вам предоставить, извините."])
+        ShowText(["Но если Кракен вернется в свою обычную форму,"])
+        ShowText(["пожалуйста, дайте мне с ней повидаться."])
+        ErasePicture([5])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Ситуация Кракена пока отодвинута в сторону до тех пор,"])
+        ShowText(["пока мы не найдем Королеву Русалок. Тем не менее,"])
+        ShowText(["Серебряная Сфера - уже неплохо."])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Ну а теперь идите."])
+        ShowText(["У меня много дел..."])
+        ErasePicture([5])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ну что ж, продолжим наше путешествие!"])
+      CallCommonEvent([330])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_umi\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1068, 0, 3, 0])
+      ConditionalBranch([0, 2251, 1])
+        ShowPicture([5, "80_poseidones_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ConditionalBranch([1, 1016, 0, 3, 1])
+          ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Посейдония\\C[0]>Свою силу я не могу вам предоставить, извините."])
+          ShowText(["Но если Кракен вернется в свою обычную форму,"])
+          ShowText(["пожалуйста, дайте мне с ней повидаться."])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Посейдония\\C[0]>Ну а теперь идите."])
+          ShowText(["У меня много дел..."])
+          Empty([])
+        BranchEnd([])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 2251, 0])
+        ShowPicture([5, "80_poseidones_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+        ShowTextAttributes(["kraken_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Кракен\\C[0]>Посейдония, к тебе кальмар."])
+        ShowText(["Мне удалось вернуть себе изначальную форму."])
+        ShowTextAttributes(["poseidones_fc1", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>О, хорошо, а то я волновалась..."])
+        ShowText(["Надо бы устроить пир по поводу твоего возвращения."])
+        ShowTextAttributes(["kraken_fc1", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Кракен\\C[0]>Ну тогда пойдем, поищем чего съестного?"])
+        ShowTextAttributes(["poseidones_fc1", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Согласна, давай..."])
+        ErasePicture([5])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Script(["add_actor_ex(280)"])
+        ControlSelfSwitch(["A", 0])
+        PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Посейдония присоединилась к группе!"])
+        Wait([60])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Соня\\C[0]>Как-то это по-простому получилось!"])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Лука\\C[0]>Как-то она просто присоединилась..."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 5, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Все морские монстры такие..."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Все морские монстры такие..."])
+          Empty([])
+        BranchEnd([])
+        ShowTextAttributes(["poseidones_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Посейдония\\C[0]>Можно сказать, что таков дух океана."])
+        ShowText(["Так, куда бы пойти поесть?"])
+        ConditionalBranch([0, 4, 0])
+          ShowTextAttributes(["alice_fc5", 5, 0, 2])
+          ShowText(["\\n<\\C[6]Алиса\\C[0]>Попробуй съесть свои ноги..."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Илиас\\C[0]>Съешь свои ноги."])
+          Empty([])
+        BranchEnd([])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 108
+Name = "EV108"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Это целебный горшочек!"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+    RecoverAll([0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["HP и MP группы полностью восстановлены!"])
+    Empty([])
+
+CommonEvent 109
+Name = "EV109"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([810, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

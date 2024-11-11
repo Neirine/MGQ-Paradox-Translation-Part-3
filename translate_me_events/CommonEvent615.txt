@@ -1,0 +1,30 @@
+CommonEvent 615
+Name = "イベント：種族経験値"
+
+  999([615])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([1, 129, 0, 0, 0])
+    ShowTextAttributes(["stein_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Промештейн\\C[0]>Я изобрела этот прогрессор ДНК..."])
+    ShowText(["...Нет, этот \"Экстракт Морковки\"."])
+    ShowText(["Он повысит расовый опыт, примите."])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Получен расовый опыт от \"Экстракта Морковки\"!"])
+    Script(["gain_party_tribe_exp(200)"])
+    ControlVariables([129, 129, 0, 0, 1])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 129, 0, 1, 0])
+    ShowTextAttributes(["stein_fc2", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Промештейн\\C[0]>Прости, у меня закончился \"Экстракт Морковки\"..."])
+    ShowText(["Мне нужно набрать л○дей, чтобы создать новый..."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

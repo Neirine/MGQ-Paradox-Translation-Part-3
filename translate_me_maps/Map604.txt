@@ -1,0 +1,581 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Оазис ♪ Бумеранг ♪"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["slime_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лайм\\C[0]>Возьми рыбку ♪"])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ChangeItems([322, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ConditionalBranch([1, 1001, 0, 14, 2])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["ここは正史と異なる世界……"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["正史の僕って……"])
+        ShowText(["今の僕と、どこか違ったりするのかな？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1001, 0, 15, 1])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["【アリス】"])
+        ShowText(["貴様が精霊の力を得るのが、正しい歴史……"])
+        ShowText(["それをなぞる事により、世界の歪みが正される……"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["正しい歴史の、精霊の力を得た僕か……"])
+        ShowText(["今の僕と、どこか違ったりするのかな？"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Изначально ты, скорее всего, от него"])
+      ShowText(["не отличался... Но в зависимости от окружения,"])
+      ShowText(["в котором вы выросли, может выходить ваше"])
+      ShowText(["различие."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Но ведь нам нужно исправлять историю..."])
+      ShowText(["Это значит, что наша история неправильна?"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>По этому миру бродит множество странных личностей."])
+      ShowText(["Сестры Лилит, таинственные Серафимы..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Эти две группы, похоже, враждебны друг к другу."])
+      ShowText(["А их цели также остаются неясными..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>А еще три Владыки Монстров..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Моя мама, командующая армией Владыки Монстров,"])
+      ShowText(["интересно, что она замышляет... Еще Черная Алиса,"])
+      ShowText(["возрождение которой окутано тайной..."])
+      ConditionalBranch([0, 2320, 1])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>И 17-ая Владыка, Нерис, похоже, что она"])
+        ShowText(["как-то связана с этим Неро. Зачем они нам"])
+        ShowText(["помогают, мы также не знаем..."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Эти двое... Не удивлюсь, если окажется,"])
+      ShowText(["что в их планы не входило ничего хорошего."])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Непохоже, что мама хочет нарушать"])
+      ShowText(["спокойствие этого мира... Наверняка ее"])
+      ShowText(["действиям есть причина... По крайней мере,"])
+      ShowText(["мне хочется в это верить."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>И мой отец, его местонахождение так и остается"])
+      ShowText(["неизвестным. Хотя мы и находим его следы,"])
+      ShowText(["информация о нем так и окутана тайной."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Опять же, все эти тайны крутятся вокруг Тартара..."])
+      ShowText(["И наверняка с этим будет связано то, что"])
+      ShowText(["произошло во время Великого Бедствия 30 лет назад."])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Что же ждет нас в Тартаре Сабасы..."])
+      ShowText(["Давай узнаем это, Лука!"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Да!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Опять же, решение всех этих загадок нам нужно искать в Тартаре."])
+      ShowText(["Я продолжу путешествие, пока не решу их все..."])
+      ControlSwitches([2088, 2088, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>И все-таки, когда же я смогу вернуться"])
+      ShowText(["к своей первоначальной форме...?"])
+      ShowText(["Мне уже так надоел этот вид..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "B", 1])
+      ControlSelfSwitch(["B", 0])
+      ConditionalBranch([1, 1001, 0, 14, 2])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["ここは、正史と異なる世界……"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["正史の僕って……"])
+        ShowText(["今の僕と、どこか違ったりするのかな？"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1001, 0, 15, 1])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["【イリアス】"])
+        ShowText(["ルカが精霊の力を得るのが、正しい歴史……"])
+        ShowText(["それをなぞる事により、世界の歪みが正される……"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["【ルカ】"])
+        ShowText(["正しい歴史の、精霊の力を得た僕か……"])
+        ShowText(["今の僕と、どこか違ったりするのかな？"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>По крайней мере, ты отличаешься от Луки,"])
+      ShowText(["которого я знаю. Настоящий Лука, например,"])
+      ShowText(["никогда не гнался за своим отцом..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Я помню, ты об этом говорила."])
+      ShowText(["Ты сказала, что тот я, которого ты знаешь,"])
+      ShowText(["ненавидел своего отца..."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Еще по этому миру бродит множество странных"])
+      ShowText(["личностей. Серафимы, которых я не знаю,"])
+      ShowText(["омерзительные Сестры Лилит..."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, эти стороны враждебны друг к другу."])
+      ShowText(["И их цели также остаются неясными..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>А еще три Владыки Монстров..."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Командующая армией Владыки, 15-ая, является"])
+      ShowText(["матерью текущей Владыки Монстров. Черная"])
+      ShowText(["Алиса начала свои действия, потому что"])
+      ShowText(["за ней перестали присматривать..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Эта Черная Алиса, она разве не была побеждена"])
+      ShowText(["Героем Генрихом? Значит, она жива, Илиас?"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>В момент ее поражения, я помогла ей..."])
+      ShowText(["...Обстоятельства этого держатся в секрете."])
+      ConditionalBranch([0, 2320, 1])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>И 17-ая Владыка, Нерис, похоже, что она"])
+        ShowText(["как-то связана с этим Неро. Зачем они нам"])
+        ShowText(["помогают, мы также не знаем..."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Что же происходит в этом мире...?"])
+      ShowText(["Все, чего я не знаю в нем, должно им отвергаться."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>И мой отец, его местонахождение так и остается"])
+      ShowText(["неизвестным. Хотя мы и находим его следы,"])
+      ShowText(["информация о нем так и окутана тайной."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Опять же, все тайны ведут нас в Тартар..."])
+      ShowText(["И соответственно к Великому Бедствию"])
+      ShowText(["30 лет назад."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Нужно будет проверить, куда ведет Тартар Сабасы."])
+      ShowText(["Лука, сопровождай меня на этом пути."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Да!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Опять же, решение всех этих загадок нам нужно искать в Тартаре."])
+      ShowText(["Я продолжу путешествие, пока не решу их все..."])
+      ControlSwitches([2053, 2053, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>И все таки, когда я смогу вернуть себе свою силу?"])
+      ShowText(["Неужели мне придется вечно оставаться в таком"])
+      ShowText(["состоянии..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>К северу от Сабасы же есть Тартар? Интересно,"])
+      ShowText(["к какому параллельному миру он ведет...?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Было уже прошлое и будущее, не так ли...?"])
+      ShowText(["Может быть, там будет очень-очень отдаленное"])
+      ShowText(["будущее?"])
+      ShowTextAttributes(["sonia_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Интересно, что мы будем делать через 10 лет."])
+      ShowText(["Решив все проблемы, вернемся жить вместе"])
+      ShowText(["в Илиасвиль?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>А? Почему бы и нет?"])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Образно говоря, как об стенку горох..."])
+      ShowText(["Злейший враг девушки - бесчувственность парня."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>При чем здесь горох...? Соня, ты проголодалась?"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Образно говоря, как об стенку горох..."])
+      ShowText(["Злейший враг девушки - бесчувственность парня."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Хильди\\C[0]>Хильди впервые в лагере!"])
+    ShowText(["Весело!"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([0, 1102, 0])
+      ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Камуро\\C[0]>Семпай... Зачем в пустыне столько песка?"])
+      ShowTextAttributes(["youko_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Ну это... Для того, чтобы строить песочные замки."])
+      ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Камуро\\C[0]>Как и ожидалось от семпая!"])
+      ShowText(["Ты знаешь все на свете!"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Камуро\\C[0]>Интересно, зачем в пустыне столько песка?"])
+      ShowText(["Надо будет спросить у семпая..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([0, 1103, 0])
+      ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Камуро\\C[0]>Семпай... Зачем в пустыне столько песка?"])
+      ShowTextAttributes(["youko_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Ну это... Для того, чтобы строить песочные замки."])
+      ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Камуро\\C[0]>Как и ожидалось от семпая!"])
+      ShowText(["Ты знаешь все на свете!"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["youko_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Интересно, почему в пустыне так много песка...?"])
+      ShowText(["Надо будет спросить Тамамо-саму."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Еще рано ложиться спать..."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Еще рано ложиться спать..."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["alice_fc5", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Так, время для интенсивных тренировок с мечом."])
+    ShowText(["С этого момента нас ждут ожесточенные бои."])
+    ShowTextAttributes(["alice_fc5", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Также постепенно увеличивается максимум SP..."])
+    ShowText(["Так что я обучу тебя мощному навыку."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ура~! Пожалуйста, учи меня!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Так началась наша тренировка..."])
+    FadeoutScreen([])
+    Wait([120])
+    FadeinScreen([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Хиийаа~!!"])
+    PlaySE(["RPG::SE(@name=\"mon_miss\", @pitch=100, @volume=100)"])
+    Wait([10])
+    PlaySE(["RPG::SE(@name=\"mon_miss\", @pitch=100, @volume=100)"])
+    Wait([10])
+    PlaySE(["RPG::SE(@name=\"mon_miss\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Крича, я произвожу широкие взмахи в разные стороны."])
+    ShowText(["Но, в отличие от Беспорядочных Ударов, взмахи связываются"])
+    ShowText(["в непрерывную серию."])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>...Похоже, что основу ты уловил."])
+    ShowText(["Ты производишь серию атак, идущих непрерывным"])
+    ShowText(["потоком."])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Это Гибельный Клинок Звезды Хаоса!"])
+    ChangeSkills([0, 1, 0, 953])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Лука выучил \\I[463]\\C[4]Гибельный Клинок Звезды Хаоса\\C[0]!"])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Это навык ужасающей мощи, но он потребляет"])
+    ShowText(["довольно много SP. Если будешь использовать"])
+    ShowText(["его необдуманно, то можешь попасть в неприятное"])
+    ShowText(["положение."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Действительно, из-за больших затрат SP, мне точно"])
+    ShowText(["не стоит использовать его просто так..."])
+    ShowText(["Он больше подходит в качестве добивания."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Таким образом, в моем арсенале появился мощный навык меча."])
+    ShowText(["С позитивным настроением я отправился спать..."])
+    FadeoutScreen([])
+    PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+    Wait([180])
+    RecoverAll([0, 0])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    ChangePlayerFollowers([0])
+    ControlVariables([11, 11, 0, 0, 2])
+    TransferPlayer([1, 11, 53, 54, 2, 2])
+    FadeinScreen([])
+    ControlSwitches([100, 100, 1])
+    Empty([])
+
+  Page 2
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Еще рано ложиться спать..."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Перед сном я тебя потренирую. Ты же хочешь,"])
+    ShowText(["чтобы я обучила тебя новому навыку...?"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ура~"])
+    ShowText(["Да, пожалуйста, обучи меня!"])
+    ShowText(["Это навык меча?!"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Нет, это не атакующая техника."])
+    ShowText(["Но она делает атакующие навыки эффективнее..."])
+    FadeoutScreen([])
+    Wait([120])
+    FadeinScreen([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Повысить боевой дух... Хаааа!"])
+    PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Лука восстанавливает свое SP!"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Этот навык потребляет MP для восстановления SP."])
+    ShowText(["С его помощью ты можешь часто использовать"])
+    ShowText(["мощные атакующие умения."])
+    ChangeSkills([0, 1, 0, 1092])
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Лука выучил \\I[836]\\C[4]Высший Заряд\\C[0]!"])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Хотя это и навык копья... Он не зависит от того,"])
+    ShowText(["экипирован ли ты копьем."])
+    ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>А поскольку ты, Лука, можешь использовать навыки"])
+    ShowText(["копья в любой профессии, то это не будет проблемой."])
+    ShowText(["С этим навыком ты сможешь уничтожать всех моих"])
+    ShowText(["врагов."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Да, спасибо!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Таким образом, в моем арсенале появился новый полезный навык."])
+    ShowText(["С позитивным настроением я отправился спать..."])
+    FadeoutScreen([])
+    PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+    Wait([180])
+    RecoverAll([0, 0])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    ChangePlayerFollowers([0])
+    ControlVariables([11, 11, 0, 0, 2])
+    TransferPlayer([1, 11, 53, 54, 2, 2])
+    FadeinScreen([])
+    ControlSwitches([100, 100, 1])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["gob_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гобу\\C[0]>Врууууум!"])
+    ShowTextAttributes(["gob_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гобу\\C[0]>Пустыня большая, и в ней мало препятствий,"])
+    ShowText(["поэтому тут трудно на кого-нибудь налететь!"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Нуруко\\C[0]>Кюю! Кюю!"])
+    ShowChoices([["Ничего не делать", "Толкнуть"], 1])
+    When([0, "Ничего не делать"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "Толкнуть"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[6])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=11, @parameters=[])\", \"RPG::MoveCommand(@code=11, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[6])"])
+      Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=11, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=11, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=30, @parameters=[3])"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["stein_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Промештейн\\C[0]>Под камнем скорпион..."])
+    ShowText(["Давай поймаем его для образца?"])
+    ShowText(["Фуфуфу..."])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Пучи\\C[0]>Колышки палатки не ослабли?"])
+    ShowText(["Почему все здесь нашли себе подходящее"])
+    ShowText(["место...?"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["phoenix_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мини\\C[0]>Так как в пустыне сухо, внутри горшка довольно"])
+    ShowText(["комфортно!"])
+    ShowTextAttributes(["phoenix_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Мини\\C[0]>...Ваа! Тут внутри скорпиооон!!"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ванилла\\C[0]>Когда этот плащ сухой, в нем скапливается"])
+    ShowText(["куча песка... Для благородного вампира"])
+    ShowText(["здесь слишком суровая среда."])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["dragonp_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Папи\\C[0]>*Глап* *Глап*"])
+    ShowText(["Здесь такая вкусная вода!"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["meia_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мейя\\C[0]>Ооо, это, должно быть, чистая вода..."])
+    ShowText(["Надо будет попробовать в ней разок поплавать."])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Ооо, я нашла высохшую кость."])
+    ShowText(["Может, использовать ее для медитации...?"])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Это шутка, такое делают только экзорцисты..."])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["frederika_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Фредерика\\C[0]>Это пустыня..."])
+    ShowText(["Первый раз ее вижу..."])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сильфа\\C[0]>Эй-эй, давайте водить хоровод!"])
+    ShowText(["Как раньше во время фестивалей Сильфы~♪"])
+    ShowTextAttributes(["sylph_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Сильфа\\C[0]>Я ведь скоро увижу Гному-чан, да?"])
+    ShowText(["Эхехе, жду с нетерпением ♪"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ева\\C[0]>Я счастлива возможности наесться досыта."])
+    ShowText(["Было бы еще лучше, если бы при этом"])
+    ShowText(["не нужно было трудиться..."])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Король Сан-Илии\\C[0]>Я заправляю систему охлаждения... эх."])
+    ShowText(["Теперь нужно вычистить попавший внутрь песок..."])
+    ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Король Сан-Илии\\C[0]>В подобной области тоже требуется серьезное"])
+    ShowText(["техническое обслуживание. Как думаешь, стоит ли"])
+    ShowText(["добавить в список требуемых разработок технологии"])
+    ShowText(["ведения боя в пустыне?"])
+    Empty([])

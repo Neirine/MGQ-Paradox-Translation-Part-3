@@ -1,0 +1,25 @@
+CommonEvent 652
+Name = "イベント：パープルスライム"
+
+  999([652])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 431, 0])
+    ShowTextAttributes(["slime_purple_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Фиолетовая Слизь\\C[0]>Бумеранг, бумеранг..."])
+    ShowTextAttributes(["slime_purple_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Фиолетовая Слизь\\C[0]>...Вы видели?"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["slime_purple_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Фиолетовая Слизь\\C[0]>Позвольте мне укрепить вашу силу слизи..."])
+  ControlSwitches([431, 431, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Фиолетовая Слизь дала вам магическую силу!"])
+  ShowText(["Сила навыков Слизи удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

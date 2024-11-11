@@ -1,0 +1,274 @@
+Display Name = "Замок Гранд Ноя 2F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 382, 39, 12, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 382, 39, 12, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 382, 39, 12, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>謁見の間になります。"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник\\C[0]>女王陛下の御身をお守りするのが、我々近衛兵の務めです。"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowPicture([5, "80_grandnoa_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Ваше величество... Для меня большая честь"])
+    ShowText(["видеть вас. Я - Лест, Всемогущий Мечник."])
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>А я Тарса, мико из Комодо."])
+    ShowText(["Эмм... Рада видеть вас в добром здравии."])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>Благодарю вас за то, что пришли издалека."])
+    ShowText(["Ситуация срочная, так что отложим все"])
+    ShowText(["формальности."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Тогда, позвольте мне рассказать о другом мире..."])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>Нет, это будет лишним."])
+    ShowText(["Мне уже известны все обстоятельства, так что..."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Вижу, до вас быстро дошла информация."])
+    ShowText(["Значит, вы ищете семерых героев, да?"])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>...Эти люди мне бесполезны."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Эээ...?"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>Мико из Комодо, Тарса..."])
+    ShowText(["Она - та, кто мне нужен."])
+    ShowTextAttributes(["tarsa_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>Я...?"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Что вы имеете в виду, ваше величество?"])
+    ShowTextAttributes(["grandnoa_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Гранд Ноя\\C[0]>......"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Глаза Королевы Гранд Ноя блеснули таинственным светом."])
+    ShowText(["Однажды, я уже видел подобное сияние."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Глаза того, кто был лишен воли и превратился в марионетку..."])
+    ShowText(["Сомнений нет, Королева Гранд Ноя находится под контролем!"])
+    ErasePicture([5])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Не прячься..."])
+    ShowText(["Выходи, Мюзетта!"])
+    ShowAnimation([5, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 0])
+    Wait([90])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>Фуфуфу, ты быстро меня обнаружил."])
+    ShowText(["А я хотела поиграть еще немного."])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([7, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 0])
+    Wait([30])
+    ShowAnimation([6, 501, false])
+    Wait([30])
+    ControlSwitches([33, 33, 0])
+    Wait([90])
+    ShowPicture([7, "80_lira_st01", 0, 0, -200, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_bell_st01", 0, 0, 200, 0, 100, 100, 0, 0])
+    ShowPicture([5, "80_muzet_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([7, nil, 0, 0, -200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 200, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["bell_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белл\\C[0]>Что же, ты угодил прямо в ловушку."])
+    ShowText(["Как я рада, что все прошло так гладко,"])
+    ShowText(["Всемогущий Мечник."])
+    ShowTextAttributes(["lira_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лира\\C[0]>Я же сказала, что не стоит идти в Гранд Ной..."])
+    ShowText(["Но ты наоборот, смело в него зашел, не так ли?"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Неужели вы взяли королеву под контроль еще тогда?"])
+    ShowText(["Это в вашем стиле."])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>Да... Эта страна уже моя."])
+    ShowText(["Таково было условие союза с Владыкой Снов."])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>А теперь, с помощью силы мико..."])
+    ShowText(["Этот мир быстро погрузится в \"Край Ночи\"."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Тарса, не знаю почему, но им нужна ты!"])
+    ShowText(["Держись ближе ко мне..."])
+    ShowTextAttributes(["tarsa_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>Я знаю, уфуфу♡"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    Wait([30])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Тарса прислоняется ко мне!"])
+    ShowText(["И крепко обнимает!"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Ч-что ты делаешь...?!"])
+    ShowTextAttributes(["tarsa_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>Уфуфу, а ты как думаешь...?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Руки Тарсы скользнули мне в штаны."])
+    ShowText(["И нежно схватили мой..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Более того, ее внешность..."])
+    ShowPicture([5, "80_tarsa_st12", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Что...? Суккуб...?!"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>Эта девушка... Почему-то у нее были гены суккуба."])
+    ShowText(["Поэтому ее было легко взять под контроль."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Мюзетта...! Это тоже твоих рук дело?!"])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>Давай, Тарса..."])
+    ShowText(["Ослабь Универсального Мечника."])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>...Что же, Лест."])
+    ShowText(["Теперь я тебя изнасилую♡"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>П-прекра... А-ааа!"])
+    PlayBGM(["RPG::BGM(@name=\"ero1\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"mon_ero_koki1\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Нежная ладонь Тарсы ловко мнет мой член."])
+    ShowText(["От удовольствия я сразу же ослабел..."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Не надо, Тарса... Аааах!"])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Я кончил в ладонь Тарсы."])
+    ShowText(["Потеряв все свои силы, я падаю на пол..."])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>Хоть я и не люблю действовать вот так в лоб..."])
+    ShowText(["Но от такого даже Всемогущий Мечник становится"])
+    ShowText(["хрупким."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Нееет... Ууууух..."])
+    ShowTextAttributes(["tarsa_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Тарса\\C[0]>Ослабей еще больше, Лест."])
+    ShowText(["Это еще не все♡"])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>П-прекрати...!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Тарса села верхом на меня."])
+    ShowText(["И ввела мой член в свою щель..."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Ах, аааа..."])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Вот так..."])
+    ShowText(["Я был изнасилован Тарсой прямо перед Мюзеттой."])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Из меня выкачали всю энергию..."])
+    ShowText(["И я потерял силу сопротивляться..."])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>Вот я и покончила со Всемогущим Мечником."])
+    ShowText(["А мико стала моей... Фуфуфу."])
+    ShowTextAttributes(["muzet_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мюзетта\\C[0]>С ее силой мы призовем Демонический Замок."])
+    ShowText(["И тогда, мой план..."])
+    ShowTextAttributes(["rest_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лест\\C[0]>Ух...ууу..."])
+    CallCommonEvent([104])
+    CallCommonEvent([105])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Вот так, я был схвачен, а Тарса попала в руки Мюзетты..."])
+    ControlVariables([1203, 1203, 0, 0, 11])
+    Wait([60])
+    FadeoutBGM([2])
+    FadeoutScreen([])
+    Wait([120])
+    ShowPicture([5, "iv_chapter04", 0, 0, 0, 0, 100, 100, 255, 0])
+    FadeinScreen([])
+    Wait([180])
+    FadeoutScreen([])
+    ErasePicture([5])
+    Wait([120])
+    TransferPlayer([0, 938, 0, 0, 2, 2])
+    Empty([])

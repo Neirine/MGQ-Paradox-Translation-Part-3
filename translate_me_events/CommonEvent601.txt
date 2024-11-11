@@ -1,0 +1,12 @@
+CommonEvent 601
+Name = "イベント：白兎"
+
+  999([601])
+  ControlSwitches([73, 73, 0])
+  ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>А? Не правда ли странное место?"])
+  ShowText(["Поскольку тут довольно тяжело, я помогу тебе!"])
+  CallCommonEvent([912])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

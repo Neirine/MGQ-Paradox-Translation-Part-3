@@ -1,0 +1,456 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["AD-5_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]AD-5\\C[0]>С моей способностью регенерация HP и навыки"])
+      ShowText(["восстановления будут недоступны. "])
+      ShowText(["Однако, максимум HP вырастет..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Кого обучить \"Невосстанавливаемому Положению\"?"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),864)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\N[\\V[10]] уже имеет \"Невосстанавливаемое Положение\"."])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 864])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\N[\\V[10]] получает способность \\I[99]\\C[4]Невосстанавливаемое Положение\\C[0]!"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["AD-5_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]AD-5\\C[0]>Хочу... жизни..."])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["lizardboss_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Босс Ящериц\\C[0]>Моя способность заставит твои обычные атаки"])
+      ShowText(["наносить только физический урон..."])
+      ShowText(["Но, при этом, сила обычных атак вырастет."])
+      ShowText(["Как тебе?"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Кого обучить \"Безатрибутному Положению\"?"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),865)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\N[\\V[10]] уже имеет \"Безатрибутное Положение\"."])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 865])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\N[\\V[10]] получает способность \\I[99]\\C[4]Безатрибутное Положение\\C[0]!"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["lizardboss_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Босс Ящериц\\C[0]>Пронзай сквозь все, что угодно!"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["nurukox_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]■■■\\C[0]>......"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Похоже, она хочет научить меня мастерству оружия \"Хаос\"."])
+      ShowText(["Кого обучить \"Мастерству Хаоса\"?"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),5655)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\N[\\V[10]] уже имеет \"Мастерство Хаоса\"."])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 5655])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\N[\\V[10]] получает способность \\I[99]\\C[4]Мастерство Хаоса\\C[0]!"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["nurukox_fc1", 7, 0, 2])
+      ShowText(["\\n<\\C[6]■■■\\C[0]>......"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["jeraira_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Джелайла\\C[0]>Давай я научу тебя совершенной звуковой технике?"])
+      ShowText(["Однако ее невозможно использовать без доступа"])
+      ShowText(["к \"Пению\"."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Кого обучить \"Адскому Вою\"?"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),2106)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\N[\\V[10]] уже знает \"Адский Вой\"."])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 2106])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\N[\\V[10]] выучивает навык \\I[184]\\C[4]Адский Вой\\C[0]!"])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 129, 0, 1, 0])
+      ShowTextAttributes(["jeraira_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Джелайла\\C[0]>С этого момента будь осторожен."])
+      ShowText(["Тебя будут окружать мощные звуки..."])
+      ControlSwitches([73, 73, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 4
+    CallCommonEvent([634])
+    Empty([])
+
+  Page 5
+    CallCommonEvent([637])
+    Empty([])
+
+  Page 6
+    CallCommonEvent([638])
+    Empty([])
+
+  Page 7
+    CallCommonEvent([639])
+    Empty([])
+
+  Page 8
+    CallCommonEvent([633])
+    Empty([])
+
+  Page 9
+    CallCommonEvent([629])
+    Empty([])
+
+  Page 10
+    CallCommonEvent([636])
+    Empty([])
+
+  Page 11
+    CallCommonEvent([635])
+    Empty([])
+
+  Page 12
+    CallCommonEvent([628])
+    Empty([])
+
+  Page 13
+    CallCommonEvent([644])
+    Empty([])
+
+  Page 14
+    CallCommonEvent([663])
+    Empty([])
+
+  Page 15
+    CallCommonEvent([664])
+    Empty([])
+
+  Page 16
+    CallCommonEvent([665])
+    Empty([])
+
+  Page 17
+    CallCommonEvent([666])
+    Empty([])
+
+  Page 18
+    CallCommonEvent([667])
+    Empty([])
+
+  Page 19
+    CallCommonEvent([668])
+    Empty([])
+
+  Page 20
+    CallCommonEvent([669])
+    Empty([])
+
+  Page 21
+    CallCommonEvent([670])
+    Empty([])
+
+  Page 22
+    CallCommonEvent([671])
+    Empty([])
+
+  Page 23
+    CallCommonEvent([672])
+    Empty([])
+
+  Page 24
+    CallCommonEvent([673])
+    Empty([])
+
+  Page 25
+    CallCommonEvent([674])
+    Empty([])
+
+  Page 26
+    CallCommonEvent([675])
+    Empty([])
+
+  Page 27
+    CallCommonEvent([676])
+    Empty([])
+
+  Page 28
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 29
+    CallCommonEvent([678])
+    Empty([])
+
+  Page 30
+    CallCommonEvent([679])
+    Empty([])
+
+  Page 31
+    CallCommonEvent([680])
+    Empty([])
+
+  Page 32
+    ConditionalBranch([1, 607, 0, 5, 2])
+      CallCommonEvent([681])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ControlVariables([14, 14, 0, 2, 1, 4])
+      ConditionalBranch([1, 14, 0, 3, 2])
+        CallCommonEvent([681])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 14, 0, 4, 0])
+        CallCommonEvent([682])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 33
+    CallCommonEvent([683])
+    Empty([])
+
+  Page 34
+    ControlSwitches([73, 73, 0])
+    ConditionalBranch([1, 129, 0, 0, 0])
+      ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Домейма\\C[0]>Я могу научить тебя способности быть всегда"])
+      ShowText(["при смерти. Но, кроме этого, она также будет"])
+      ShowText(["повышать все твои параметры."])
+      ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Домейма\\C[0]>Еще эта способность отключает регенерацию HP."])
+      ShowText(["Это хорошо для того, чтобы постоянно оставаться"])
+      ShowText(["при смерти."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Кого обучить \"Неустойчивому Положению\"?"])
+      Label(["選択"])
+      Script(["names = party_members.collect{|m|m.name}"])
+      ScriptMore(["unlimited_choices(11, names)"])
+      ScriptMore(["actor = party_members[$game_variables[11]]"])
+      ScriptMore(["$game_variables[10] = actor ? actor.id : 0"])
+      ConditionalBranch([1, 10, 0, 0, 0])
+        ControlSwitches([73, 73, 1])
+        ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Домейма\\C[0]>Гуаа!!"])
+        EraseEvent([])
+        PlayBGM(["RPG::BGM(@name=\"scene_kanasimi2\", @volume=100, @pitch=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Домейма внезапно умирает..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "actor_skill_have?(v(10),863)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\N[\\V[10]] уже имеет \"Неустойчивое Положение\"."])
+        JumpToLabel(["選択"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([129, 129, 0, 0, 1])
+      ChangeSkills([1, 10, 0, 863])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\N[\\V[10]] получает способность \\I[99]\\C[4]Неустойчивое Положение\\C[0]!"])
+      ControlSwitches([73, 73, 1])
+      ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Домейма\\C[0]>Гуаа!!"])
+      EraseEvent([])
+      PlayBGM(["RPG::BGM(@name=\"scene_kanasimi2\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Домейму оставили последние силы..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Вы хотите отправиться на следующий уровень?"])
+    ShowChoices([["Еще нет", "На следующий уровень"], 1])
+    When([0, "Еще нет"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "На следующий уровень"])
+      ControlVariables([121, 121, 2, 0, 1])
+      CallCommonEvent([901])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    FadeoutScreen([])
+    ControlSwitches([41, 41, 1])
+    ControlSwitches([52, 52, 1])
+    ChangeSaveAccess([1])
+    ControlSwitches([61, 61, 1])
+    ControlSwitches([62, 62, 1])
+    ControlSwitches([63, 63, 1])
+    ControlSwitches([64, 64, 1])
+    ControlSwitches([65, 65, 1])
+    ControlSwitches([69, 69, 1])
+    ControlSwitches([70, 70, 1])
+    ControlSwitches([71, 71, 1])
+    ControlSwitches([72, 72, 1])
+    ControlSwitches([54, 54, 1])
+    ControlSwitches([66, 66, 1])
+    ControlSwitches([67, 67, 1])
+    ControlSwitches([68, 68, 1])
+    ControlVariables([131, 131, 0, 0, 0])
+    ControlVariables([121, 121, 0, 0, 0])
+    CallCommonEvent([112])
+    ConditionalBranch([1, 121, 1, 122, 1])
+      ControlVariables([122, 122, 0, 1, 121])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 576, 14, 50, 2, 2])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["С обновлением Лабиринта Хаоса вы были изгнаны из прошлого лабиринта!"])
+    ConditionalBranch([1, 912, 0, 0, 0])
+      ConditionalBranch([0, 2332, 0])
+        ConditionalBranch([0, 4, 0])
+          Script(["delete_actor_ex(26)"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 5, 0])
+          Script(["delete_actor_ex(5)"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([60])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    Empty([])

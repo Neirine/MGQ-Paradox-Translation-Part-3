@@ -1,0 +1,11 @@
+CommonEvent 631
+Name = "イベント：ヴァンパイアガール"
+
+  999([631])
+  ControlSwitches([73, 73, 0])
+  ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Девочка-Вампир\\C[0]>Добро пожаловать в Магазин Ваниллы,"])
+  ShowText(["отделение в Лабиринте Хаоса!"])
+  CallCommonEvent([106])
+  ControlSwitches([73, 73, 1])
+  Empty([])

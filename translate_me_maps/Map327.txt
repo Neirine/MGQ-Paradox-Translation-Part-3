@@ -1,0 +1,685 @@
+Display Name = "Замок Владыки Монстров 3 Этаж"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 326, 6, 16, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 326, 7, 16, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 326, 55, 10, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 326, 56, 10, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 4, 46, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 5, 46, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 4, 10, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 5, 10, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 50, 43, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 51, 43, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 50, 8, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 327, 51, 8, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([99, 0, 0, 1, false])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это боевое снаряжение, передаваемое Владыке Монстров из поколения в поколение."])
+      ShowText(["Давай немедленно наденем его и отправимся возвращать трон!"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([542, 0, 0, 1, false])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Ах, это же..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Я не думаю, что мне нужно объяснять тебе, что это..."])
+      ShowText(["...В любом случае, это любимый посох Восьмой Владыки Монстров."])
+      ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Уфуфу, он хранился здесь всё это время..."])
+      ShowText(["Однако грустно, что он до сих пор не нашёл себе нового владельца..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Репутация прошлого владельца была так ужасна, что никто не хотел его использовать."])
+      ShowText(["Посему, он и остался пылиться здесь."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это любимых посох Чёрной Алисы..."])
+      ShowText(["Неужели он хранился тут всё это время, так и не найдя нового владельца?"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1079, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([180, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([354, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([247, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_sanki_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_sanki_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    ShowPicture([7, "80_sanki_st21", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, false])
+    MovePicture([6, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, false])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["sanki0_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Черный Цветок\\C[0]>Фуфу, какие негодные детки..."])
+    ShowText(["Зачем вы тайно пробрались в сокровищницу?"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Ээ? Я уверен, что уже видел вас ранее..."])
+    ShowTextAttributes(["sanki2_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Роза\\C[0]>Мы Три Чёрные Княгини..."])
+    ShowText(["...Ох, мне кажется, что мы уже встречались."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Верно, мы уже сражались с ними."])
+    ShowText(["Но это было в параллельном мире 500 летней давности..."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 6, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Подожди-ка, разве мы не встречали их в мире прошлого?"])
+      ShowText(["Почему они здесь, в это время..!?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Что тут происходит?"])
+      ShowText(["Эти монстры не должны существовать в данной эре..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["То, что происходит с параллельными мирами, влияет и на мир сингулярности..."])
+    ShowText(["Это единственное объяснение, приходящее мне в голову."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Если так подумать, то и Административная Башня появилась в этом мире."])
+    ShowText(["Параллельные миры и мир сингулярности воздействуют друг на друга..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Как бы там ни было, похоже, что нам придётся сразиться с ними вновь!"])
+    ConditionalBranch([4, 538, 0])
+      ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Генрих\\C[0]>Я несколько раз сражался с ними в своём времени..."])
+      ShowText(["Никогда не думал, что сражусь с ними ещё и в будущем."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sanki1_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Змея\\C[0]>Расхитители, положившие глаз на сокровищницу"])
+    ShowText(["Замка Владыки Монстров... Отведайте же моего"])
+    ShowText(["копья!"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ага, только вот это мои сокровища!"])
+      ShowText(["И какого чёрта вы вовсе делаете в сокровищнице?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Почему вы всегда здесь!?"])
+      ShowText(["Это ведь явно не ключевое место на пути к Владыке Монстров..!"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sanki2_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Роза\\C[0]>Ну..."])
+    ShowText(["Мы просто используем это место как комнату отдыха..."])
+    ShowTextAttributes(["sanki0_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Черный Цветок\\C[0]>Эй, ты не должна была им говорить это!"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Как я и думала, вы просто кучка идиотов..."])
+      ShowText(["В любом случае, начнём!"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Так вы просто нашли место, где можете вечно отлынивать от работы!?"])
+      ShowText(["Вы понесёте наказание за вашу ленность!"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    ErasePicture([6])
+    ErasePicture([7])
+    ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+    ControlSwitches([22, 22, 0])
+    BattleProcessing([0, 1501, false, false])
+    ControlSwitches([22, 22, 1])
+    ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+    PlayBGM(["RPG::BGM(@name=\"scene_comi2\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_sanki_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+    ShowPicture([6, "80_sanki_st13", 0, 0, 0, 0, 100, 100, 0, 0])
+    ShowPicture([7, "80_sanki_st23", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([6, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, false])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["sanki1_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Змея\\C[0]>Не может быть...! Мы побеждены!"])
+    ShowTextAttributes(["sanki0_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Черный Цветок\\C[0]>Нам придется сейчас отступить..."])
+    ShowText(["...Эй, у кого-то ещё есть чувство дежавю?"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Альстромерия\\C[0]>...Довольно."])
+      ShowTextAttributes(["sanki0_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Черный Цветок\\C[0]>Ты же... не может быть, ваше Высочество!?"])
+      ShowTextAttributes(["sanki2_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Черная Роза\\C[0]>Вы всё ещё живы..?"])
+      ShowText(["Постойте... Разве мы сами не должны были быть мертвы?"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Похоже, что их воспоминания также смешались."])
+      ShowText(["Похоже, что мы исказили время-пространство и нарушили причинно-следственные связи."])
+      ShowTextAttributes(["alicetromeria_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Альстромерия\\C[0]>В любом случае, вам стоит пойти со мной."])
+      ShowText(["Нам стоит насладиться этим иномирным банкетом всем вместе..."])
+      ShowTextAttributes(["sanki1_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Черная Змея\\C[0]>За вами, хоть на край света, ваше Высочество!"])
+      ShowTextAttributes(["sanki0_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Черный Цветок\\C[0]>Мы последуем за вами!"])
+      ShowTextAttributes(["sanki2_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Черная Роза\\C[0]>Вы тоже служите её Величеству, да?"])
+      ShowText(["Уфуфу, рада быть вместе с вами..."])
+      ErasePicture([5])
+      ErasePicture([6])
+      ErasePicture([7])
+      ControlSwitches([2435, 2435, 0])
+      Script(["add_actor_ex(426)"])
+      Script(["add_actor_ex(427)"])
+      Script(["add_actor_ex(428)"])
+      PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Три Чёрные Княгини присоединились к группе!"])
+      Wait([60])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["sanki2_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Черная Роза\\C[0]>Я жажду реванша..."])
+      ShowText(["Постойте... Разве это не был реванш?"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, что их воспоминания также смешались."])
+      ShowText(["Оказаться в искажении временного пространства - какое жалкое положение"])
+      ErasePicture([5])
+      ErasePicture([6])
+      ErasePicture([7])
+      Wait([60])
+      PlaySE(["RPG::SE(@name=\"mon_warp\", @pitch=100, @volume=80)"])
+      ControlSwitches([2435, 2435, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["黒の三貴は撤退した！"])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_maouzyou\", @volume=100, @pitch=100)"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Что же, раз уж с помехами покончено..."])
+      ShowText(["Давайте обыщем сокровищницу!"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Подумать только, что они доставят нам проблем дважды..."])
+      ShowText(["Ладно, самое время забрать все сокровища!"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>В прошлом ли мы или в настоящем, наши действия не меняются... хе-хе."])
+    ConditionalBranch([0, 2149, 0])
+      ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Бонни\\C[0]>В этом дух пиратства!"])
+      ShowTextAttributes(["ashel_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Ашэр\\C[0]>Именно поэтому мы и не перестанем быть пиратами..!"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([158, 0, 0, 1])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это метеорит..."])
+      ShowText(["Одно из сокровищ замка и материал для легендарной экипировки."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Но, в мире нет ни одного кузнеца, способного обработать его."])
+      ShowText(["Разве что за исключением легендарного кузнеца Рэндольфа..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это метеорит..."])
+      ShowText(["Сокровище, которое хранили поколения Владык Монстров, и материал для легендарной экипировки."])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Но, в мире нет ни одного кузнеца, способного обработать его."])
+      ShowText(["Разве что за исключением легендарного кузнеца Рэндольфа..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Однако, местоположение Рэндольфа неизвестно."])
+    ShowText(["Если мы однажды сможем найти его, он сможет выковать нам мощную экипировку."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["e_vampire_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старший Вампир\\C[0]>Если вы ищите сокровищницу, то она этажом выше..."])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["enenra_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Энэнра\\C[0]>Хм? Сокровищница находится на верхнем этаже восточной башни."])
+    ShowText(["Вы сейчас в западной башне."])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["vouivre_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Гивр\\C[0]>У Чёрной Алисы была младшая сестра..."])
+    ShowText(["Она не любила тиранию старшей сестры и планировала восстание."])
+    ShowTextAttributes(["vouivre_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Гивр\\C[0]>Но, её планы были раскрыты ещё до самого восстания..."])
+    ShowText(["Младшая сестра не успела поднять восстание, была поймана и заключена под стражу."])
+    ShowTextAttributes(["vouivre_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Гивр\\C[0]>После этого, герой Генрих победил Чёрную Алису."])
+    ShowText(["Её младшая сестра была освобождена и стала девятой Владыкой Монстров."])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["g_marmaid_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Русалка-Генерал\\C[0]>Похоже, что Алисфиз 9-я была тем ещё трудоголиком."])
+    ShowText(["Она потратила большую часть своей жизни избавляясь от тиранического образа, оставленного её старшей сестрой."])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["esuccubus_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старший Суккуб\\C[0]>Даже во время чрезвычайного положения, мы работаем посменно."])
+    ShowText(["У меня сейчас перерыв, поэтому я не стану сражаться..."])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
+    BattleProcessing([0, 1450, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
+    BattleProcessing([0, 1450, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
+    BattleProcessing([0, 1450, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([644, 0, 0, 1])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это предмет для смены расы. Он даёт доступ к расам Королев."])
+      ShowText(["Так как это предмет, который разрешено использовать лишь Владыке Монстров, я могу его забрать."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это же... предмет для смены расы. Он даёт доступ к расам Королев."])
+      ShowText(["Владыка Монстров использует его, когда назначает новую Королеву."])
+      ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Мы заберём его себе, конечно же."])
+      ShowText(["Уфуфу, он нам пригодится."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

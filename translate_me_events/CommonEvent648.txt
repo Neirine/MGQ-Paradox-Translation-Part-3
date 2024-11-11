@@ -1,0 +1,24 @@
+CommonEvent 648
+Name = "イベント：ボニー"
+
+  999([648])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 427, 0])
+    ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Бонни\\C[0]>Когда-нибудь я буду править семью морями!"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["bonny_fc1", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Бонни\\C[0]>Ты мне нравишься!"])
+  ShowText(["Рыбы-Пираты помогут тебе!"])
+  ControlSwitches([427, 427, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Вы понравились Бонни из Рыб-Пиратов!"])
+  ShowText(["По вашим врагам будет вестись обстрел до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

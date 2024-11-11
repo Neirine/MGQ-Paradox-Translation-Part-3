@@ -1,0 +1,12 @@
+CommonEvent 1146
+Name = "会話：ラナエル"
+
+  999([1146])
+  ControlVariables([25, 25, 0, 0, 0])
+  ShowTextAttributes(["ranael_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Архангел Ранаэль\\C[0]>Я не разговариваю с грешниками,"])
+  ShowText(["отвернувшимися от Богини."])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Архангел Ранаэль отказывается разговаривать!"])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,25 @@
+CommonEvent 113
+Name = "転職の書"
+
+  999([113])
+  ShowChoices([["Изменить Профессии и Расы", "Организовать Группу", "Не важно"], 3])
+  When([0, "Изменить Профессии и Расы"])
+    Script(["SceneManager.call(Scene_JobChange)"])
+    Wait([1])
+    RecoverAll([0, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([1, "Организовать Группу"])
+    GatherFollowers([])
+    ChangeState([0, 1, 1, 1])
+    Script(["call_party_edit"])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([2, "Не важно"])
+    ExitEventProcessing([])
+    Empty([])
+
+  ChoicesEnd([])
+  Empty([])

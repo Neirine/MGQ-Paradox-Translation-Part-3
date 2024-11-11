@@ -1,0 +1,32 @@
+CommonEvent 7152
+Name = "サラ：敗北"
+
+  999([7152])
+  CallCommonEvent([7000])
+  ShowPicture([5, "80_sara_st12", 0, 0, 0, 0, 100, 100, 255, 0])
+  ShowTextAttributes(["sara_fc2", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Сара\\C[0]>Фуфу, как жаль. Ты расстроен тем, что смог"])
+  ShowText(["кончить только мне в рот?"])
+  ShowTextAttributes(["sara_fc2", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Сара\\C[0]>Приходи еще, если захочешь чтобы я снова"])
+  ShowText(["высосала из тебя все до последнего своими"])
+  ShowText(["оральными техниками..."])
+  ErasePicture([5])
+  ChangeMapDisplay([1])
+  ConditionalBranch([0, 443, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1028, 0, 7, 2])
+    TransferPlayer([0, 378, 24, 10, 2, 0])
+    Empty([])
+
+  Else([])
+    TransferPlayer([0, 633, 24, 10, 2, 0])
+    Empty([])
+
+  BranchEnd([])
+  PlayBGM(["RPG::BGM(@name=\"castle2\", @volume=100, @pitch=100)"])
+  ExitEventProcessing([])
+  Empty([])

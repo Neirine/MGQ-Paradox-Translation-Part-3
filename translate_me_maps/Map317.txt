@@ -1,0 +1,106 @@
+Display Name = "ヘルゴンドのほこら B3F"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Карен\\C[0]>Похоронить Марцелла в таком месте..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лазарь\\C[0]>Так уж сложилось. Дома его не ждет семья."])
+    ShowText(["Сам он желал чтобы его кости были похоронены"])
+    ShowText(["там, где он пал..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мерлин\\C[0]>Так-то оно так, но но все равно как-то одиноко."])
+    ShowText(["Быть закопанным под храмом..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лазарь\\C[0]>Вот где закончилось наше путешествие."])
+    ShowText(["Оно было не таким уж плохим, Марцелл..."])
+    FadeoutBGM([1])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShotBalloonIcon([2, 1, false])
+    ShotBalloonIcon([3, 1, false])
+    ShotBalloonIcon([4, 1, false])
+    SetMoveRoute([2, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Марцелл\\C[0]>Ребята... А что вы здесь делаете?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лазарь\\C[0]>Что? Невозможно..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Карен\\C[0]>А? Марцелл...?"])
+    ShowText(["Но, как..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Марцелл\\C[0]>...Я плохо помню последние пару дней."])
+    ShowText(["Мы прибыли в этот храм и..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Марцелл\\C[0]>Гах, ничего не помню..."])
+    ShowText(["Кстати, а чья это могила...?"])
+    Wait([30])
+    TintScreen(["Tone(@red=34.0, @green=-34.0, @blue=-68.0, @gray=170.0)", 30, true])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["...Марцелл внезапно вернулся."])
+    ShowText(["Прямо после того как мы похоронили его, точно мертвого."])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["Тогда мы не имели ни малейшего понятия что происходит."])
+    ShowText(["Он не был подражателем, это был сам Марцелл во плоти."])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["В конце концов, мы..."])
+    ShowText(["Мы решили притвориться будто Марцелл не умирал."])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["Если это было бы так, то в могиле никого бы не было."])
+    ShowText(["Но нам было слишком страшно проверять."])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["Если бы в могиле оказался труп Марцелла..."])
+    ShowText(["Тогда кем был тот парень, появившийся после?"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["В общем, так закончилось наше приключение."])
+    ShowText(["Был ли тот Марцелл другим человеком?"])
+    ShowText(["Я все еще сомневаюсь."])
+    FadeoutScreen([])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    ChangeTransparency([1])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 315, 16, 11, 2, 2])
+    Wait([120])
+    ControlSwitches([31, 31, 0])
+    ControlSwitches([32, 32, 0])
+    FadeinScreen([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])

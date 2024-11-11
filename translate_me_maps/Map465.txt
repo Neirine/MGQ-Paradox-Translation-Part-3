@@ -1,0 +1,975 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На полках лежат бумаги и научные приспособления."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На полках лежат бумаги и научные приспособления."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 464, 16, 53, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 464, 16, 53, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 464, 16, 53, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ShowPicture([5, "80_stein_st33", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]???\\C[0]>Уаa! Кто вы такие...?!"])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это наш вопрос!"])
+      ShowText(["И что ты тут вообще делаешь?!"])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Я, я - Промештейн."])
+      ShowText(["Я библиотекарь и низший ангел."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ангел...? Хмм, похоже на то."])
+      ShowText(["Хотя это не объясняет, что библиотекарь делает"])
+      ShowText(["в таком месте."])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Перед тем, как я это объясню, можно вопрос?"])
+      ShowText(["Какой сейчас год?"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Должен быть 1455 по Йохану, но тут..."])
+        ShowText(["Кто знает, какой он здесь?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Должен быть 1455 по Йохану, но тут..."])
+        ShowText(["Кто знает, какой он здесь?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>А, нет, я просто хотела узнать из какой"])
+      ShowText(["эпохи вы пришли. Хотя 1455 по календарю"])
+      ShowText(["Йохана - довольно отдаленное будущее."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Будущее?"])
+      ShowText(["Так это значит, что ты из прошлого?"])
+      ShowText(["Какого черта ты тут оказалась?"])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Ты напоминаешь мне Саджу..."])
+      ShowText(["Может, ты потомок одного из этих великих демонов?"])
+      ShowTextAttributes(["alice_fc6", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Эй, я задала вопрос!"])
+      ShowText(["Если ты не ответишь, я начну выпивать твои бутылки!"])
+      ShowPicture([5, "80_stein_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Пожалуйста, не надо!"])
+      ShowText(["Они мне нужны в экспериментах по путешествию"])
+      ShowText(["через пространство и время..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Эксперименты?"])
+      ShowText(["Ты говоришь, что Илиас в самом деле приказала"])
+      ShowText(["своим ангелам проводить эксперименты?"])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Нет, я делаю это сама."])
+      ShowText(["Я проверяла реакцию между святой и темной маной"])
+      ShowText(["и оказалась здесь..."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ого, проводить магические эксперименты без"])
+      ShowText(["разрешения от Илиас. Ты довольно мятежный"])
+      ShowText(["ангел."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Погоди, возможно..."])
+      ShowText(["Это твои эксперименты вызвали Великое Бедствие?"])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Нет, невозможно."])
+      ShowText(["Мои эксперименты очень локальные."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Он просто открыл маленькие врата"])
+      ShowText(["в пространстве-времени, и то это было"])
+      ShowText(["неожиданным побочным эффектом."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Тем не менее, с того момента, как я попала сюда,"])
+      ShowText(["я провожу больше экспериментов и измерений."])
+      ShowText(["Я обнаружила существование крупного разрыва"])
+      ShowText(["в пространстве-времени."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>В настоящее время я расследую причину этого"])
+      ShowText(["разрыва пространства-времени. Я предполагаю,"])
+      ShowText(["что он был первопричиной моего появления здесь."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Похоже, ты экспериментировала довольно"])
+        ShowText(["длительное время. Сколько дней ты уже здесь?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Похоже, ты экспериментировала довольно"])
+        ShowText(["длительное время. Сколько дней ты уже здесь?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Дней...? Я здесь уже почти 200 лет."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Чтооооо?!"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Чтооооо?!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Кстати, какого рода эксперимент перенес вас сюда?"])
+      ShowText(["Я бы хотела как можно более детально узнать,"])
+      ShowText(["что вы делали."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Мы не экспериментировали или типа того."])
+      ShowText(["Вот этот недогерой может открывать двери"])
+      ShowText(["сквозь пространство-время."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Мы объясняем обстоятельства Промештейн..."])
+      ShowPicture([5, "80_stein_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Не может быть..."])
+      ShowText(["Как человек может пересекать параллельные миры...?"])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Когда у людей проявляются подобные особые силы,"])
+      ShowText(["то у них есть видимые изменения в лобной доле."])
+      ShowText(["Лука, не могли бы вы мне позволить"])
+      ShowText(["препарировать ваш мозг?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Это же убьет меня."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Хорошо, тогда позвольте мне клонировать вас."])
+      ShowText(["Вот, заполните эту мензурку своей спермой."])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Как будто мы тебе дадим это сделать!"])
+      ShowText(["Убирайся отсюда, безумный ангел-ученый!"])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Это же вы пришли ко мне..."])
+      ShowText(["Ну, а все будет в порядке, если я буду сопровождать вас?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Сопровождать нас...?"])
+      ShowText(["Ты хочешь присоединиться к нашей группе?"])
+      ShowPicture([5, "80_stein_st32", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Да, я бы с радостью наблюд..."])
+      ShowText(["Я имею в виду, помогала бы вам."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Ты ведь на самом деле хочешь использовать"])
+        ShowText(["Луку в качестве подопытного кролика, не так ли?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Ты ведь не намерена использовать меня в"])
+        ShowText(["качестве подопытного кролика, не так ли?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Не волнуйся. От потери кусочка лобной доли"])
+      ShowText(["не будет никаких заметных эффектов."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Я так и знала, что ты все еще хочешь препарировать его!"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Так ты хочешь препарировать меня!"])
+        Empty([])
+      BranchEnd([])
+      Label(["仲間1"])
+      ConditionalBranch([4, 41, 0])
+        ShowTextAttributes(["stein_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Что...? Еще одна я?!"])
+        ShowTextAttributes(["stein_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Похоже, туман Хаоса здесь силен. Если ты"])
+        ShowText(["присоединишься к нам, ситуация должна сойтись."])
+        ShowTextAttributes(["stein_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Понимаю. В этом достаточно смысла для меня."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Добавить Промештейн в группу?"])
+      ShowChoices([["Да", "Нет"], 2])
+      When([0, "Да"])
+        ShowTextAttributes(["stein_fc2", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Хорошо, приятно будет с вами познакомиться."])
+        ShowText(["Может быть, я не такая уж и особенная, но я буду"])
+        ShowText(["стараться изо всех сил."])
+        ErasePicture([5])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Script(["add_actor_ex(41)"])
+        PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Промештейн присоединяется к группе!"])
+        Wait([60])
+        ControlSwitches([2126, 2126, 0])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+          ShowText(["\\n<\\C[6]Соня\\C[0]>Лука, не расслабляйся, а не то она препарирует"])
+          ShowText(["тебя. Может, она и выглядит невинной, но у нее"])
+          ShowText(["черное сердце..."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 72, 0])
+          ShowTextAttributes(["phoenix_fc1", 3, 0, 2])
+          ShowText(["\\n<\\C[6]Мини\\C[0]>Мне тоже стоит быть осторожной..."])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([4, 79, 0])
+          ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Нуруко\\C[0]>Кюю..."])
+          Empty([])
+        BranchEnd([])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "Нет"])
+        ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["stein_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Ох..."])
+        ShowText(["Тогда я просто продолжу проводить свои эксперименты здесь."])
+        ControlSelfSwitch(["A", 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Вы хотите взять меня с собой?"])
+      JumpToLabel(["仲間1"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "A", 1])
+      ShowPicture([5, "80_stein_st33", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]???\\C[0]>Уаa! Кто вы такие...?!"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Промештейн...?"])
+      ShowText(["Это ТЫ!"])
+      ShowText(["Но почему ты здесь и почему так выглядишь...?"])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>О-откуда ты знаешь мое имя?"])
+      ShowText(["Ты низший ангел, как и я, но я не..."])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Низший ангел?"])
+      ShowText(["Как ты смеешь показывать мне свое неуважение!"])
+      ShowText(["Карающая Гроза тебя очистит!"])
+      PlaySE(["RPG::SE(@name=\"mon_denpa1\", @pitch=100, @volume=80)"])
+      ShakeScreen([5, 5, 30, true])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Илиас выпускает Карающую Грозу!"])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Аай! Что ты такое?"])
+      ShowText(["Гибрид ангела и электрического ската?!"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Хорошо, успокойтесь вы обе."])
+      ShowText(["Так что ты здесь делаешь?"])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Перед тем, как я это объясню, можно вопрос?"])
+      ShowText(["Какой сейчас год?"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Должен быть 1455 по Йохану, но тут..."])
+        ShowText(["Кто знает, какой он здесь?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Должен быть 1455 по Йохану, но тут..."])
+        ShowText(["Кто знает, какой он здесь?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>А, нет, я просто хотела узнать из какой"])
+      ShowText(["эпохи вы пришли. Хотя 1455 по календарю"])
+      ShowText(["Йохана - довольно отдаленное будущее."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Будущее? Понятно."])
+      ShowText(["Ты не уменьшилась, как я."])
+      ShowText(["Вместо этого, ты просто из прошлого."])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Этот вопрос решен."])
+      ShowText(["А теперь, прежде всего, позволь нам послушать,"])
+      ShowText(["как ты из далекого прошлого оказалась здесь."])
+      ShowPicture([5, "80_stein_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Я оказалась здесь во время эксперимента."])
+      ShowText(["Видишь ли, я тестировала реакцию между святой"])
+      ShowText(["и темной маной..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Погоди, возможно..."])
+      ShowText(["Это твои эксперименты вызвали Великое Бедствие?"])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Нет, невозможно."])
+      ShowText(["Мои эксперименты очень локальные."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Он просто открыл маленькие врата"])
+      ShowText(["в пространстве-времени, и то это было"])
+      ShowText(["неожиданным побочным эффектом."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Тем не менее, с того момента, как я попала сюда,"])
+      ShowText(["я провожу больше экспериментов и измерений."])
+      ShowText(["Я обнаружила существование крупного разрыва"])
+      ShowText(["в пространстве-времени."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>В настоящее время я расследую причину этого"])
+      ShowText(["разрыва пространства-времени. Я предполагаю,"])
+      ShowText(["что он был первопричиной моего появления здесь."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Похоже, ты экспериментировала довольно"])
+        ShowText(["длительное время. Сколько дней ты уже здесь?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Похоже, ты экспериментировала довольно"])
+        ShowText(["длительное время. Сколько дней ты уже здесь?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Дней...? Я здесь уже почти 200 лет."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Чтооооо?!"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Чтооооо?!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Кстати, какого рода эксперимент перенес вас сюда?"])
+      ShowText(["Я бы хотела как можно более детально узнать,"])
+      ShowText(["что вы делали."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Мы ни с чем не экспериментировали."])
+      ShowText(["Мы пришли сюда с помощью силы Луки..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Мы объясняем обстоятельства Промештейн..."])
+      ShowPicture([5, "80_stein_st33", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Не может быть..."])
+      ShowText(["Как человек может пересекать параллельные миры...?"])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Когда у людей проявляются подобные особые силы,"])
+      ShowText(["то у них есть видимые изменения в лобной доле."])
+      ShowText(["Лука, не могли бы вы мне позволить"])
+      ShowText(["препарировать ваш мозг?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Это же убьет меня."])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Хорошо, тогда позвольте мне клонировать вас."])
+      ShowText(["Вот, заполните эту мензурку своей спермой."])
+      ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Лука мой слуга!"])
+      ShowText(["Ты НЕ будешь делать с ним все, что тебе захочется!"])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>П-понимаю..."])
+      ShowText(["Ну, а все будет в порядке, если я буду сопровождать вас?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Сопровождать нас...?"])
+      ShowText(["Ты хочешь присоединиться к нашей группе?"])
+      ShowPicture([5, "80_stein_st32", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["stein_fc2", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Да, я бы с радостью наблюд..."])
+      ShowText(["Я имею в виду, помогала бы вам."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Ты ведь на самом деле хочешь использовать"])
+        ShowText(["Луку в качестве подопытного кролика, не так ли?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Ты ведь не намерена использовать меня в"])
+        ShowText(["качестве подопытного кролика, не так ли?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["stein_fc2", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Не волнуйся. От потери кусочка лобной доли"])
+      ShowText(["не будет никаких заметных эффектов."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Я так и знала, что ты все еще хочешь препарировать его!"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Так ты хочешь препарировать меня!"])
+        Empty([])
+      BranchEnd([])
+      Label(["仲間2"])
+      ConditionalBranch([4, 41, 0])
+        ShowTextAttributes(["stein_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Что...? Еще одна я?!"])
+        ShowTextAttributes(["stein_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Похоже, туман Хаоса здесь силен. Если ты"])
+        ShowText(["присоединишься к нам, ситуация должна сойтись."])
+        ShowTextAttributes(["stein_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Понимаю. В этом достаточно смысла для меня."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Добавить Промештейн в группу?"])
+      ShowChoices([["Да", "Нет"], 2])
+      When([0, "Да"])
+        ShowTextAttributes(["stein_fc2", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Хорошо, приятно будет с вами познакомиться."])
+        ShowText(["Может быть, я не такая уж и особенная, но я буду"])
+        ShowText(["стараться изо всех сил."])
+        ErasePicture([5])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Script(["add_actor_ex(41)"])
+        PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Промештейн присоединяется к группе!"])
+        ControlSwitches([2126, 2126, 0])
+        Wait([60])
+        ShowTextAttributes(["iriasu_fc4", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Кстати, Промештейн, ты еще не поняла кто я?"])
+        ShowText(["Подсказка номер один: раньше я была выше."])
+        ShowTextAttributes(["stein_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Умммм... и ты знаешь меня, полагаю?"])
+        ShowText(["Может быть, Гермес?"])
+        ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Ты заслуживаешь смерти за то, что спутала"])
+        ShowText(["меня с этим лакеем! Подсказка номер два:"])
+        ShowText(["я очень-очень важная!"])
+        ShowTextAttributes(["stein_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Ой, неужели ты - Архангел?"])
+        ShowText(["Мариель после обширной пластической операции?"])
+        ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Архангел?! Еще больше мелких сошек!"])
+        ShowText(["Подсказка номер три: я колоссально сильна,"])
+        ShowText(["известна и знаменита!"])
+        ConditionalBranch([0, 6, 0])
+          ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Соня\\C[0]>Прекратите дурачиться, нам нужно идти..."])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Лука\\C[0]>Прекратите дурачиться, нам нужно идти..."])
+          Empty([])
+        BranchEnd([])
+        ExitEventProcessing([])
+        Empty([])
+      When([1, "Нет"])
+        ShowTextAttributes(["stein_fc2", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Промештейн\\C[0]>Ох..."])
+        ShowText(["Тогда я просто продолжу проводить свои эксперименты здесь."])
+        ControlSelfSwitch(["A", 0])
+        MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+        ErasePicture([5])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ShowPicture([5, "80_stein_st31", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Вы хотите взять меня с собой?"])
+      JumpToLabel(["仲間2"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе аккуратно разложены различные типы химикатов."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе аккуратно разложены различные типы химикатов."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе аккуратно разложены различные типы химикатов."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе аккуратно разложены различные типы химикатов."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе аккуратно разложены различные типы химикатов."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе аккуратно разложены различные типы химикатов."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе лежит экспериментальная аппаратура."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе лежит экспериментальная аппаратура."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Стол завален бумагами."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Стол завален бумагами."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе лежит экспериментальная аппаратура."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Драгоценные камни на столе, похоже, давно выродились."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Это все из здешней лавки."])
+      ShowText(["Я использовала их в некоторых экспериментах."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Стол завален бумагами."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Книга на столе полностью покрыта формулами и данными."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["-Исследование Апоптозов-"])
+    ShowText(["Их можно рассматривать как иммунную систему самой этой"])
+    ShowText(["области пространства. Они, по всей видимости, состоят из"])
+    ShowText(["собранной здесь органической и неорганической материи."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Кроме того, апоптозы делят одни и те же тела."])
+    ShowText(["Те, что называли себя Луксур, помнили одинаковые"])
+    ShowText(["человеческие воспоминания. Похоже, они являются"])
+    ShowText(["копиями вплоть до их личностей."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Тем не менее, фактический механизм их производства остается"])
+    ShowText(["неизвестным. Я считаю, что это процесс эрозии самого"])
+    ShowText(["пространства, но у меня нет доказательств. Для подтверждения"])
+    ShowText(["мне потребуется больше времени и оборудования."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Я написала это для тех, кто появится после меня,"])
+      ShowText(["но в конечном итоге получилась просто грубая"])
+      ShowText(["сводка и общие замечания..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Драгоценные камни на столе, похоже, давно выродились."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Это все из здешней лавки."])
+      ShowText(["Я использовала их в некоторых экспериментах."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Драгоценные камни на столе, похоже, давно выродились."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Это все из здешней лавки."])
+      ShowText(["Я использовала их в некоторых экспериментах."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Деревянный ящик наполнен научным снаряжением."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Деревянный ящик наполнен научным снаряжением."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Деревянный ящик наполнен научным снаряжением."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Думаю, ничего страшного не будет, если я"])
+      ShowText(["оставлю свои реагенты и снаряжение здесь."])
+      ShowText(["Сюда все равно никто не заявится..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе лежит пара плюшевых кроликов."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Эти из здешней лавки."])
+      ShowText(["Я называю их \"левый кролик\" и \"правый кролик\"."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На столе лежит плюшевый мишка."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Это Медведь-Помощник."])
+      ShowText(["Я нашла его здесь."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На полках лежат бумаги и научные приспособления."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На полках лежат бумаги и научные приспособления."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На полках лежат бумаги и научные приспособления."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["На полках лежат бумаги и научные приспособления."])
+    ConditionalBranch([4, 41, 0])
+      ShowTextAttributes(["stein_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Промештейн\\C[0]>Мы можем оставить мои экспериментальные"])
+      ShowText(["данные здесь. Я читала их достаточное"])
+      ShowText(["количество раз, чтобы все запомнить."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

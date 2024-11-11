@@ -1,0 +1,24 @@
+CommonEvent 654
+Name = "イベント：白蛇様"
+
+  999([654])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 433, 0])
+    ShowTextAttributes(["sirohebisama_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Широхеби\\C[0]>Иногда я и сама помогаю другим."])
+    ShowText(["Моя сестренка такая шумная..."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["sirohebisama_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Широхеби\\C[0]>Позвольте мне наполнить вас силой змеи."])
+  ControlSwitches([433, 433, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Широхеби одарила вас мистической силой!"])
+  ShowText(["Сила навыков Змеи удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

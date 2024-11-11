@@ -1,0 +1,11 @@
+CommonEvent 1147
+Name = "会話：ナガエル"
+
+  999([1147])
+  ControlVariables([25, 25, 0, 0, 0])
+  ShowTextAttributes(["nagael_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Архай Нагаэль\\C[0]>Молчать, грешник."])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Архай Нагаэль отказывается разговаривать!"])
+  ExitEventProcessing([])
+  Empty([])

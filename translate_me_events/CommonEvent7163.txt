@@ -1,0 +1,46 @@
+CommonEvent 7163
+Name = "サラーン：敗北"
+
+  999([7163])
+  ShowTextAttributes(["mob_assasin1_fc1", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Саран\\C[0]>Победа за мной. Что насчет платы...?"])
+  ConditionalBranch([0, 443, 1])
+    ChangeGold([1, 0, 500])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Лука заплатил 500G!"])
+  ShowTextAttributes(["mob_assasin1_fc1", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Саран\\C[0]>Можешь вызвать меня на поединок снова, если ты"])
+  ShowText(["опечален своим поражением. Я заставлю тебя"])
+  ShowText(["кончить сколько угодно раз..."])
+  ConditionalBranch([0, 443, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2331, 1])
+    ErasePicture([5])
+    ChangeActorName([66, "ヴァニラ"])
+    ChangeActorGraphic([66, "Evil01_cip", 0, "vgirl_fc1", 0])
+    ControlSwitches([100, 100, 1])
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ConditionalBranch([1, 1143, 0, 9, 2])
+      TransferPlayer([0, 476, 16, 43, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1143, 0, 10, 1])
+      ControlVariables([57, 57, 0, 0, 1441])
+      TransferPlayer([0, 441, 12, 50, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ChangePlayerFollowers([0])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

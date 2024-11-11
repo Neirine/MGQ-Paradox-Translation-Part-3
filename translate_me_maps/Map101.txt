@@ -1,0 +1,466 @@
+Display Name = "Башня Кукловода: 1 Этаж"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 433, 4, 13, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 433, 14, 16, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 433, 19, 16, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 433, 24, 24, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 188, 293, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 188, 293, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 188, 293, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([92, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"kagetumugi\", @volume=100, @pitch=100)"])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowPicture([5, "80_kagetumugi_st41", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]???\\C[0]>Ооо...?"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Извините... Эм, вы...?"])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Кагецумуги\\C[0]>Я - Кагецумуги, кукловод..."])
+    ShowText(["Я главная в этой башне."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Я Лука, странствующий герой. Извините за мою"])
+    ShowText(["бестактность, но вы не могли бы мне дать"])
+    ShowText(["магическую нить?"])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Кагецумуги\\C[0]>...Я не могу. Это то, что кукловод должен"])
+    ShowText(["передавать только своей ученице."])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Кагецумуги\\C[0]>Я не могу ее передать так просто тому, кто"])
+    ShowText(["не стремится следовать пути..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>В-вот как...? Прошу прощения за то, что"])
+    ShowText(["сказал подобное так внезапно."])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Кагецумуги\\C[0]>Нет... С этим ничего не поделаешь, поскольку"])
+    ShowText(["ты не знал. Также, если тебе нужна она"])
+    ShowText(["во что бы то ни стало, я скажу тебе,"])
+    ShowText(["где ты можешь ее найти."])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Кагецумуги\\C[0]>Вы, конечно же, пришли сюда через Пещеру"])
+    ShowText(["Искателя. Эта пещера также является местом"])
+    ShowText(["особой тренировки для ищущих искусства."])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Кагецумуги\\C[0]>\\C[3]Магическая Нить\\C[0] должна храниться на нижнем ярусе."])
+    ShowText(["Если тебе нужна она несмотря ни на что, то тогда"])
+    ShowText(["ты можешь пойти и забрать ее."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Спасибо вам большое за информацию!"])
+    ShowText(["Ну, тогда..."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>...Лука, мы получили информацию, так что быстро"])
+      ShowText(["возвращаемся. Давай-давай..."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Эй, Алиса, не тяни меня..."])
+      ShowText(["Мне все еще нужно поблагодарить..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Мы получили информацию, давайте возвращаться."])
+      ShowText(["Давай, мы уходим..."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Эй, зачем ты тянешь меня...?"])
+      ShowText(["Мне все еще нужно поблагодарить..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["kagetumugi_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Кагецумуги\\C[0]>Нет-нет, все в порядке."])
+    ShowText(["Все ценят свое время..."])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([5])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["И таким образом я был вытянут из башни..."])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 188, 294, 2, 0])
+    Wait([60])
+    ControlVariables([1026, 1026, 0, 0, 2])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Что ты делаешь, Алиса...?"])
+      ShowText(["Это было очень грубо с нашей стороны."])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Кагецумуги это кукловод, известная среди демонов."])
+      ShowText(["Она является еретиком, не связывайся с ней."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>То есть... Другими словами, она опасная?"])
+      ConditionalBranch([4, 64, 0])
+        ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Пучи\\C[0]>Но она вела себя так любезно..."])
+        ShowText(["Неужели она и вправду опасна?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 72, 0])
+        ShowTextAttributes(["phoenix_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Мини\\C[0]>Я поняла, что она плохая с первого взгляда!"])
+        ShowText(["Ее одежда была черной!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Кагецумуги это псевдоним, дающийся главе клана."])
+      ShowText(["Та, с которой мы встретились, является четвертой"])
+      ShowText(["в роду Кагецумуги."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Она ограничена только куклами..."])
+      ShowText(["Но клан Кагецумуги даже более опытен в этом,"])
+      ShowText(["чем семья Артистэ, которая развивалась во всех"])
+      ShowText(["Великих Искусствах."])
+      ConditionalBranch([4, 118, 0])
+        ShowTextAttributes(["meia_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Мейя\\C[0]>Что за клан... Даже мир магического искусства"])
+        ShowText(["не прост, не так ли?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Не связывайся с Кагецумуги... Это то, что мне"])
+      ShowText(["говорила моя мама, как Владыка Монстров."])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Она очень опасная, но в то же время - безвредна,"])
+      ShowText(["поскольку полностью погружена в свои"])
+      ShowText(["исследования. Вот почему мне говорили"])
+      ShowText(["не связываться с ней."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Эй, что ты делаешь...?"])
+      ShowText(["Это было очень грубо с нашей стороны."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>...Кагецумуги это еретический кукловод."])
+      ShowText(["Она очень опасная демоница, нам не стоит"])
+      ShowText(["связываться с ней."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Значит... она опасная?"])
+      ConditionalBranch([4, 64, 0])
+        ShowTextAttributes(["pramia_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Пучи\\C[0]>Но она вела себя так любезно..."])
+        ShowText(["Неужели она и вправду опасна?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 72, 0])
+        ShowTextAttributes(["phoenix_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Мини\\C[0]>Я поняла, что она плохая с первого взгляда!"])
+        ShowText(["Ее одежда была черной!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Кагецумуги это псевдоним, дающийся главе клана."])
+      ShowText(["Ты знаешь, что такое псевдоним? Что-то вроде"])
+      ShowText(["титула..."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>И та ранее была Кагецумуги в четвертом поколении."])
+      ShowText(["Ограниченная только кукловодством, она абсолютно"])
+      ShowText(["лучшая в этом деле."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Даже в сравнении с отвратительной семьей"])
+      ShowText(["Артистэ, наиболее известной своими магическими"])
+      ShowText(["искусствами... В кукловодстве эта семья на"])
+      ShowText(["несколько уровней ниже Кагецумуги."])
+      ConditionalBranch([4, 118, 0])
+        ShowTextAttributes(["meia_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Мейя\\C[0]>Что за клан... Даже мир магического искусства"])
+        ShowText(["не прост, не так ли?"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это прискорбно, но мы абсолютно не можем"])
+      ShowText(["ничего сделать с ней... Пока она для нас"])
+      ShowText(["слишком тяжелый противник."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Значит, эта демоница такая опасная..."])
+    ConditionalBranch([4, 66, 0])
+      ShowTextAttributes(["vgirl_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Ванилла\\C[0]>Я рада, что мы ее не разозлили..."])
+      ShowText(["А я уже хотела завести с ней беседу, как с той,"])
+      ShowText(["кто тоже носит черную одежду..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Она казалась очень доброй, но мне не стоит судить по внешнему"])
+    ShowText(["виду. В любом случае, скорее всего, в ее информации"])
+    ShowText(["не было лжи."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Хорошо, давайте обследуем Пещеру Искателя."])
+    ShowText(["Так как, по-видимому, там на нижнем ярусе"])
+    ShowText(["есть \\C[3]Магическая Нить\\C[0]."])
+    ConditionalBranch([4, 79, 0])
+      ShowTextAttributes(["nuruko_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Нуруко\\C[0]>Кюкю!"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["И, таким образом, мы снова вернулись в Пещеру Искателя..."])
+    FadeoutScreen([])
+    FadeoutBGM([1])
+    Wait([120])
+    ControlSwitches([11, 11, 1])
+    ChangeTransparency([0])
+    TransferPlayer([0, 602, 8, 12, 0, 2])
+    FadeinScreen([])
+    Empty([])
+
+  Page 1
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    PlayBGM(["RPG::BGM(@name=\"kagetumugi\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_kagetumugi_st51", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["おや、あなた達でしたか……"])
+    ShowText(["私を倒し、人形のサーカスを止めようというのですね。"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["影紬……！"])
+    ShowText(["やっぱり、僕達の世界のお前が黒幕だったんだな。"])
+    ShowTextAttributes(["chrom_fc2", 2, 0, 2])
+    ShowText(["【クロム】"])
+    ShowText(["以前に一度、お前の舞台を見た事があるのじゃ。"])
+    ShowText(["その指遣いから、同一人物である事は明らかよ。"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["流石は、腐ってもアルテイスト家の娘……"])
+    ShowText(["なかなか良く見ているものですね。"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["ですが今は、少々手が込んでいる身。"])
+    ShowText(["あなた達の相手は、また後にさせて頂きましょう。"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["待ちなさい、逃げる気ですか！"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["お客を退屈させるつもりはありませんよ。"])
+    ShowText(["こちらの人形が、あなた方を歓待しましょう……"])
+    ErasePicture([5])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"mon_dassyutu\", @pitch=100, @volume=100)"])
+    ControlSwitches([31, 31, 0])
+    Wait([30])
+    ShowPicture([5, "80_miyabihime_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["syoukan_x_fc2", 0, 0, 2])
+    ShowText(["【快楽人形・雅姫】"])
+    ShowText(["よく来られた、ご客人。"])
+    ShowText(["妾が、極上の快楽を与えてくれようぞ……"])
+    ShowTextAttributes(["kagetumugi_fc1", 0, 0, 2])
+    ShowText(["【影紬】"])
+    ShowText(["私は最上階にいます。"])
+    ShowText(["この首が欲しければ、そこまで上がってくるのですね……"])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([12, 542, false])
+    Wait([60])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["影紬は、その場から立ち去った――"])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["言われなくても、最上階まで行きます！"])
+    ShowText(["まずは目の前のガラクタ人形を処分しますよ！"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["今まで見た事のない新型だな……"])
+    ShowText(["……行くぞっ！"])
+    ConditionalBranch([4, 383, 0])
+      ShowTextAttributes(["eden_fc1", 1, 0, 2])
+      ShowText(["【エデン】"])
+      ShowText(["なんという、淫らな人形……"])
+      ShowText(["風紀を保つためにも、処分しなければなりませんね。"])
+      Empty([])
+
+    BranchEnd([])
+    BattleProcessing([0, 1868, false, false])
+    ControlSwitches([31, 31, 1])
+    ControlVariables([1142, 1142, 0, 0, 46])
+    PlayBGM(["RPG::BGM(@name=\"singun_kagetumugi\", @volume=100, @pitch=100)"])
+    ConditionalBranch([4, 19, 0])
+      ShowTextAttributes(["arumaeruma_fc2", 3, 0, 2])
+      ShowText(["【アルマエルマ】"])
+      ShowText(["こんな人形を相手に、性欲を解消する男がいるのかしら？"])
+      ShowText(["望みなら、いつでも私が行ってあげるのに……"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["【イリアス】"])
+    ShowText(["魔界で暴れていた人形より、戦闘能力が高いですね。"])
+    ShowText(["第二波の攻撃では、この人形達も投入されるのでしょう……"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["そうなると、本格的に手に負えなくなるね……"])
+    ShowText(["一刻も早く、最上階の影紬を倒そう！"])
+    ConditionalBranch([4, 817, 0])
+      ShowTextAttributes(["mukuro_fc1", 3, 0, 2])
+      ShowText(["【躯】"])
+      ShowText(["ここには、人形がたくさん……"])
+      ShowText(["仲良くはできないのか？"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 2
+    PlayBGM(["RPG::BGM(@name=\"singun_kagetumugi\", @volume=100, @pitch=100)"])
+    EraseEvent([])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([4095, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])

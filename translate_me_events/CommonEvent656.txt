@@ -1,0 +1,24 @@
+CommonEvent 656
+Name = "イベント：クィーンハーピー"
+
+  999([656])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 435, 0])
+    ShowTextAttributes(["queenhapy_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Гарпий\\C[0]>Пожалуйста, посетите мою деревню в следующий раз."])
+    ShowText(["Мы хорошенько тебя поприветствуем..."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["queenhapy_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Королева Гарпий\\C[0]>Позволь мне наполнить ваши крылья силой."])
+  ControlSwitches([435, 435, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Королева Гарпий дала вам магическую силу!"])
+  ShowText(["Сила навыков Крыльев удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

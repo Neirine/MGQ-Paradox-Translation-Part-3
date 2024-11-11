@@ -1,0 +1,62 @@
+CommonEvent 7201
+Name = "ジーナ：会話"
+
+  999([7201])
+  ConditionalBranch([1, 821, 0, 0, 0])
+    ControlVariables([821, 821, 0, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  PlayBGM(["RPG::BGM(@name=\"ero2\", @volume=75, @pitch=100)"])
+  ShowPicture([5, "80_mob_kensi_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+  MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+  ConditionalBranch([0, 2331, 1])
+    ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Джина\\C[0]>Я знаю что такое секс-битвы. Хочешь сразиться?"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 821, 0, 2, 1])
+    ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Джина\\C[0]>Ставкой будет 400G. За победу тебе не достанется"])
+    ShowText(["никаких призов."])
+    Empty([])
+
+  Else([])
+    ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Джина\\C[0]>Ставкой будет 400G. Победишь, и тогда я дам тебе"])
+    ShowText(["награду, которая позволит получить доступ"])
+    ShowText(["к освоенным навыкам меча."])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+  ShowText(["【ジーナ】"])
+  ShowText(["さあ、どうする？"])
+  ShowText(["私の責めに耐えきれる自信はあるかしら？"])
+  ShowChoices([["バトルファックを挑む", "やめておく"], 2])
+  When([0, "バトルファックを挑む"])
+    ConditionalBranch([7, 400, 0])
+      CallCommonEvent([7202])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Джина\\C[0]>У тебя недостаточно денег."])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  When([1, "Передумать"])
+    ShowTextAttributes(["mob_kensi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Джина\\C[0]>Никакой уверенности? Как жаль..."])
+    ErasePicture([5])
+    ExitEventProcessing([])
+    Empty([])
+
+  ChoicesEnd([])
+  Empty([])

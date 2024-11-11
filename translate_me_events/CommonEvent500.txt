@@ -1,0 +1,75 @@
+CommonEvent 500
+Name = "コラボ：魔城クリスタル"
+
+  999([500])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, true])
+  RecoverAll([0, 0])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["HP и MP группы полностью восстановлены!"])
+  ConditionalBranch([1, 1210, 0, 0, 0])
+    ShowChoices([["Изменить Профессии и Расы", "Не важно"], 2])
+    When([0, "Изменить Профессии и Расы"])
+      Script(["SceneManager.call(Scene_JobChange)"])
+      Wait([1])
+      RecoverAll([0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "Не важно"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1210, 0, 1, 1])
+    Script(["unlimited_choices(11, [\"Изменить Профессии и Расы\","])
+    ScriptMore(["\"Редактирование группы\","])
+    ScriptMore(["\"Сформировать/Собрать группу\","])
+    ScriptMore(["\"Использовать склад\", "])
+    ScriptMore(["\"Не важно\"])"])
+    ConditionalBranch([1, 11, 0, 0, 0])
+      Script(["SceneManager.call(Scene_JobChange)"])
+      RecoverAll([0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 1, 0])
+      GatherFollowers([])
+      ChangeState([0, 1, 1, 1])
+      Script(["call_party_edit"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 2, 0])
+      ShowChoices([["Собрать сформированную группу", "Сформировать группу", "Выход"], 3])
+      When([0, "Собрать сформированную группу"])
+        Script(["SceneManager.call(Scene_PartyLoad)"])
+        Empty([])
+
+      When([1, "Сформировать группу"])
+        Script(["SceneManager.call(Scene_PartySave)"])
+        Empty([])
+
+      When([2, "Выход"])
+        ExitEventProcessing([])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 3, 0])
+      Script(["SceneManager.call(Scene_Storehouse)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

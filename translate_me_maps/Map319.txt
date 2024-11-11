@@ -1,0 +1,410 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([6, -1, 2])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1139, 0, 3, 2])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Что это за монумент?"])
+      ShowText(["На нем что-то написано, но трудно прочитать..."])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Нам нечего здесь делать."])
+        ShowText(["Хватит дурачиться и идем уже в Храм Хеллгондо..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Лука... у нас здесь нет никаких дел."])
+        ShowText(["Давай поскорее уйдем."])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1139, 0, 4, 0])
+      GatherFollowers([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Это запечатывающий монумент."])
+      ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Мефисто\\C[0]>Многослойный барьер души..."])
+      ShowText(["Он держит в заключении душу великого грешника"])
+      ShowText(["чтобы он не мог переродиться."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Кто вообще мог заслужить такой участи?"])
+      ShowText(["Кажется на монументе выгравировано имя..."])
+      PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>...Генрих Хейн?!"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>То есть герой Генрих...?!"])
+        ShowTextAttributes(["alice_fc6", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Вряд ли кто-то другой с тем же именем."])
+        ShowText(["Но зачем Илиас запечатала его душу...?"])
+        ShowTextAttributes(["alicetromeria_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Альстромерия\\C[0]>......"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["heinrich_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Генрих\\C[0]>Значит, это будущий я..."])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>......"])
+        Empty([])
+      BranchEnd([])
+      Wait([30])
+      ShowAnimation([7, 501, false])
+      Wait([30])
+      ControlSwitches([31, 31, 0])
+      Wait([90])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_heinrich_st51", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["heinrich_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Бронированный Берсерк\\C[0]>АНГЕЛ... АНГЕЕЕЕЛ..."])
+      ConditionalBranch([4, 53, 0])
+        ShowTextAttributes(["slime_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Лайм\\C[0]>Опять он!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Что? Он уже вернулся...?"])
+      ErasePicture([5])
+      Wait([30])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowAnimation([8, 501, false])
+      Wait([30])
+      ControlSwitches([32, 32, 0])
+      Wait([90])
+      ShowPicture([5, "80_heinrich_st51", 0, 0, -150, 0, 100, 100, 0, 0])
+      ShowPicture([6, "80_heinrich_st51", 0, 0, 150, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, -150, 0, 100, 100, 255, 0, 30, false])
+      MovePicture([6, nil, 0, 0, 150, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["heinrich_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Бронированный Берсерк B\\C[0]>АНГЕЕЕЕЕЕЛ... УБИИИИТЬ..."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Как...?"])
+      ShowText(["Откуда здесь еще...?!"])
+      ConditionalBranch([4, 143, 0])
+        ShowTextAttributes(["eva_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Ева\\C[0]>Погодите, почему они множатся?!"])
+        ShowText(["Вот деньги не множатся, а они - да!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["heinrich_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Бронированный Берсерк A\\C[0]>АНГЕЛ... АНГЕЛ... АНГЕЕЕЕЛ...!"])
+      ShowText(["УБИТЬ УБИТЬ УБИТЬУБИТЬУБИТЬУБИТЬУБИТЬУБИТЬ..."])
+      ShowTextAttributes(["heinrich_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Бронированный Берсерк B\\C[0]>АНГЕЛАНГЕЛАНГЕЛАНГЕЛАНГЕЛАНГЕЛАНГЕЛ!!"])
+      ShowText(["УБИТЬ УБИТЬ... УБИТЬ, УБИТЬ, УБИТЬ...!"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc6", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Кхх, они собираются напасть!"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Сейчас они нападут, готовимся!"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([4, 382, 0])
+        ShowTextAttributes(["morrigan_fc1", 5, 0, 2])
+        ShowText(["\\n<\\C[6]Морриган\\C[0]>Мне все равно, я просто их сдую!!"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ErasePicture([6])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss2\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 1491, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      PlayBGM(["RPG::BGM(@name=\"scene_odayaka2\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["heinrich_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Бронированный Берсерк\\C[0]>АН...ГЕЕЛ..."])
+      PlaySE(["RPG::SE(@name=\"mon_syometu\", @pitch=100, @volume=100)"])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Бронированные Берсеркеры превратились в частицы и исчезли."])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Откуда их столько...?"])
+      ShowText(["Не только возрождаются, но еще множатся..."])
+      ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Мефисто\\C[0]>Здесь заключены мысли Генриха..."])
+      ShowText(["Поскольку печать ослабла, мысли проникают наружу."])
+      ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Мефисто\\C[0]>Он питает ужасную ненависть к ангелам."])
+      ShowText(["Эта ненависть распространяется вокруг и сливается"])
+      ShowText(["с частицами святой магии здесь."])
+      ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Мефисто\\C[0]>Так порождаются Бронированные Берсерки."])
+      ShowText(["Кристаллизация святой маны, впавшая в буйство"])
+      ShowText(["благодаря его ненависти..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>То есть... Мысли Генриха продолжат бесконечно"])
+      ShowText(["создавать этих Бронированных Берсерков?"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Мы не можем так все оставить."])
+        ShowText(["Возможно ли как-то восстановить печать, чтобы"])
+        ShowText(["его мысли перестали проникать наружу?"])
+        ShowTextAttributes(["mefist_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Мефисто\\C[0]>К сожалению, я не могу восстановить печать"])
+        ShowText(["такой мощи. Даже сил нынешней Владыки Монстров"])
+        ShowText(["не хватит для этого."])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Черт, как раздражает быть бессильной."])
+        ShowText(["Что нам тогда делать...?"])
+        ShowTextAttributes(["alicetromeria_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Альстромерия\\C[0]>...Я запечатаю его."])
+        ShowText(["А подачу святой энергии отрежу магической печатью."])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Альстромерия... ты..."])
+        ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+        ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Четыре жилы, восемь оков."])
+        ShowText(["Печать, что запрещает странствовать душе..."])
+        PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=100)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Душа Генриха была запечатана!"])
+        Wait([30])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>...Теперь на какое-то время все будет в порядке."])
+        ShowText(["Мысли Генриха не будут проникать во внешний мир."])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Но почему Илиас запечатала легендарного героя?"])
+        ShowText(["И почему мысли Генриха пропитаны ненавистью...?"])
+        ShowTextAttributes(["alicetromeria_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Илиас..."])
+        ShowText(["Так поступить с героем, который был стольк ей"])
+        ShowText(["предан..."])
+        ShowTextAttributes(["alicetromeria_fc1", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Альстромерия\\C[0]>......"])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Черная Алиса..."])
+        ShowText(["Кажется, в первый раз я вижу тебя настоящую."])
+        ShowTextAttributes(["alicetromeria_fc1", 4, 0, 2])
+        ShowText(["\\n<\\C[6]Альстромерия\\C[0]>Фуфу... Мы с тобой похожи."])
+        ShowText(["Обе странствовали по пути, который приведет нас..."])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>...Надеюсь такого не случится."])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Я так и не понял в чем их схожесть."])
+        ShowText(["Альстромерия, наверное, мне не скажет..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>...Надо сейчас же обновить печать."])
+        ShowText(["Но не думаю что у меня получится в нынешнем"])
+        ShowText(["состоянии... Эдем, могу я тебе это доверить?"])
+        ShowTextAttributes(["eden_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Эдем\\C[0]>Да, положитесь на меня."])
+        ShowText(["Стоит ли мне отрезать источник светлой маны?"])
+        ShowTextAttributes(["eden_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Эдем\\C[0]>Четыре жилы, восемь оков."])
+        ShowText(["Печать, что запрещает странствовать душе..."])
+        PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Душа Генриха была запечатана!"])
+        Wait([30])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>...Теперь все будет в порядке."])
+        ShowText(["Мысли Генриха больше не просочатся во внешний"])
+        ShowText(["мир."])
+        ShowTextAttributes(["heinrich_fc1", 5, 0, 2])
+        ShowText(["\\n<\\C[6]Генрих\\C[0]>Госпожа Илиас..."])
+        ShowText(["Вы ничего мне не скажете?"])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>......"])
+        ShowTextAttributes(["heinrich_fc1", 5, 0, 2])
+        ShowText(["\\n<\\C[6]Генрих\\C[0]>Мое будущее я запечатано здесь..."])
+        ShowText(["Получается, мои действия когда-то приведут"])
+        ShowText(["к такой судьбе."])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Генрих..."])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>То, что произошло, было чередой чрезвычайно"])
+        ShowText(["неудачных событий. Ты был слишком незрелым,"])
+        ShowText(["а я - слишком упрямой."])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Видя вновь тени моих прошлых действий..."])
+        ShowText(["Я не думаю, что тебя постигнет та же участь."])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>К тому же я теперь..."])
+        ShowText(["Никогда не буду поступать так глупо."])
+        ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Генрих\\C[0]>Вот как...?"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Я не знаю, что случилось между ними двумя."])
+        ShowText(["И не думаю, что должен вмешиваться."])
+        Empty([])
+      BranchEnd([])
+      PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Как-то легче не стало... но видимо дело сделано?"])
+      ShowText(["Эти Бронированные Берсерки больше не появятся?"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Угу, мы сделали, что было нужно."])
+        ShowText(["Теперь наконец-то в Замок Владыки Монстров!"])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Да... Ну что же, идем!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["На континенте монстров у нас осталось лишь одно дело."])
+        ShowText(["Добраться до Замка Владыки Монстров и вернуть Алису на трон."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Скорей всего нас ожидают большие испытания."])
+        ShowText(["Но тем не менее, я не сдамся..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Да, мы закончили то, что было нужно."])
+        ShowText(["Нам пора отправиться в Замок Владыки Монстров."])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Да... Ну что же, идем!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["На континенте монстров у нас осталось лишь одно дело."])
+        ShowText(["Добраться до Замка Владыки Монстров и выяснить ее истинные"])
+        ShowText(["намерения."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Скорей всего нас ожидают большие испытания."])
+        ShowText(["Но тем не менее, я не сдамся..."])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([1139, 1139, 0, 0, 5])
+      PlayBGM(["RPG::BGM(@name=\"scene_sinpi\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1139, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Монумент запечатавший душу великого грешника."])
+      ShowText(["На нем выгравировано \"Генрих Хейн\"."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 318, 16, 1, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 318, 16, 1, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 318, 16, 1, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 318, 16, 1, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 318, 16, 1, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "通行止め"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "通行止め"
+
+  Page 0
+    Empty([])

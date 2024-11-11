@@ -1,0 +1,23 @@
+CommonEvent 660
+Name = "イベント：ラ・クロワ"
+
+  999([660])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 439, 0])
+    ShowTextAttributes(["shirom_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ла Круа\\C[0]>Иди куда угодно..."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["shirom_fc2", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Ла Круа\\C[0]>Я удвою мощь ваших встроенных сил..."])
+  ControlSwitches([439, 439, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Ла Круа дала вам магическую силу!"])
+  ShowText(["Сила Встроенных навыков удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

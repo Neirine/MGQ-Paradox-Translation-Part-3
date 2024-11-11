@@ -1,0 +1,12 @@
+CommonEvent 512
+Name = "コラボC6：紙"
+
+  999([512])
+  PlaySE(["RPG::SE(@name=\"Book2\", @pitch=75, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Когда я нечаянно наступил на бумагу, она издала неожиданно"])
+  ShowText(["громкий звук!"])
+  ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+  ShowText(["\\n<\\C[6]Казуя\\C[0]>А... Черт!"])
+  CallCommonEvent([514])
+  Empty([])

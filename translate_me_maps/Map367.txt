@@ -1,0 +1,256 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Comment(["明かり設定1"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 366, 11, 6, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 366, 11, 6, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 366, 11, 6, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 366, 11, 6, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 366, 11, 6, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([12, "unlock_level < 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Сундук заперт..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeWeapons([102, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"boss0\", @volume=100, @pitch=100)"])
+    ShowPicture([5, "80_yamatanooroti_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["yamatanooroti_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>Вы - следующая жертва?"])
+    ShowText(["Стоило только припугнуть деревню, как жертвы идут"])
+    ShowText(["одна за другой..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Мы не жертва!"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Ямата-но-Орочи!"])
+      ShowText(["Лука, ты что, собираешься бросить ей вызов?"])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Она известна среди демонов своей силой."])
+      ShowText(["Если ты не уверен, что сможешь победить,"])
+      ShowText(["то лучше бежать, пока не поздно."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Ямата-но-Орочи..."])
+      ShowText(["Лука, ты собираешься сразиться с этой демоницей?"])
+      ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Она довольно трудный противник."])
+      ShowText(["Конечно, хорошо, показать свою силу демону,"])
+      ShowText(["но если у тебя нет шансов победить, то лучше"])
+      ShowText(["уходить."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ShowChoices([["Бросить вызов", "Сбежать"], 2])
+    When([0, "Бросить вызов"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Нет, начнем бой!"])
+      ShowTextAttributes(["yamatanooroti_fc2", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>Хо, ты бросаешь мне вызов...?"])
+      ShowText(["Тогда я покажу тебе силу великого демона земель"])
+      ShowText(["Яматая!"])
+      ConditionalBranch([4, 230, 0])
+        ShowTextAttributes(["yamatanooroti_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>И там Ямата, и я Ямата..."])
+        ShowTextAttributes(["yamatanooroti_fc2", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>А вместе 16-мата...?"])
+        ShowText(["Это интересно, вперед!"])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      ChangeBattleBGM(["RPG::BGM(@name=\"boss1\", @volume=100, @pitch=100)"])
+      ControlSwitches([22, 22, 0])
+      BattleProcessing([0, 646, false, false])
+      ControlSwitches([22, 22, 1])
+      ChangeBattleBGM(["RPG::BGM(@name=\"battle\", @volume=100, @pitch=100)"])
+      Script(["gain_medal(3007)"])
+      PlayBGM(["RPG::BGM(@name=\"scene_epilogue2\", @volume=100, @pitch=100)"])
+      ShowPicture([5, "80_yamatanooroti_st03", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ConditionalBranch([4, 218, 0])
+        ShowTextAttributes(["nyumaou_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Ушимао\\C[0]>Хмф, вообще без проблем!"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["yamatanooroti_fc3", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>Как удивительно, вы смогли меня превзойти."])
+      ShowText(["Какие крепкие люди..."])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Имя Ямата-но-Орочи втоптано в землю."])
+        ShowText(["С этого момента, больше не доставляй"])
+        ShowText(["неприятностей жителям."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Победа за нами."])
+        ShowText(["Теперь, больше не причиняй зла жителям деревни."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["yamatanooroti_fc3", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>Мое имя втоптано в землю..."])
+      ShowText(["Стоит ли мне теперь показываться здесь?"])
+      ShowTextAttributes(["yamatanooroti_fc3", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>Да, лучше возьмите меня с собой."])
+      ShowText(["Жители будут показывать мне в спину пальцем,"])
+      ShowText(["я этого не выдержу..."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>А она удивительно чувствительна..."])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Она удивительно чувствительна..."])
+        Empty([])
+      BranchEnd([])
+      ErasePicture([5])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Script(["add_actor_ex(230)"])
+      PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Ямата-но-Орочи присоединяется к группе!"])
+      Wait([60])
+      ControlSwitches([2317, 2317, 0])
+      ShowTextAttributes(["yamatanooroti_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>Иногда это не так уж и плохо."])
+      ShowText(["Мир, я иду!"])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_izumi\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "Сбежать"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Я забыл свое оружие в гостинице!"])
+      ShowText(["Сейчас вернусь!"])
+      ErasePicture([5])
+      Wait([60])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=22, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=22, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      ShowTextAttributes(["yamatanooroti_fc2", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Ямата-но-Орочи\\C[0]>Хухуху, так испугался меня...?"])
+      ShowText(["Давай-давай, беги..."])
+      PlayBGM(["RPG::BGM(@name=\"dungeon_izumi\", @volume=100, @pitch=100)"])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([211, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Сундук оказался Девушкой из Коробки!"])
+    BattleProcessing([0, 606, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])

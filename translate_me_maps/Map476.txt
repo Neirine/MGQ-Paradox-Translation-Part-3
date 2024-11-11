@@ -1,0 +1,2544 @@
+Display Name = "Сабаса"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 12, 102, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 53, 61, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 83, 48, 6, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 55, 100, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 94, 101, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 94, 20, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 60, 20, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 11, 21, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([1, 1028, 0, 1, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Дверь заперта..."])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Эта дверь заперта магией..."])
+        ShowText(["Это дом не обычного жителя?"])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Меня заинтересовал этот дом. Интересно, кто-нибудь"])
+        ShowText(["знает о нем что-нибудь? Давайте попробуем собрать"])
+        ShowText(["информацию в таверне..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, что она заперта магией..."])
+        ShowText(["Это не дом обычного жителя."])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Нос Богини улавливает что-то неприятное."])
+        ShowText(["Может, кто-нибудь в таверне знает больше"])
+        ShowText(["об этом доме..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1028, 0, 2, 1])
+      ConditionalBranch([1, 1086, 0, 0, 0])
+        ConditionalBranch([2, "A", 1])
+          ControlSelfSwitch(["A", 0])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Дверь заперта..."])
+          ConditionalBranch([0, 4, 0])
+            ShowTextAttributes(["alice_fc5", 0, 0, 2])
+            ShowText(["\\n<\\C[6]Алиса\\C[0]>Они сказали, что это дом Саран. Ничего"])
+            ShowText(["не поделаешь, давайте откроем магический"])
+            ShowText(["замок силой..."])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([0, 5, 0])
+            ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+            ShowText(["\\n<\\C[6]Илиас\\C[0]>Видимо, это дом Саран. Давайте отопрем этот"])
+            ShowText(["магический замок."])
+            Empty([])
+          BranchEnd([])
+          PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Магический замок открыт!"])
+          Empty([])
+        BranchEnd([])
+        PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 477, 134, 25, 0, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1086, 0, 1, 0])
+        Script(["move_stand_actor(559)"])
+        PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 477, 134, 25, 0, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1086, 0, 2, 0])
+        PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 477, 134, 25, 0, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1086, 0, 3, 0])
+        PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 477, 161, 25, 0, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1086, 0, 4, 0])
+        PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 477, 165, 83, 0, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1086, 0, 5, 1])
+        ChangeActorName([66, "ゲレゲレ"])
+        ChangeActorGraphic([66, "Evil01_cip", 0, "vgirl_fc1", 5])
+        ControlSwitches([100, 100, 0])
+        PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        TransferPlayer([0, 477, 165, 83, 0, 0])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ChangeMapDisplay([0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 377, 31, 54, 0, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 477, 131, 98, 0, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 103, 293, 2, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 103, 293, 2, 0])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 103, 293, 2, 0])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 103, 293, 2, 0])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 103, 293, 2, 0])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ConditionalBranch([1, 815, 0, 2, 1])
+      ConditionalBranch([0, 1558, 1])
+        ShowTextAttributes(["mob_uranai1_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Ная\\C[0]>В твоих руках судьба этого мира... Вот, что"])
+        ShowText(["показало мое гадание. А моя судьба - помочь"])
+        ShowText(["тебе..."])
+        ShowChoices([["Дать ей присоединиться", "Пока отказать"], 0])
+        When([0, "Дать ей присоединиться"])
+          ShowTextAttributes(["mob_uranai1_fc1", 1, 0, 2])
+          ShowText(["\\n<\\C[6]Ная\\C[0]>Ну что же, тогда идем вместе..."])
+          ErasePicture([5])
+          SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Script(["add_actor_ex(558)"])
+          PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Ная присоединяется к группе!"])
+          Wait([60])
+          ExitEventProcessing([])
+          Empty([])
+        When([1, "Пока отказать"])
+          ShowTextAttributes(["mob_uranai1_fc1", 0, 0, 2])
+          ShowText(["\\n<\\C[6]Ная\\C[0]>Вот как...?"])
+          ShowText(["Значит, я оказалась не нужна..."])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([7141])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Королю Сабасы поколениями служила группа Ассасинов, но..."])
+        ShowText(["Они тоже были выгнаны новой королевой."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ходит слух, что их глава замышляет покушение на королеву"])
+        ShowText(["Сару. Если они действительно убьют ее..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>...Станет ли в этой стране снова хорошо?"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Говорят, что бывшая королева Сара была безумна..."])
+        ShowText(["Но действительно ли это правда?"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Большинство людей верит в это..."])
+        ShowText(["А мне интересно, что же на самом деле было."])
+        Script(["actor_label_jump"])
+        ExitEventProcessing([])
+        Label(["525"])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Ничего не поделаешь с тем, что есть люди, которые сомневаются..."])
+        ExitEventProcessing([])
+        Label(["529"])
+        ShowTextAttributes(["sara_fc3", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Сара\\C[0]>С этого момента я восстановлю свою честь усердной работой..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ConditionalBranch([1, 1001, 0, 28, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Оказалось, что безумие Короля Грангольда было вызвано"])
+        ShowText(["Владыкой Монстров... Ну, тогда значит, что история о том,"])
+        ShowText(["что нашей королевой манипулировали, была правдой."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Более того, это все было большим заговором Владыки Монстров..."])
+        ShowText(["Если теперь герой победит Владыку Монстров, то все точно"])
+        ShowText(["придет в норму."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Подумать только, нападение вампиров..."])
+      ShowText(["А мне казалось, что война будет где-то там далеко."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ConditionalBranch([1, 1028, 0, 7, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Старушка\\C[0]>Ходит слух о том, что в этот дом часто заходят Ассасины..."])
+      ShowText(["Звучит опасно, так что лучше держаться от него подальше."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1028, 0, 8, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Старушка\\C[0]>По-видимому, человек, который способствовал разрешению"])
+      ShowText(["ситуации с королевой, жил в этом доме... Но это значит,"])
+      ShowText(["что он был членом гильдии Ассасинов."])
+      ShowText(["Как же это жутко..."])
+      Empty([])
+
+    BranchEnd([])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["93"])
+    ShowTextAttributes(["liot_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Райот\\C[0]>Это естественно, что люди опасаются клана,"])
+    ShowText(["унаследовавшего методы убийства. Каждый"])
+    ShowText(["найдет ужасным то, что Ассасин проник в их"])
+    ShowText(["повседневную жизнь..."])
+    ExitEventProcessing([])
+    Label(["102"])
+    ShowTextAttributes(["youko_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Если я изучу техники убийства, то меня все"])
+    ShowText(["будут ненавидеть...? Но я не смогу избежать"])
+    ShowText(["их, если я хочу стать Ниндзя..."])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 2, 103, 293, 2, 0])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    ControlSwitches([2122, 2122, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Мы сделали это!"])
+    ShowText(["Мы дошли до Замка Сабасы!"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 6, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Этот город такой большой~♪"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 118, 0])
+      ShowTextAttributes(["meia_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мейя\\C[0]>Для русалок здесь довольно суровая среда..."])
+      ShowText(["Ааа, у меня в горле пересохло..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 17, 2])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Ну что ж, давайте сразу собирать информацию."])
+        ShowText(["О Гноме и Северном Тартаре... мм?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Ну что ж, давайте сразу начнем сбор информации."])
+        ShowText(["О Гноме и Северном Тартаре... о?"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Ну что ж, давайте сразу собирать информацию."])
+        ShowText(["О Северном Тартаре... мм?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Ну что ж, давайте сразу начнем сбор информации."])
+        ShowText(["О Северном Тартаре... о?"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник А\\C[0]>Стоять, путешественники!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник В\\C[0]>Вы выглядите подозрительно... Вы точно шпионы Грангольда!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник А\\C[0]>Но... Мы можем для вас сделать исключение и не заметить"])
+    ShowText(["вашего присутствия... Мы же не демоны."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник В\\C[0]>Мы позволим вам отделаться за 100G."])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Солдаты регулярной армии требуют взятку"])
+      ShowText(["средь бела дня?!"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Странно... А я слышала, что армия Сабасы строго"])
+      ShowText(["дисциплинированна. Было глупо, назначать таких"])
+      ShowText(["бандитов на охрану главных ворот..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Как странно... Дисциплина в войсках Сабасы"])
+      ShowText(["не должна была так упасть. Король Сабасы,"])
+      ShowText(["которого я знаю, не допустил бы подобного"])
+      ShowText(["непорядка среди солдат."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник А\\C[0]>О чем вы говорите?! Мы - личная гвардия королевы Сары!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Стражник В\\C[0]>Если вы пойдете против нас, то отправитесь в тюрьму!"])
+    Label(["1"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Что нам делать, Лука...?"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ShowChoices([["Заплатить 100G", "Вырубить их"], 0])
+    When([0, "Заплатить 100G"])
+      ConditionalBranch([7, 100, 0])
+        ChangeGold([1, 0, 100])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Лука заплатил 100G..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Стражник А\\C[0]>Отлично, сегодня нам прет!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Стражник В\\C[0]>Пошли пропьем эти деньги...!"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Стражник А\\C[0]>Не включай дурака, здесь не хватает!"])
+        JumpToLabel(["1"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "Вырубить их"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"mon_fall2\", @pitch=100, @volume=100)"])
+      SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 4])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 4])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 4])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 4])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражники А и В\\C[0]>УАААААА!"])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc3", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Какие слабаки! Они же не слабее солдат Илиасвиля?!"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>К-какие слабые..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    ChoicesEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это были не солдаты, ни умственно, ни физически."])
+      ShowText(["Значит, вот она какая, армия Сабасы, чья военная"])
+      ShowText(["мощь не имеет себе равных."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Ни телом, ни умом они не были благонадежны..."])
+      ShowText(["Они не похожи на солдат Сабасы, которая"])
+      ShowText(["гордится своей армией."])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Они - личная гвардия королевы Сары... Другими словами,"])
+    ShowText(["банда головорезов, набранных в последнее время."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Предыдущий Король Сабасы погиб, и новая королева взошла"])
+    ShowText(["на трон... С тех пор в этой стране не произошло ничего хорошего."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Королева Сара отбросила политику и начала жить только"])
+    ShowText(["развлечениями. Она завербовала кучку бесполезных людей,"])
+    ShowText(["вроде тех стражников, что вы видели."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Верные подданные, что хотели наставлять ее, были брошены"])
+    ShowText(["в тюрьму или изгнаны из Сабасы. Все это превратилось"])
+    ShowText(["в действительно ужасную страну..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Упс... У меня будут проблемы, если стражники услышат, о чем"])
+    ShowText(["я здесь говорю. Вам также стоит быть осторожными..."])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это звучит ужасно... Нам нужно что-то сделать"])
+    ShowText(["с этой новой королевой!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Хорошо, идем в королевский замок немедленно!"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Дурак, не действуй без плана..."])
+      ShowText(["Что ты собрался делать после того, как внезапно"])
+      ShowText(["к ним вломишься?"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>В подобные времена, то, что нам нужно сделать,"])
+      ShowText(["это внимательно послушать, что говорят местные"])
+      ShowText(["жители. Даже если мы хотим узнать о королеве,"])
+      ShowText(["нам нужно сначала собрать информацию."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Не беги без оглядки как Мелос..."])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>В первую очередь, давай соберем информацию."])
+      ShowText(["Мы сможем вломиться к королеве после этого."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 531, 0])
+      ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Король Сан-Илии\\C[0]>До меня доходили эти слухи, но не думал,"])
+      ShowText(["что политическое разложение зайдет так далеко..."])
+      ShowText(["Из-за своей веры я не могу позволить оставаться"])
+      ShowText(["такому бедственному положению."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 17, 2])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Пока отложим в сторону Гному и Тартар, да...?"])
+        ShowText(["Давайте поспрашиваем вокруг, а потом встретимся"])
+        ShowText(["с королевой."])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Нам придется пока отложить в сторону Гному"])
+        ShowText(["и Тартар... Давайте поспрашиваем вокруг,"])
+        ShowText(["а потом встретимся с королевой!"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Пока отложим в сторону другие вопросы..."])
+        ShowText(["Давайте поспрашиваем вокруг, а потом встретимся"])
+        ShowText(["с королевой."])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Нам придется пока отложить в сторону другие"])
+        ShowText(["вопросы... Давайте поспрашиваем вокруг,"])
+        ShowText(["а потом встретимся с королевой!"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 129, 0])
+      ShowTextAttributes(["brunhild_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Хильди\\C[0]>Мы не будем бить королеву...?"])
+      ShowText(["Значит, здесь нет работы для Хильди..."])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([1028, 1028, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Несмотря на то, что я сказал ранее... Многие люди считают,"])
+        ShowText(["что в королеве произошли ненормальные изменения."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Вроде, будто ее разум был кем-то приведен в беспорядок"])
+        ShowText(["или что ее подменили, и она не настоящая... Проще говоря,"])
+        ShowText(["ходят слухи, что все это не настоящая воля королевы Сары."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Ну, я к этому скептически отношусь. Конечно же, ее личность"])
+        ShowText(["по сравнению с той, когда она была принцессой, слишком"])
+        ShowText(["сильно изменилась, но..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Ой, это не очень хорошая тема."])
+        ShowText(["Так, куда вам нужно?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Как я и думал, с леди Сарой что-то сотворил демон. Я думал,"])
+        ShowText(["что это странно, что она так отличалась от того, когда она"])
+        ShowText(["была Принцессой."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Ой, это все уже в прошлом."])
+        ShowText(["Так, куда вам нужно?"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Когда тебя кусает вампир, ты неосознанно начинаешь"])
+      ShowText(["задыхаться. Сейчас мне до сих пор тяжело дышать..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Упс, я же гид столицы."])
+      ShowText(["Так, куда вам нужно?"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["unlimited_choices(11, [\"Гостиница\","])
+    ScriptMore(["\"Магазин Оружия и Доспехов\","])
+    ScriptMore(["\"Лавка\",\"Кузница\","])
+    ScriptMore(["\"Церковь\",\"Замок Сабасы\",\"Никуда\"])"])
+    ConditionalBranch([1, 11, 0, 0, 0])
+      TransferPlayer([0, 476, 60, 71, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 1, 0])
+      TransferPlayer([0, 476, 47, 70, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 2, 0])
+      TransferPlayer([0, 476, 54, 17, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 3, 0])
+      TransferPlayer([0, 476, 37, 19, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 4, 0])
+      TransferPlayer([0, 476, 65, 44, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 5, 0])
+      TransferPlayer([0, 476, 14, 1, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 6, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Дочь Лавочника\\C[0]>Добро пожаловать~!"])
+    ShowText(["В этом магазине продается оружие, броня и аксессуары!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["66"])
+    ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ванилла\\C[0]>Все это здание - магазин?!"])
+    ShowText(["Круто!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Слизь\\C[0]>Я ловлю рыбку~♪"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["53"])
+    ShowTextAttributes(["slime_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лайм\\C[0]>Урааа! Я тоже ее половлю~♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Женщина\\C[0]>Король Сабасы умер во время несчастного случая, когда"])
+      ShowText(["посещал Тартар. Внезапный порыв ветра столкнул его"])
+      ShowText(["в большую яму..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Женщина\\C[0]>Но его тело до сих пор не нашли..."])
+      ShowText(["Из-за этого, многие верят, что он выжил."])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Женщина\\C[0]>Было бы прекрасно, если бы это оказалось правдой."])
+        ShowText(["Тогда король смог бы вразумить свою дочь и вернуть нашей"])
+        ShowText(["стране былую мощь..."])
+        Empty([])
+      BranchEnd([])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["529"])
+      ShowTextAttributes(["sara_fc3", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Отец... возможно ли..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Женщина\\C[0]>Эх, был бы жив Король Сабасы..."])
+    ShowText(["Он бы не поверил, каких успехов добилась его дочь."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Женщина\\C[0]>Да уж, кровь - великое дело."])
+    ShowText(["Вы сможете сражаться против Владыки Монстров."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["529"])
+    ShowTextAttributes(["sara_fc3", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Я рада, что люди меня приняли."])
+    ShowText(["Отец, пожалуйста, присматривай за мной..."])
+    ExitEventProcessing([])
+    Label(["530"])
+    ShowTextAttributes(["sara_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Уфуфу, положитесь на меня ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Старик\\C[0]>Королева Сара не была такой до того, как она унаследовала"])
+        ShowText(["трон. Она была благородной, доброжелательной и умной..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Старик\\C[0]>Как могла внезапная потеря отца так ее изменить..."])
+        ShowText(["Или, может быть, кто-то наложил на нее странное заклятье...?"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Старик\\C[0]>Как я и думал, королева Сара была лишена разума."])
+        ShowText(["Ее отречение действительно досадное..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Старик\\C[0]>Но даже сейчас многие люди довольны этим."])
+        ShowText(["Думаю, это неизбежно..."])
+        Script(["actor_label_jump"])
+        ExitEventProcessing([])
+        Label(["118"])
+        ShowTextAttributes(["meia_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Мейя\\C[0]>Заработать дурную славу после потери разума..."])
+        ShowText(["Я это хорошо понимаю."])
+        ExitEventProcessing([])
+        Label(["529"])
+        ShowTextAttributes(["sara_fc3", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Сара\\C[0]>Это естественно, ведь я показала себя в таком"])
+        ShowText(["непотребном свете... С этого момента я отдам долг"])
+        ShowText(["своим гражданам усердной работой."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Во время нападения вампиров, Королева Сабасы успешно"])
+    ShowText(["справлялась с управлением армией. А когда ее схватили,"])
+    ShowText(["то она приняла эротичную форму и разметала вампиров."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Теперь в Сабасе не найдется людей, которые бы жаловались"])
+    ShowText(["на королеву. Только объединившись, люди смогут сражаться"])
+    ShowText(["с армией Владыки Монстров!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["529"])
+    ShowTextAttributes(["sara_fc3", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Эротичную..."])
+    ExitEventProcessing([])
+    Label(["530"])
+    ShowTextAttributes(["sara_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Что будет, когда слух о моей непристойности"])
+    ShowText(["разойдется по стране?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Продавщица\\C[0]>Добро пожаловать, мы предлагаем широкий выбор деликатесов ♪"])
+    Script(["actor_label_jump"])
+    JumpToLabel(["店"])
+    Label(["5"])
+    ShowTextAttributes(["alice_fc5", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Ооо, они продают джем! Интересно, он вкуснее,"])
+    ShowText(["чем джем Тамамо...?"])
+    ShowTextAttributes(["alice_fc5", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Кстати, джем Тамамо это джем, который делает"])
+    ShowText(["Тамамо. Это не джем из Тамамо."])
+    ShowTextAttributes(["alice_fc5", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Хотя это не значит, что я никогда не думала"])
+    ShowText(["сделать такой..."])
+    JumpToLabel(["店"])
+    Label(["26"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Виноград. Эдем всегда... Нет нет, это не важно."])
+    JumpToLabel(["店"])
+    Label(["84"])
+    ShowTextAttributes(["hapy_bc_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Пина\\C[0]>Пии-чан, они здесь продают бананы."])
+    ShowTextAttributes(["hapy_bc_fc1", 6, 0, 2])
+    ShowText(["\\n<\\C[6]Пии\\C[0]>Эй, купи ♪"])
+    JumpToLabel(["店"])
+    Label(["148"])
+    ShowTextAttributes(["datyou_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мию\\C[0]>Давай купим кофе. Мы сможем благодаря ему"])
+    ShowText(["много пробежать по пустыне."])
+    JumpToLabel(["店"])
+    Label(["店"])
+    ShopProcessing([0, 303, 0, 0, false])
+    ShopItem([0, 304, 0, 0])
+    ShopItem([0, 305, 0, 0])
+    ShopItem([0, 337, 0, 0])
+    ShopItem([0, 343, 0, 0])
+    ShopItem([0, 427, 0, 0])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Торговля всегда процветала в пустыне еще с древних времен."])
+    ShowText(["Здесь собираются деликатесы со всего мира."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["5"])
+    ShowTextAttributes(["alice_fc5", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Ммм, здесь много всего вкусного... ♪"])
+    ExitEventProcessing([])
+    Label(["541"])
+    ShowTextAttributes(["piha_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Пиха\\C[0]>Здесь есть бананы и виноград, как необычно ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Женщина\\C[0]>К северо-востоку от Сабасы есть место, называемое"])
+    ShowText(["Оазисом Благословения. В нем нет ничего необычного,"])
+    ShowText(["но он стал популярен среди туристов благодаря своему"])
+    ShowText(["красивому пейзажу."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Женщина\\C[0]>Конечно же, там появляются и монстры..."])
+    ShowText(["Так что если вы хотите насладиться пейзажем, то будьте"])
+    ShowText(["предельно осторожны."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["41"])
+    ShowTextAttributes(["stein_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Промештейн\\C[0]>Оазис, это было бы лучшим местом для исследования"])
+    ShowText(["экосистем. Мне нужно будет взять там образцы"])
+    ShowText(["воды."])
+    ExitEventProcessing([])
+    Label(["154"])
+    ShowTextAttributes(["wani_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гар\\C[0]>Там чудесный пейзаж и полно воды..."])
+    ShowText(["Давайте пойдем туда купаться...?"])
+    ExitEventProcessing([])
+    Label(["542"])
+    ShowTextAttributes(["domeima_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Домейма\\C[0]>ВОДАААА!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>В этой пустыне, конечно, суровая среда. Причина, по которой"])
+        ShowText(["Сабаса, несмотря на все это, процветает, исключительно"])
+        ShowText(["в компетентности наших королей."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Предыдущий Король Сабасы, Его Величество 9-ый, был"])
+        ShowText(["самым лучшим правителем. Но почему все обернулось так...?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>В этой пустыне, конечно, суровая среда. Причина, по которой"])
+        ShowText(["Сабаса, несмотря на все это, процветает, исключительно"])
+        ShowText(["в компетентности наших королей."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Парень\\C[0]>Всеобщие выборы скоро начнутся, парламент будет"])
+        ShowText(["установлен... Но я бы хотел вернуться к нашим хорошим традициям."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Меня немножко укусили вампиры..."])
+      ShowText(["Боюсь меня они пленили..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Парень\\C[0]>Оох, я хочу чтобы пососали мою кровь..."])
+      ShowText(["Я хочу быть высосаным..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Продавщица\\C[0]>Как насчет красивых и стильных аксессуаров?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Продавщица\\C[0]>Но, я думаю, приключенцам не нужно это. Наши аксессуары"])
+    ShowText(["для красоты и не имеют никаких особых эффектов."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["113"])
+    ShowTextAttributes(["lamia_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Анастасия\\C[0]>Я взгляну... Этот бантик выглядит очень красиво."])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Мне немного любопытно... Но давай пока отложим"])
+    ShowText(["вещи, не нужные в приключении."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Здесь есть неплохой рынок, но в Грандоле все намного"])
+    ShowText(["роскошнее. В конце концов, там находятся лучшие"])
+    ShowText(["в мире развлечения."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>А еще, там повсюду магазины! Магазин за магазином!"])
+    ShowText(["Конечно же, там находится Большой Театр, но кроме него"])
+    ShowText(["там есть масса других развлекательных заведений."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Песни, танцы, алкоголь, женщины... Там есть все!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Не хорошо, я слишком увлекся..."])
+    ShowText(["У меня все еще есть здесь работа."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["80"])
+    ShowTextAttributes(["orc_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Хип\\C[0]>Это классно!"])
+    ShowText(["Я бы хотела во что бы то ни стало туда напасть!"])
+    ExitEventProcessing([])
+    Label(["114"])
+    ShowTextAttributes(["wakame_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Вакамэ\\C[0]>Там танцуют? Будем танцевать весело, весело..."])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ева\\C[0]>Эй, давай скорее туда!"])
+    ShowText(["Мы там повеселимся ♪"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менестрель\\C[0]>В Сабасе так много магазинов... Но Грандол на севере,"])
+    ShowText(["наверное, еще более потрясающий!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Менестрель\\C[0]>Это крупнейшая в мире деловая область... Интересно, что"])
+    ShowText(["это за место... Моя грудь разрывается от ожиданий."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["56"])
+    ShowTextAttributes(["inp_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Рами\\C[0]>Моя грудь раздувается в ожидании!"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ёко\\C[0]>Я с нетерпением жду этой деловой области."])
+    ShowText(["Интересно, у них есть опера...?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Среди особых товаров Сабасы, мы прежде всего упоминаем"])
+    ShowText(["кофе. Наши бобы особенные, это бобы..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>В общем, во всех наших магазинах и даже в тавернах есть кофе."])
+    ShowText(["Вам тоже стоит попробовать насладиться этим настроением Сабасы."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["146"])
+    ShowTextAttributes(["sasori_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Скарлет\\C[0]>Я тоже люблю кофе."])
+    ShowText(["Это распространенный напиток в пустыне..."])
+    ExitEventProcessing([])
+    Label(["150"])
+    ShowTextAttributes(["mummy_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Патра\\C[0]>Кофе... Его аромат не изменился с тех пор,"])
+    ShowText(["когда я была жива..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Странствующий Торговец\\C[0]>Могу сказать, что города в пустыне выглядят действительно"])
+    ShowText(["огромными. В том смысле, что они полностью занимают довольно"])
+    ShowText(["обширное пространство..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Странствующий Торговец\\C[0]>Конечно, большой город это хорошо, но ходить по нему - та еще"])
+    ShowText(["проблема..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["101"])
+    ShowTextAttributes(["cent2_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Лихтину\\C[0]>Я могу свободно скакать даже в городе,"])
+    ShowText(["будто моя мечта воплотилась в жизнь ♪"])
+    ExitEventProcessing([])
+    Label(["148"])
+    ShowTextAttributes(["datyou_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мию\\C[0]>Вот как? Мне кажется, что это нормально..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Эти сережки такие миленькие..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["80"])
+    ShowTextAttributes(["orc_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Хип\\C[0]>А что вы думаете насчет серег на свиных ушах...?"])
+    ExitEventProcessing([])
+    Label(["124"])
+    ShowTextAttributes(["arikui_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Анна\\C[0]>Человеческие одежды и аксессуары популярны"])
+    ShowText(["среди моих товарищей. Может, мне стоит купить"])
+    ShowText(["несколько в качестве сувениров?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Грубиян\\C[0]>Некоторые говорят, что королева Сара является суккубом,"])
+        ShowText(["и эта теория неожиданно наиболее вероятна. По-видимому,"])
+        ShowText(["многие видели ее в обличии монстра..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Грубиян\\C[0]>В таком случае, была ли превращена королева в суккуба...?"])
+        ShowText(["Или, может быть, суккуб приняла облик королевы?"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Грубиян\\C[0]>В конце концов, все было разрешено... Но достоверность"])
+        ShowText(["теории о суккубе осталась загадкой."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Грубиян\\C[0]>Тем не менее, разве не было бы и в самом деле эротично,"])
+        ShowText(["если бы королева оказалась суккубом?"])
+        Script(["actor_label_jump"])
+        ExitEventProcessing([])
+        Label(["56"])
+        ShowTextAttributes(["inp_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Рами\\C[0]>А как насчет королевы-импа? Это не эротично?"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Грубиян\\C[0]>Имп была бы как-то..."])
+        ExitEventProcessing([])
+        Label(["529"])
+        ShowTextAttributes(["sara_fc3", 1, 0, 2])
+        ShowText(["\\n<\\C[6]Сара\\C[0]>Это неприятно..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Грубиян\\C[0]>В итоге, королева Сара все-таки была суккубом!"])
+    ShowText(["Мою правую руку больше не остановить!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["529"])
+    ShowTextAttributes(["sara_fc3", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Отвратительно..."])
+    ExitEventProcessing([])
+    Label(["530"])
+    ShowTextAttributes(["sara_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Уфуфу, а будешь ли ты удовлетворен своей рукой?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сильный Мужчина\\C[0]>Люди за пределами часто не понимают этого, но..."])
+    ShowText(["Города в пустынях не так уж и суровы, если, конечно,"])
+    ShowText(["не стоять целыми днями под солнцем."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сильный Мужчина\\C[0]>Скорее всего, хуже этого быть во влажном регионе..."])
+    ShowText(["В Сабасе довольно легко жить."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["100"])
+    ShowTextAttributes(["rahure_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Флезия\\C[0]>Но я люблю влажные места."])
+    ShowText(["Там я могу распылять далеко свой аромат..."])
+    ExitEventProcessing([])
+    Label(["102"])
+    ShowTextAttributes(["youko_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Кицунэ\\C[0]>У меня пушистый мех, так что мне жааааарко!"])
+    ExitEventProcessing([])
+    Label(["103"])
+    ShowTextAttributes(["kamuro_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Камуро\\C[0]>В этой одежде жарко..."])
+    ShowText(["Моему хвосту очень жарко... Хаууу..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мальчик\\C[0]>Давайте играть в героев, урааа!"])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["525"])
+      ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Когда Лука был ребенком, он постоянно"])
+      ShowText(["делал подобное."])
+      ExitEventProcessing([])
+      Label(["118"])
+      ShowTextAttributes(["meia_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мейя\\C[0]>Маленькие дети такие энергичные..."])
+      ShowText(["Уфуфу."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мальчик\\C[0]>Я - герой Лука!"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мальчик\\C[0]>Интересно, почему леди Сара стала такой странной..."])
+        ShowText(["Перед тем, как она стала королевой, она была такой доброй..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девочка\\C[0]>Может это была просто видимость...?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мальчик\\C[0]>Как я и думал, леди Сара хорошая!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девочка\\C[0]>Парни такие простые..."])
+        Script(["actor_label_jump"])
+        ExitEventProcessing([])
+        Label(["131"])
+        ShowTextAttributes(["doll_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мияби\\C[0]>И в самом деле..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мальчик\\C[0]>Королева Сара всех победила! Она такая классная~♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девочка\\C[0]>Побеждать вампиров в форме суккуба..."])
+      ShowText(["Королева потрясающа ♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мальчик\\C[0]>Интересно, почему леди Сара стала такой странной..."])
+        ShowText(["Перед тем, как она стала королевой, она была такой доброй..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девочка\\C[0]>Может это была просто видимость...?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мальчик\\C[0]>Как я и думал, леди Сара хорошая!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Девочка\\C[0]>Парни такие простые..."])
+        Script(["actor_label_jump"])
+        ExitEventProcessing([])
+        Label(["131"])
+        ShowTextAttributes(["doll_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мияби\\C[0]>И в самом деле..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мальчик\\C[0]>Королева Сара всех победила! Она такая классная~♪"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девочка\\C[0]>Побеждать вампиров в форме суккуба..."])
+      ShowText(["Королева потрясающа ♪"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>Я Принцесса!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["131"])
+    ShowTextAttributes(["doll_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мияби\\C[0]>Я Принцесса..."])
+    ExitEventProcessing([])
+    Label(["529"])
+    ShowTextAttributes(["sara_fc3", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Я тоже Принцесса!"])
+    ShowTextAttributes(["sara_fc3", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>...Я просто хотела попробовать это сказать."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 25, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Старик\\C[0]>Если силы Грангольда нападут, я также возьму оружие и буду"])
+      ShowText(["сражаться. Видишь ли, мне нужно защитить своих внуков..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Старик\\C[0]>Но Грангольд действительно таинственная страна."])
+      ShowText(["Нет абсолютно никакой информации о том, что там происходит..."])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["531"])
+      ShowTextAttributes(["saniria_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Король Сан-Илии\\C[0]>Даже такой старик, как он, так решителен..."])
+      ShowText(["Нам нужно быстро положить конец этой войне."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 26, 1])
+      ConditionalBranch([1, 1001, 0, 28, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Старик\\C[0]>Когда армия монстров нападет, я тоже буду сражаться"])
+        ShowText(["с ним своим оружием. Я защищу своего внука..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Старик\\C[0]>Когда вампиры напали, солдаты защитили мою семью."])
+      ShowText(["Похоже, моим старым костям нет нужды сражаться..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Солдат\\C[0]>Здесь находится кузнец, но также есть тренировочное"])
+    ShowText(["оборудование. Там мускулистые парни потеют ведрами!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["120"])
+    ShowTextAttributes(["page257_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ёко\\C[0]>Вместо мускулистых я предпочитаю эстетичных..."])
+    ExitEventProcessing([])
+    Label(["540"])
+    ShowTextAttributes(["amira_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Амира\\C[0]>Мвах, отлично..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ConditionalBranch([1, 1028, 0, 7, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражник\\C[0]>Так устал..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1028, 0, 8, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражник\\C[0]>Добро пожаловать в Замок Сабасы."])
+      ShowText(["Наш замок открыт для публики."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ConditionalBranch([1, 1028, 0, 7, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражник\\C[0]>Эй, тебе нужно оплатить дань...."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражник\\C[0]>...Эх, не важно. Вы выглядите сильными."])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Дисциплина военных очень ослабла..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1028, 0, 8, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражник\\C[0]>Добро пожаловать в Замок Сабасы."])
+      ShowText(["Наш замок открыт для публики."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>Я тоже рыбачу~♪"])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Милая..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Любимый..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Молодая парочка флиртует..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["105"])
+    ShowTextAttributes(["mimic_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Минелли\\C[0]>Взорвитесь..."])
+    ExitEventProcessing([])
+    Label(["163"])
+    ShowTextAttributes(["lily_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Как бельмо в глазу..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Уааа, щупальца...?!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Эй, что ты...?!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Милая..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Любимый..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Молодая парочка флиртует..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["105"])
+    ShowTextAttributes(["mimic_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Минелли\\C[0]>Взорвитесь..."])
+    ExitEventProcessing([])
+    Label(["163"])
+    ShowTextAttributes(["lily_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Как бельмо в глазу..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Уааа, щупальца...?!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка\\C[0]>Эй, что ты...?!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Это реально солдаты Сабасы?"])
+        ShowText(["Какие жалкие..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Мужчина\\C[0]>Их манеры мягки, но они сильны в выпивке и в битве..."])
+        ShowText(["Вот, какими должны быть солдаты Сабасы!"])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Как и ожидалось, солдаты Сабасы не отступят перед вампирами."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Странствующий Торговец\\C[0]>С тех пор, как королева взошла на престол, торговые"])
+        ShowText(["пути практически совсем не защищены. Ни физически,"])
+        ShowText(["ни экономически..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Странствующий Торговец\\C[0]>Прямо сейчас королева не заботится об экономике."])
+        ShowText(["Такими темпами страна обанкротится..."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Странствующий Торговец\\C[0]>Начала реализовываться крупномасштабная обширная торговая"])
+        ShowText(["политика... Похоже, что экономика этой страны быстро"])
+        ShowText(["восстановится."])
+        ExitEventProcessing([])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Странствующий Торговец\\C[0]>В последнее время товаров недостает..."])
+      ShowText(["Хотя город и ожил после отражения атаки вампиров,"])
+      ShowText(["но еще не время для празднований."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([32, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Как вы наверное уже слышали, здешний Тартар находится"])
+    ShowText(["в сельской части Сабасы. Это место расположено далеко"])
+    ShowText(["на севере."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Сам Тартар находится восточнее Салуна, самого северного"])
+    ShowText(["города Сабасы... Но даже бывалые приключенцы туда не заходят."])
+    ConditionalBranch([1, 1001, 0, 17, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Похоже, что лучше идти в Тартар уже после"])
+        ShowText(["заключения контракта с Гномой. Нам нужно"])
+        ShowText(["будет пройти это испытание после тщательной"])
+        ShowText(["подготовки..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, что мы должны отправиться в Тартар"])
+        ShowText(["после того, как закончим с Гномой. Лучше"])
+        ShowText(["всего нам тщательно подготовиться..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>К западу отсюда есть Деревня Охоты на Ведьм. Ее название?"])
+    ShowText(["Маги... как она там? Короче, достаточно называть ее"])
+    ShowText(["Деревней Охоты на Ведьм."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>В этой деревне с давних пор происходила охота на ведьм..."])
+    ShowText(["Но недавно ведьмы захватили деревню."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>Фух, деревня - страшное место... Городские жители лелеют"])
+    ShowText(["иллюзию о том, что люди в деревнях наивны по сравнению"])
+    ShowText(["с ними."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["163"])
+    ShowTextAttributes(["lily_fc1", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Не то чтобы я захватила деревню..."])
+    ShowText(["Но ты не ошибся, говоря, что деревня - страшное место."])
+    ExitEventProcessing([])
+    Label(["167"])
+    ShowTextAttributes(["lusia_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Люсия\\C[0]>Информация немного отличается от правды."])
+    ShowText(["Думаю, это предубеждение..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Недавно в сельской местности был возрожден Фестиваль Гномы."])
+      ShowText(["С тех пор, как наступил Ренессанс, эти местные верования"])
+      ShowText(["стали популярными."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>В городе все еще сильна церковь, но..."])
+      ShowText(["Может, позиции однажды сменятся?"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Ну... Вместо того, чтобы молиться в гнетущей церкви,"])
+      ShowText(["лучше молиться духам в пирах, песнях, танцах и прочем шуме."])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["26"])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Сердца людей были отравлены ересью..."])
+      ExitEventProcessing([])
+      Label(["12"])
+      ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Сильфа\\C[0]>Это гораааздо веселее ♪"])
+      ExitEventProcessing([])
+      Label(["13"])
+      ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Гнома\\C[0]>......"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>В регионе Наталия, похоже, отменяют фестивали Сильфы один за другим."])
+      ShowText(["До фестивалей Гномы в Сабасе это еще не дошло..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Мужчина\\C[0]>Я уже слышу голоса:\"Что же станется с поклонением монстрам"])
+      ShowText(["в будущем?\" В какое отвратительное время мы живем..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мужчина\\C[0]>В Грандоле есть большое казино. Мне не терпится туда сходить,"])
+    ShowText(["но пока я каждый день занят работой."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["121"])
+    ShowTextAttributes(["page65537_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Корнелия\\C[0]>Казино... Честно говоря, не то чтобы"])
+    ShowText(["я не интересовалась этим."])
+    ExitEventProcessing([])
+    Label(["143"])
+    ShowTextAttributes(["eva_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ева\\C[0]>Казино! Шанс быстро разбогатеть, верно?"])
+    ShowText(["Знаешь, я довольно удачлива..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Собака\\C[0]>Гав! Гав!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["60"])
+    ShowTextAttributes(["dog_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Почи\\C[0]>Аууу, Ауууу!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    ShowTextAttributes(["datyou_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Страус\\C[0]>Раз-два, раз-два."])
+    ShowText(["Давайте сегодня тоже проведем гонку~!"])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["62"])
+    ShowTextAttributes(["gob_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гобу\\C[0]>Я не проиграааю!"])
+    ExitEventProcessing([])
+    Label(["101"])
+    ShowTextAttributes(["cent2_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лихтину\\C[0]>Ты все равно не сможешь выиграть против моих ног...!"])
+    ExitEventProcessing([])
+    Label(["148"])
+    ShowTextAttributes(["datyou_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мию\\C[0]>Давайте вместе хорошо потренируемся!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Овечка\\C[0]>Меее..."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["74"])
+    ShowTextAttributes(["usagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Банни\\C[0]>Эта овечка хорошая... Она не пьет много"])
+    ShowText(["алкоголя и не вызывает проблемы все время."])
+    ConditionalBranch([4, 75, 0])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Мэри\\C[0]>Лучше говори мне это прямо, кролик..."])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Label(["75"])
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Мэри\\C[0]>Меее~!"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    ShowTextAttributes(["wani_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Крокодил\\C[0]>Гррр..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Девушка-Крокодил широко открыла нижний рот!"])
+    ShowTextAttributes(["wani_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Крокодил\\C[0]>Фуааа..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["...Похоже, она просто зевает."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["154"])
+    ShowTextAttributes(["wani_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гар\\C[0]>Привет."])
+    ShowTextAttributes(["wani_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Крокодил\\C[0]>Привет..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старик\\C[0]>Ммм, тут крокодил... Она не голодна, так что не будет"])
+    ShowText(["причинять вред людям, но лучше быть осторожными."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["26"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Недавно я перестала удивляться, когда вижу"])
+    ShowText(["монстров в городах... Я начала смягчаться?"])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Нет, мой внешний вид, конечно же, мягче, чем"])
+    ShowText(["был раньше... Но это не то, что я имела в виду..."])
+    ExitEventProcessing([])
+    Label(["525"])
+    ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>Это место удивительное, у них есть крокодилы"])
+    ShowText(["в центре города..."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Кактус\\C[0]>Я благородная девушка-кактус. Я желаю, чтобы этот город"])
+      ShowText(["был чуточку более благородным, чем он есть сейчас."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Кактус\\C[0]>Интересно, смогла бы я переехать в высококлассную резиденцию"])
+      ShowText(["в Грандоле...? Это место было бы более уместно для моего"])
+      ShowText(["благородства."])
+      Script(["actor_label_jump"])
+      ExitEventProcessing([])
+      Label(["108"])
+      ShowTextAttributes(["kai_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Шелли\\C[0]>Дорогая резиденция..."])
+      ShowText(["Это хорошее место для жизни вместе с мужем."])
+      ExitEventProcessing([])
+      Label(["143"])
+      ShowTextAttributes(["eva_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Ева\\C[0]>Хмф... Все эти резиденции высокого класса"])
+      ShowText(["должны просто сгореть."])
+      ExitEventProcessing([])
+      Label(["147"])
+      ShowTextAttributes(["saboten_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Кастер\\C[0]>Звучит хорошо... Как только это путешествие"])
+      ShowText(["подойдет к концу, может, мне стоит провести"])
+      ShowText(["там свободное время?"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Кактус\\C[0]>Я благородная девушка-кактус."])
+    ShowText(["А вампиры не так благородны, как о них идет молва."])
+    Script(["actor_label_jump"])
+    ExitEventProcessing([])
+    Label(["338"])
+    ShowTextAttributes(["carmilla_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Кармилла\\C[0]>Королева разозлится, если услышит это~!"])
+    ExitEventProcessing([])
+    Label(["339"])
+    ShowTextAttributes(["elisabeth_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Элизабет\\C[0]>Грррр...! Лука, это все из-за тебя!"])
+    ExitEventProcessing([])
+    Label(["340"])
+    ShowTextAttributes(["queenvampire_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Фатима\\C[0]>Что бы кто не говорил..."])
+    ShowText(["Должна ли я это терпеть?"])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([20, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([338, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([26, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([68, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    ConditionalBranch([1, 1001, 0, 28, 2])
+      ConditionalBranch([1, 1028, 0, 7, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Женщина\\C[0]>Множество солдат предыдущего короля были уволены..."])
+        ShowText(["Ходят слухи, что они собираются в кузнице и планируют"])
+        ShowText(["восстание."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Женщина\\C[0]>Королева действительно действует странно..."])
+        ShowText(["Но я не думаю, что все хотят бунта."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1028, 0, 8, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Женщина\\C[0]>Похоже, что слуги, которых королева уволила, когда была"])
+        ShowText(["безумна, вернулись. Поскольку среди них росло волнение,"])
+        ShowText(["я рада, что все успокоилось."])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 29, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Бабушка\\C[0]>Если бы королеве Саре не вернулся разум,"])
+      ShowText(["Сабаса бы точно пала."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Бабушка\\C[0]>Возможно, это тоже было целью Владыки Монстров."])
+      ShowText(["Но королева Сара пробилась через заговор демонов."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Парень\\C[0]>Вам, должно быть, тяжело освоиться с тем, насколько"])
+    ShowText(["велика Сабаса. А теперь, куда вы хотите?"])
+    Script(["unlimited_choices(11, [\"Гостиница\","])
+    ScriptMore(["\"Магазин Оружия и Доспехов\","])
+    ScriptMore(["\"Лавка\",\"Кузница\","])
+    ScriptMore(["\"Церковь\",\"К выходу\",\"Никуда\"])"])
+    ConditionalBranch([1, 11, 0, 0, 0])
+      TransferPlayer([0, 476, 60, 71, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 1, 0])
+      TransferPlayer([0, 476, 47, 70, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 2, 0])
+      TransferPlayer([0, 476, 54, 17, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 3, 0])
+      TransferPlayer([0, 476, 37, 19, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 4, 0])
+      TransferPlayer([0, 476, 65, 44, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 5, 0])
+      TransferPlayer([0, 476, 44, 82, 2, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 11, 0, 6, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_odayaka1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Камуро\\C[0]>Семпай... Почему в пустыне так жарко?"])
+    ShowTextAttributes(["youko_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Умм, видишь ли..."])
+    ShowText(["...Это потому, что Пустынный Бог"])
+    ShowText(["чувствителен к холоду."])
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Камуро\\C[0]>Как и ожидалось от семпая!"])
+    ShowText(["Ты знаешь все на свете!"])
+    PlayBGM(["RPG::BGM(@name=\"mura6\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"scene_odayaka1\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Камуро\\C[0]>Семпай... Почему в пустыне так жарко?"])
+    ShowTextAttributes(["youko_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кицунэ\\C[0]>Умм, видишь ли..."])
+    ShowText(["...Это потому, что Пустынный Бог"])
+    ShowText(["чувствителен к холоду."])
+    ShowTextAttributes(["kamuro_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Камуро\\C[0]>Как и ожидалось от семпая!"])
+    ShowText(["Ты знаешь все на свете!"])
+    PlayBGM(["RPG::BGM(@name=\"mura6\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    ShowTextAttributes(["dog_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Собака\\C[0]>Гав! Гав!"])
+    ConditionalBranch([4, 60, 0])
+      ShowTextAttributes(["dog_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Почи\\C[0]>Даже на земле пылающих песков есть мои"])
+      ShowText(["одомашненные сестры. Или, может, они гордятся"])
+      ShowText(["тем, что ходят среди людей...?"])
+      ShowTextAttributes(["dog_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Почи\\C[0]>...Блин, разве тебе не жарко?"])
+      ConditionalBranch([2, "A", 1])
+        ControlSelfSwitch(["A", 0])
+        ControlVariables([1036, 1036, 1, 0, 1])
+        ConditionalBranch([1, 1036, 0, 9, 1])
+          CallCommonEvent([311])
+          Empty([])
+        Else([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 84
+Name = "EV084"
+
+  Page 0
+    ShowTextAttributes(["orc_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Хип\\C[0]>Хрю! Это нападение орков!"])
+    ConditionalBranch([1, 1028, 0, 7, 2])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражник\\C[0]>Хияя! Монстры атакууууют!"])
+      ShowText(["Я все сделаю! Пожалуйста, пощадите!"])
+      ShowTextAttributes(["orc_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Хип\\C[0]>Они настолько трусливы, что удивляют даже"])
+      ShowText(["орка. Тебе не кажется, что ты должен быть"])
+      ShowText(["более храбрым...?"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1028, 0, 8, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Стражник\\C[0]>Мы, солдаты Сабасы, не потерпим насилия."])
+      ShowText(["Подходи ко мне, если хочешь окончить свою жизнь."])
+      ShowTextAttributes(["orc_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Хип\\C[0]>...У вас песок на ботинках."])
+      ShowText(["Хотите, чтобы я их вылизала?"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 85
+Name = "EV085"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"amira\", @volume=100, @pitch=100)"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      CallCommonEvent([322])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["amira_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Амира\\C[0]>Ты нашел меня здесь."])
+      ShowText(["Продолжай искать меня..."])
+      Empty([])
+
+    BranchEnd([])
+    PlayBGM(["RPG::BGM(@name=\"mura6\", @volume=100, @pitch=100)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 86
+Name = "EV086"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Чтобы найти убежище Саран, поверни налево и пройди"])
+      ShowText(["по главной улице. Когда поднимешься по лестнице,"])
+      ShowText(["ты сразу заметишь ее здание."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Чтобы найти убежище Саран, поверни налево и пройди"])
+      ShowText(["по главной улице. Когда поднимешься по лестнице,"])
+      ShowText(["ты сразу заметишь ее здание."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["vgirl_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ванилла\\C[0]>Мы уже давно торгуем, так что переговоры"])
+    ShowText(["будут несложными. Вперед!"])
+    Empty([])
+
+  Page 1
+    Empty([])

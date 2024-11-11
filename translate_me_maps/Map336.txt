@@ -1,0 +1,130 @@
+Display Name = "Комната Эрубети"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 325, 56, 46, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 325, 56, 46, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ControlSelfSwitch(["A", 0])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это комната Эрубети."])
+      ShowText(["Тут ничего особого нет..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Наверняка это комната Эрубети."])
+      ShowText(["Да уж, выглядит ужасно."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sonia_fc2", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>А разве Эрубети не одна из Небесных Рыцарей?"])
+    ShowText(["Почему кто-то в ее положении живет в такой"])
+    ShowText(["обшарпанной комнате...?"])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Я хотела ей дать такую же комнату, как и остальным"])
+      ShowText(["рыцарям... Но она сказала, что ей уютней среди"])
+      ShowText(["воды и поселилась в водостоке."])
+      ConditionalBranch([4, 53, 0])
+        ShowTextAttributes(["slime_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лайм\\C[0]>Я бы тоже хотела жить у водички вместо"])
+        ShowText(["большой красивой комнаты."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>В любом случае, нам тут нечего делать."])
+      ShowText(["Она в любом случае не здесь, а если придет,"])
+      ShowText(["могут быть проблемы."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Это вполне в духе Владыки Монстров."])
+      ShowText(["Давать своим подчиненным подобные комнаты,"])
+      ShowText(["а самой утопать в роскоши."])
+      ShowTextAttributes(["eden_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Эдем\\C[0]>А госпожа Илиас дарует ангелам в комнаты"])
+      ShowText(["теплые одеяла. Мы так благодарны..."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["レバーがある……下ろしますか？"])
+    ShowChoices([["はい", "いいえ"], 2])
+    When([0, "はい"])
+      PlaySE(["RPG::SE(@name=\"Push\", @pitch=100, @volume=80)"])
+      ControlSwitches([2569, 2569, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Снаружи открылась какая-то дверь..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "Нет"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Рычаг уже опущен..."])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Горшок оказался Волшебным Горшочком!"])
+    BattleProcessing([0, 1450, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])

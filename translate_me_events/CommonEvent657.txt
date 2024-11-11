@@ -1,0 +1,23 @@
+CommonEvent 657
+Name = "イベント：クィーンアント"
+
+  999([657])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 436, 0])
+    ShowTextAttributes(["queenant_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Муравьев\\C[0]>До встречи, мои дочери уже ждут меня."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["queenant_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Королева Муравьев\\C[0]>Я дам стимуляцию вашим инстинктам насекомого..."])
+  ControlSwitches([436, 436, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Королева Муравьев дала вам магическую силу!"])
+  ShowText(["Сила навыков Насекомого удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

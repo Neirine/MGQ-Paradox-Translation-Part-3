@@ -1,0 +1,1200 @@
+Display Name = "Особняк Лили: 1 Этаж(З)"
+Parallax Name = "DarkSpace1"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([5, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([1315, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 360, 1, 9, 6, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([8, 521])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 361, 13, 38, 8, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2093, 2093, 0])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 360, 16, 22, 2, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Хмм... Что-то не так."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>...Что-то странное."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Мы пошли по лестнице с первого этажа,"])
+        ShowText(["почему мы опять на первом этаже...?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Мы должны были спуститься с первого этажа,"])
+        ShowText(["но мы все еще на первом этаже...?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Эта лестница снаряжена телепортационной магией,"])
+        ShowText(["которая переместила нас в другую область."])
+        ShowText(["Для того, чтобы спуститься по ней, нам нужно"])
+        ShowText(["найти способ пробиться через эту магию..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Эта лестница снаряжена телепортационной магией,"])
+        ShowText(["которая отправила нас в другую область."])
+        ShowText(["Для того, чтобы спуститься по ней, нам нужно"])
+        ShowText(["найти способ пробиться через эту магию..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["明かり設定3000800"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=0.0, @gray=68.0)", 1, true])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([8, 521])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 361, 13, 38, 8, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2093, 2093, 0])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 360, 16, 22, 2, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Хмм... Что-то не так."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>...Что-то странное."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Мы пошли по лестнице с первого этажа,"])
+        ShowText(["почему мы опять на первом этаже...?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Мы должны были спуститься с первого этажа,"])
+        ShowText(["но мы все еще на первом этаже...?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Эта лестница снаряжена телепортационной магией,"])
+        ShowText(["которая переместила нас в другую область."])
+        ShowText(["Для того, чтобы спуститься по ней, нам нужно"])
+        ShowText(["найти способ пробиться через эту магию..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Эта лестница снаряжена телепортационной магией,"])
+        ShowText(["которая отправила нас в другую область."])
+        ShowText(["Для того, чтобы спуститься по ней, нам нужно"])
+        ShowText(["найти способ пробиться через эту магию..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 1029, 0, 5, 1])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2091, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Дверь заперта..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 359, 38, 28, 0, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 359, 39, 28, 0, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ConditionalBranch([1, 1029, 0, 5, 1])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2091, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Дверь заперта..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 359, 38, 23, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([52, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    TransferPlayer([0, 224, 38, 17, 0, 0])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Comment(["明かり設定3300300"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    TransferPlayer([0, 224, 38, 17, 0, 0])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    ControlSwitches([100, 100, 0])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Я ждала..."])
+    ShowText(["Меня зовут Лили Мейстер, и я правитель этой"])
+    ShowText(["деревни."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Вы пришли, чтобы послушать мою историю, верно?"])
+    ShowText(["Пожалуйста, идемте сюда..."])
+    ErasePicture([5])
+    FadeoutScreen([])
+    ControlVariables([1029, 1029, 0, 0, 3])
+    ChangeMapDisplay([1])
+    TransferPlayer([0, 359, 34, 36, 4, 2])
+    FadeinScreen([])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Вы, о том, что вы сделали в этой деревне..."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sara_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Извините, но я начну сразу с проблем."])
+      ShowText(["Первое, по поводу подозрений о том, что"])
+      ShowText(["вы по собственной воле казнили мужчин"])
+      ShowText(["этой деревни..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Вы слышали от людей этой деревни, не так ли?"])
+    ShowText(["Мужчины жившие здесь жестоко обращались"])
+    ShowText(["с женщинами."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Оправдываясь традициями, они продолжали"])
+    ShowText(["угнетать нас... В результате большинство"])
+    ShowText(["женщин этой деревни умирали, не дожив"])
+    ShowText(["до двадцати лет."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Единственное, что позволило нам вырваться"])
+    ShowText(["из такой ситуации, была сила..."])
+    ShowText(["Мы только защищались."])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Но убийство мужчин это слишком..."])
+      ShowText(["Разве вы не могли обратиться к столице Сабасы"])
+      ShowText(["или кому-нибудь еще?"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Ничего не было сделано, Сабаса предоставляла"])
+      ShowText(["эту деревню самой себе... Здесь средняя"])
+      ShowText(["продолжительность жизни между мужчинами"])
+      ShowText(["и женщинами разнилась на тридцать лет."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sara_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Вне зависимости от обстоятельств, это линчевание."])
+      ShowText(["По закону это запрещено."])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Центральное правительство нации превозносит"])
+      ShowText(["правила, но что оно сделало для нас?"])
+      ShowText(["Здесь средняя продолжительность жизни между"])
+      ShowText(["мужчинами и женщинами разнилась на тридцать лет."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>На тридцать лет...?"])
+      ShowText(["Что же там происходило...?"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Разница между мужчинами и женщинами"])
+      ShowText(["была в тридцать лет...? Как это вообще"])
+      ShowText(["произошло...?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Используя автономию и независимость как свою"])
+      ShowText(["защиту, эта деревня ушла из-под контроля"])
+      ShowText(["центрального правительства. По факту закон"])
+      ShowText(["защищал этих жестоких угнетателей."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Люди из центра, конечно же, многое поняли,"])
+      ShowText(["не так ли? Они знали об этом и, тем не менее,"])
+      ShowText(["ничего не делали... ничего не делали в течение"])
+      ShowText(["долгого времени."])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Права местной администрации были гарантированы"])
+      ShowText(["им Пятой Статьей Конституции Сабасы, так что..."])
+      ShowText(["Силовое вмешательство было бы нарушением"])
+      ShowText(["Конституции..."])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Да, конечно же, это было бы вмешательством"])
+      ShowText(["в местную автономию. Большинство насилия"])
+      ShowText(["разрешалось без вмешательства столицы"])
+      ShowText(["в гражданские дела..."])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Множество традиций защищено, чтобы обеспечить"])
+      ShowText(["свободу мысли... И прежде всего, если человек"])
+      ShowText(["не может пожаловаться, то тогда не было"])
+      ShowText(["и инцидента..."])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Как вы думаете, женщины этой деревни были"])
+      ShowText(["способны на эти формальности?! Женщины,"])
+      ShowText(["заключенные в своих домах, не в силах уйти,"])
+      ShowText(["постоянно избиваемые?!"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Вы думаете, что я была избалованная, потому что"])
+      ShowText(["была дочерью правителя?! Как раз наоборот!"])
+      ShowText(["Мне было не лучше, чем жертвам, всегда...!"])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>В конце концов, закон защищал только этих"])
+      ShowText(["скотов! Что нам было нужно - это сила вырваться"])
+      ShowText(["из такой ситуации!"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Используя книгу магии щупальцев, которая"])
+    ShowText(["была оставлена в этом особняке, я обучилась"])
+    ShowText(["ей сама... и, получив силу, я наконец-то спасла"])
+    ShowText(["женщин этой деревни."])
+    ConditionalBranch([0, 1529, 1])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>В этом мире не все является только добром"])
+        ShowText(["или злом... Это не наша цель судить их."])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Кстати, я полагаю, ты что-то от нас хочешь, верно?"])
+        ShowText(["Разве вы не позвали нас сюда потому, что у вас"])
+        ShowText(["есть к нам просьба?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>В человеческом обществе происходит много"])
+        ShowText(["неразумных вещей, не так ли...? У меня нет"])
+        ShowText(["ни времени, ни желания ввязываться в каждую"])
+        ShowText(["из них."])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Однако, ты ведь от нас что-то хочешь, верно?"])
+        ShowText(["Для тебя, правителя, самостоятельно с нами"])
+        ShowText(["встретиться - означает, что у тебя есть к нам"])
+        ShowText(["просьба, так?"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>......"])
+      ShowTextAttributes(["sara_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Я очень сильно сочувствую вашим обстоятельствам."])
+      ShowText(["А также и большая часть центрального"])
+      ShowText(["правительства..."])
+      ShowTextAttributes(["sara_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Если бы я здесь говорила о своих личных чувствах,"])
+      ShowText(["то я бы молча согласилась с вашими действиями..."])
+      ShowText(["Но я здесь с позиции закона."])
+      ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Значит, если ты мыслишь в соответствии с духом"])
+      ShowText(["закона... Мне интересно, какие у тебя сейчас"])
+      ShowText(["есть полномочия?"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Ты отказалась от трона, и страна теперь"])
+      ShowText(["преобразовывается в парламентскую демократию..."])
+      ShowText(["Разве это не означает, что ты практически"])
+      ShowText(["гражданское лицо?"])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Да, все так, как ты сказала..."])
+      ShowText(["В итоге я всего лишь гражданское лицо,"])
+      ShowText(["и мои полномочия ограничены лишь"])
+      ShowText(["уведомлением, такова моя текущая позиция."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Также, насчет убийства мужчин в этой деревне..."])
+      ShowText(["Я только подарила женщинам силу, но я"])
+      ShowText(["не приказывала им сделать это."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Они решили освободиться по собственной воле."])
+      ShowText(["И делали они это без желания, только лишь,"])
+      ShowText(["чтобы защитить себя..."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Основываясь на фактах, это лишь законная"])
+      ShowText(["самозащита. Серия инцидентов самозащиты,"])
+      ShowText(["а не резня."])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Это абсурд... в конце концов, ты будешь"])
+      ShowText(["нести ответственность, как зачинщица."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Так... ты можешь доказать это в суде?"])
+      ShowText(["Пока это является законом нашей области,"])
+      ShowText(["тебе нужно сначала доказать свою правоту."])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>......"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>В любом случае... пока у тебя нет реальной"])
+      ShowText(["власти, я не сдамся тебе."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Причина, по которой я, несмотря на это, отношусь"])
+      ShowText(["к вам как к гостям, в том, что я хочу достичь"])
+      ShowText(["вашего понимания."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Какие у нас были обстоятельства... и почему"])
+      ShowText(["мы не смогли бы жить, ничего не делая..."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Если вы хотите обвинить меня, несмотря на то,"])
+      ShowText(["что узнали, то как хотите. Однако стена"])
+      ShowText(["автономии и невозможности гражданского"])
+      ShowText(["вмешательства очень прочная..."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>...В конце концов, твой отец не спас нас."])
+      ShowText(["Похоже, что в этот раз закон стал нашим"])
+      ShowText(["союзником."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Если ты все еще хочешь обвинить меня в этом,"])
+      ShowText(["то тебе нужно подготовить законный судебный"])
+      ShowText(["иск с нуля. А теперь у тебя нет на это полномочий,"])
+      ShowText(["бывшая королева."])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>...Я сделаю это. Хотя не похоже, что это случится"])
+      ShowText(["в ближайшее время..."])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>То, что происходило в этой деревне, должно"])
+      ShowText(["быть раскрыто... и, принимая во внимание"])
+      ShowText(["все смягчающие обстоятельства, я ожидаю"])
+      ShowText(["правильного решения."])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>...Боже мой, не дави на Сару так сильно."])
+        ShowText(["Она была еще ребенком, когда этот инцидент"])
+        ShowText(["произошел и не несла ответственности за него."])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Также, я не думаю, что причина, по которой ты"])
+        ShowText(["нас позвала, это ради подколок в сторону"])
+        ShowText(["нашей бывшей королевы. Тебе ничего не нужно"])
+        ShowText(["от нас, путешественников?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>...Может, ты прекратишь обижать нашу бывшую"])
+        ShowText(["королеву? Этот случай не дано судить никому,"])
+        ShowText(["кроме Богини."])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>И ты явно хотела, чтобы мы пришли не затем,"])
+        ShowText(["чтобы прижать к стенке бывшую королеву, верно?"])
+        ShowText(["У тебя есть, о чем ты бы хотела поговорить с нами,"])
+        ShowText(["как путешественниками, так...?"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Да... Я хотела встретиться с вами по делу."])
+    ShowText(["Думаю, вы уже знаете, что есть люди,"])
+    ShowText(["восставшие против нас."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Ведьма по имени Люсия руководит жестокой"])
+    ShowText(["фракцией. Они не хотят, чтобы сила магии"])
+    ShowText(["щупальцев распространилась по миру."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Люсия изначально была моей союзницей, которой"])
+    ShowText(["я дала силу... Но она решила, что эта сила"])
+    ShowText(["опасна, и пытается удержать ее в секрете."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Не так давно они провели вооруженное нападение..."])
+    ShowText(["И вот, я хочу, чтобы вы победили Люсию."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Задание заключается в том, чтобы победить"])
+    ShowText(["лидера повстанцев...?"])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Конечно, поскольку это задание, будет и награда."])
+    ShowText(["Я самолично составлю вам компанию в путешествии."])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 7, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Другими словами, ты станешь нашей соратницей...?"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>То есть, ты присоединишься к нам...?"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Да, именно..."])
+    ShowText(["В мире есть еще много угнетенных."])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Поскольку у них нет силы, они не только"])
+    ShowText(["теряют человеческое достоинство, но и"])
+    ShowText(["подвергают свои жизни риску..."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Вы слышите их? Крики этих людей..."])
+    ShowText(["Я могу их слышать, эти голоса ищут помощи..."])
+    ShowText(["и силы."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Я хочу ответить на эти стенания. Даровать им"])
+    ShowText(["силу магии щупальцев, позволить им освободить"])
+    ShowText(["себя..."])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc3", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>Путешествие для спасения угнетенных...?"])
+      ShowText(["Вы серьезно...?"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Серьезно...?"])
+      ShowText(["Вы ведь не врете, нет...?"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Ну же, прислушайтесь... разве вы не слышите его?"])
+    ShowText(["Детский плач... он такой громкий..."])
+    ShowText(["Неужели, вы его не слышите?"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Смотрите, и отсюда тоже... и отсюда...!"])
+    ShowText(["Их плач, они все плачут, ведь так...?!"])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Я буду спасать слабых до тех пор... пока"])
+    ShowText(["их крики не исчезнут!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Я спасла всех людей в этой деревне."])
+    ShowText(["Но крики снаружи не прекращаются..."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Я намеревалась отправиться в ближайшую"])
+    ShowText(["деревню, чтобы остановить эти крики."])
+    ShowText(["Вот, когда эти повстанцы выскочили..."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Если бы Люсия исчезла, я бы могла отправиться"])
+    ShowText(["в свое путешествие. В путешествие для спасения"])
+    ShowText(["угнетенных и дарования им силы..."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Вы тоже пришли, чтобы спасти слабых, не так ли?"])
+    ShowText(["Значит, мы с вами похожи..."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Так что победите Люсию."])
+    ShowText(["Если вы сделаете это, я пойду вместе с вами."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Вам не нужно убивать Люсию... просто"])
+    ShowText(["заставьте ее замолчать. Все будет хорошо,"])
+    ShowText(["если она не сможет распространять волнения"])
+    ShowText(["в этой деревне."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>......"])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Непохоже, что она врет."])
+      ShowText(["Что нам делать, Лука?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Похоже, что это ее истинные намерения."])
+      ShowText(["Что мы будем делать, Лука?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 1529, 0])
+      ShowTextAttributes(["sara_fc1", 4, 0, 2])
+      ShowText(["\\n<\\C[6]Сара\\C[0]>Я уже озвучивала свое мнение, как бывшей"])
+      ShowText(["королевы. Что насчет задания... Я оставляю"])
+      ShowText(["выбор Луке."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["А теперь что мне делать...?"])
+    ShowChoices([["Согласиться, победить Люсию", "Не соглашаться, победить Лили", "Не соглашаться, игнорировать Лили", "Подумать над этим"], 0])
+    When([0, "Согласиться, победить Люсию"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Как я и думала, мы с тобой похожи..."])
+      ShowText(["Я знала, что ты поймешь."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Я буду ждать здесь."])
+      ShowText(["Как только вы победите Люсию, я открыто стану"])
+      ShowText(["вашей союзницей."])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "Не соглашаться, победить Лили"])
+      ControlSwitches([2091, 2091, 0])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Значит, вы все-таки планируете противостоять"])
+      ShowText(["мне. Тогда покиньте это место, СЕЙЧАС ЖЕ..."])
+      ErasePicture([5])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Лили использует магическую силу, чтобы выкинуть нас из особняка!"])
+      ControlSwitches([31, 31, 1])
+      TransferPlayer([0, 224, 38, 17, 0, 2])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Wait([60])
+      FadeinScreen([])
+      Empty([])
+
+    When([2, "Не соглашаться, игнорировать Лили"])
+      ControlSwitches([2091, 2091, 0])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Значит, вы отказываетесь."])
+      ShowText(["Тогда покиньте это место, СЕЙЧАС ЖЕ..."])
+      ErasePicture([5])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Лили использует магическую силу, чтобы выкинуть нас из особняка!"])
+      ControlSwitches([31, 31, 1])
+      TransferPlayer([0, 224, 38, 17, 0, 2])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Wait([60])
+      FadeinScreen([])
+      Empty([])
+
+    When([3, "Подумать над этим"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Если тебе так трудно ответить словами.."])
+      ShowText(["Тогда не нужно ответа, я узнаю, если Люсия"])
+      ShowText(["будет побеждена."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Я буду ждать здесь."])
+      ShowText(["Как только вы победите Люсию, я открыто стану"])
+      ShowText(["вашей союзницей."])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Боже, вы все еще не победили Люсию, так ведь?"])
+    ShowText(["Или, может... вы изменили свое мнение?"])
+    ShowChoices([["Ничего не изменилось", "Победить Лили", "Дальше думать над этим"], 3])
+    When([0, "Ничего не изменилось"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Я буду ждать здесь."])
+      ShowText(["Как только вы победите Люсию, я открыто стану"])
+      ShowText(["вашей союзницей."])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    When([1, "Победить Лили"])
+      ControlSwitches([2091, 2091, 0])
+      ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["lily_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Значит, вы все-таки планируете противостоять"])
+      ShowText(["мне. Тогда покиньте это место, СЕЙЧАС ЖЕ..."])
+      ErasePicture([5])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Лили использует магическую силу, чтобы выкинуть нас из особняка!"])
+      ControlSwitches([31, 31, 1])
+      TransferPlayer([0, 224, 38, 17, 0, 2])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Wait([60])
+      FadeinScreen([])
+      Empty([])
+
+    When([2, "Дальше думать над этим"])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Если тебе так трудно ответить словами.."])
+      ShowText(["Тогда не нужно ответа, я узнаю, если Люсия"])
+      ShowText(["будет побеждена."])
+      ShowTextAttributes(["lily_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лили\\C[0]>Я буду ждать здесь."])
+      ShowText(["Как только вы победите Люсию, я открыто стану"])
+      ShowText(["вашей союзницей."])
+      ErasePicture([5])
+      ExitEventProcessing([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Вы победили Люсию, как и обещали."])
+    ShowText(["Я благодарю вас от всего сердца..."])
+    ShowPicture([5, "80_lily_st13", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>...Эта девушка должна была понимать меня"])
+    ShowText(["лучше всего. Мы были вместе с малых лет"])
+    ShowText(["и разделяли те же страдания..."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Когда мы ускользали из поля зрения взрослых,"])
+    ShowText(["мы читали книги о магии, день за днем..."])
+    ShowText(["Мы сотрудничали в проведении исследований,"])
+    ShowText(["пока, наконец, не получили силу, и все же..."])
+    ShowTextAttributes(["lily_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>С каких пор она стала кем-то, кто боится силы?"])
+    ShowText(["С тех самых пор, когда мы истребили всех этих"])
+    ShowText(["угнетателей..."])
+    ConditionalBranch([4, 62, 0])
+      ShowTextAttributes(["gob_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Гобу\\C[0]>Лили-сан, вы ведь не хотели бить свою подругу"])
+      ShowText(["собственными руками, верно...?"])
+      ShowText(["Это не честно, но я понимаю..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    ShowPicture([5, "80_lily_st11", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>...Ну что же, тогда я пойду с вами, как и обещала."])
+    ShowText(["В этой деревне больше нет людей, которых нужно"])
+    ShowText(["спасти."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Но в этом мире еще должно быть много угнетенных"])
+    ShowText(["людей. Крики о помощи, которые я слышу всегда..."])
+    ShowTextAttributes(["lily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лили\\C[0]>Давайте вместе спасать бессильных, как союзники."])
+    ShowText(["Это ответственность тех, у кого есть сила..."])
+    ErasePicture([5])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Script(["add_actor_ex(163)"])
+    PlayME(["RPG::ME(@name=\"fanfale\", @pitch=100, @volume=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Лили присоединяется к группе!"])
+    ControlSwitches([2137, 2137, 0])
+    ControlVariables([1029, 1029, 0, 0, 6])
+    Wait([60])
+    Script(["gain_medal(28)"])
+    ConditionalBranch([0, 6, 0])
+      ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Соня\\C[0]>...Лука, все действительно в порядке?"])
+      ShowText(["Она, вроде, довольно опасная..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Путешествуя вместе с нами, люди часто менялись."])
+      ShowText(["Я думаю, что мы, в частности, не должны давать"])
+      ShowText(["ей и дальше отсиживаться в этой деревне..."])
+      ConditionalBranch([4, 529, 0])
+        ShowTextAttributes(["sara_fc1", 4, 0, 2])
+        ShowText(["\\n<\\C[6]Сара\\C[0]>Мучить себя в одиночестве - действительно"])
+        ShowText(["опасно..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1001, 0, 18, 1])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc5", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Теперь, с этим мы разобрались. Пришло время"])
+      ShowText(["заключить контракт с Гномой..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Ну вот, этот вопрос был улажен. Хотя у меня"])
+      ShowText(["и нет желания, но не пора ли нам идти к Гноме?"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1031, 0, 2, 2])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Перед этим, как насчет зайти в Салун?"])
+        ShowText(["Мы же слышали, что там живет кузнец, который"])
+        ShowText(["делает кристальную экипировку, помните?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Как насчет посетить Салун перед этим?"])
+        ShowText(["Я слышал, что там есть кузнец, который"])
+        ShowText(["делает экипировку из кристалла."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Согласна... если мы собираемся бросить ей вызов,"])
+        ShowText(["то лучше экипироваться, как следует. Я оставлю"])
+        ShowText(["решение за тобой."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Подготовиться к битве, хорошо снарядившись,"])
+        ShowText(["звучит неплохо. Я оставлю это на твой суд."])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Если я не ошибаюсь, Салун находится далеко на севере Сабасы."])
+      ShowText(["Руины находятся к северу от Грандола, но Салун еще дальше"])
+      ShowText(["на север."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["В разломе между горами есть точка, где пустыня сменяется"])
+      ShowText(["пустошами. Если пройти оттуда на восток, то мы достигнем"])
+      ShowText(["Салуна... по крайней мере, мы так слышали."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Говорят, что в этом городе живет кузнец, делающий кристальную"])
+      ShowText(["экипировку. Нам стоит подготовиться, прежде чем навещать"])
+      ShowText(["Гному."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Ну хорошо, тогда давайте отправимся к нашей"])
+      ShowText(["следующей цели!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Беспорядки в Деревне Магистия улеглись, и мы получили"])
+      ShowText(["нового соратника. Итак, мы отправляемся к нашему"])
+      ShowText(["следующему месту назначения..."])
+      ConditionalBranch([1, 1031, 0, 0, 0])
+        ControlVariables([1031, 1031, 0, 0, 1])
+        Empty([])
+      BranchEnd([])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Руины Сафару, где живет Гнома, находятся"])
+      ShowText(["на севере от Грандола. Ну что ж, идем туда!"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ConditionalBranch([8, 521])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 361, 13, 38, 8, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2093, 2093, 0])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 360, 16, 22, 2, 0])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Хмм... Что-то не так."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>...Что-то странное."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 6, 0])
+        ShowTextAttributes(["sonia_fc2", 2, 0, 2])
+        ShowText(["\\n<\\C[6]Соня\\C[0]>Мы пошли по лестнице с первого этажа,"])
+        ShowText(["почему мы опять на первом этаже...?"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Лука\\C[0]>Мы должны были спуститься с первого этажа,"])
+        ShowText(["но мы все еще на первом этаже...?"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 4, 0])
+        ShowTextAttributes(["alice_fc5", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Алиса\\C[0]>Эта лестница снаряжена телепортационной магией,"])
+        ShowText(["которая переместила нас в другую область."])
+        ShowText(["Для того, чтобы спуститься по ней, нам нужно"])
+        ShowText(["найти способ пробиться через эту магию..."])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 5, 0])
+        ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Илиас\\C[0]>Эта лестница снаряжена телепортационной магией,"])
+        ShowText(["которая отправила нас в другую область."])
+        ShowText(["Для того, чтобы спуститься по ней, нам нужно"])
+        ShowText(["найти способ пробиться через эту магию..."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([25, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([100, 100, 1])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    TransferPlayer([0, 224, 38, 17, 0, 0])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Горшок оказался Горшочком Меда!"])
+    BattleProcessing([0, 269, false, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])

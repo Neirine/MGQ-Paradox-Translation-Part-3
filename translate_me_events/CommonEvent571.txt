@@ -1,0 +1,28 @@
+CommonEvent 571
+Name = "ループ：サキュバスの毛"
+
+  999([571])
+  ControlVariables([1112, 1112, 1, 0, 1])
+  ConditionalBranch([1, 1112, 0, 1, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это первый..."])
+    ShowText(["Нужно добыть еще два волоса суккубов."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1112, 0, 2, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это второй..."])
+    ShowText(["Нужно добыть еще один волос суккуба."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1112, 0, 3, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Отлично, у меня есть три."])
+    ShowText(["Теперь с волосами суккубов я закончил."])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

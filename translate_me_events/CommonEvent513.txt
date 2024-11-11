@@ -1,0 +1,11 @@
+CommonEvent 513
+Name = "コラボC6：ピアノ"
+
+  999([513])
+  PlaySE(["RPG::SE(@name=\"mon_piano\", @pitch=75, @volume=100)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Я случайно трону клавишу пианино!"])
+  ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+  ShowText(["\\n<\\C[6]Казуя\\C[0]>Почему эта штука в библиотеке?!"])
+  CallCommonEvent([514])
+  Empty([])

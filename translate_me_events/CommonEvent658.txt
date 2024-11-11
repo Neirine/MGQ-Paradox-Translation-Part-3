@@ -1,0 +1,23 @@
+CommonEvent 658
+Name = "イベント：プリエステス"
+
+  999([658])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 437, 0])
+    ShowTextAttributes(["a_emp_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Альра-Жрица\\C[0]>Я не хочу возвращаться в деревню..."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["a_emp_fc1", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Альра-Жрица\\C[0]>Вот я посажу в ваши тела этот таинственный вид."])
+  ControlSwitches([437, 437, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Альра-Жрица дала вам магическую силу."])
+  ShowText(["Сила навыков Растения удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

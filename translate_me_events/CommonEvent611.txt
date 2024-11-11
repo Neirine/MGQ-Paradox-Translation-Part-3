@@ -1,0 +1,23 @@
+CommonEvent 611
+Name = "イベント：ウンディーネ"
+
+  999([611])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 63, 0])
+    ShowTextAttributes(["undine_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ундина\\C[0]>Моя сила уже должна начать работать..."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["undine_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Ундина\\C[0]>Используй мою силу..."])
+  ControlSwitches([63, 63, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Похоже, Ундина делится с вами силой!"])
+  ShowText(["До следующего босса вам даровано покровительство воды!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,26 @@
+CommonEvent 333
+Name = "蛇神社"
+
+  999([333])
+  ControlSwitches([2339, 2339, 0])
+  PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc6", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Что за черт...?!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Ч-что такое...?!"])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Лука\\C[0]>Кто-то напал на это место?!"])
+  ShowText(["Но, чтобы победить стольких..."])
+  ShowTextAttributes(["durahan_fc1", 2, 0, 2])
+  ShowText(["\\n<\\C[6]Артурия\\C[0]>Как я вижу, битва была односторонней..."])
+  ShowText(["Что за монстр сюда напал...?"])
+  ExitEventProcessing([])
+  Empty([])

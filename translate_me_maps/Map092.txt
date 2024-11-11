@@ -1,0 +1,503 @@
+Display Name = "Комната Курому"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это тело..."])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Его нашли в Гиблом Лесу Зальзанебы."])
+    ShowText(["В его доме была найдена записка о том,"])
+    ShowText(["что он решил покончить с собой."])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это тело..."])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Утопленник, появившийся у побережья возле"])
+    ShowText(["портового города Набула. Скорей всего, это"])
+    ShowText(["местный рыбак, пропавший несколько лет назад."])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это тело..."])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Торговец, погибший от стихийного бедствия"])
+    ShowText(["в пустыне Сабасы. Тебе тоже стоит их опасаться."])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([1, 1105, 0, 6, 0])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Ммгх, это все же утомительная техника..."])
+      ShowText(["Побыстрее спрашивай что надо."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([551])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ChangeItems([36, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это тело..."])
+    ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Пожилой человек, живший один и умерший"])
+    ShowText(["от сердечного приступа... Довольно неправильно"])
+    ShowText(["со стороны общества, но в самом трупе ничего"])
+    ShowText(["подозрительного."])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1105, 0, 2, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Это тело... похоже, отличается от остальных."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Хо, что-то не так с этим трупом?"])
+      ShowText(["Да, ты прав."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Это... нет, кто он такой?"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Труп неизвестного, принесенный из деревни Финой..."])
+      ShowText(["Это пострадавший в инциденте с Краем Ночи."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>В тот момент в Финое..."])
+      ShowText(["Значит он - жертва Мюски и ее семейства...?"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Во время инцидента с Краем Ночи они оккупировали Финой."])
+      ShowText(["Тогда было убито множество жителей деревни."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Как ты знаешь, после того инцидента образовалось"])
+      ShowText(["множество трупов. Однако, до сих пор остались"])
+      ShowText(["неизвестные..."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Мне предложили провести их вскрытие и я"])
+      ShowText(["согласилась. Среди них был один особенно"])
+      ShowText(["странный..."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Очевидно, что он стал жертвой суккубов..."])
+      ShowText(["Но, почему-то его время смерти фиксируется"])
+      ShowText(["еще до начала инцидента в Финое."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>То есть, Мюска убила его до нападения на деревню?"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Да, довольно странно."])
+      ShowText(["Кроме того, у него очень необычное снаряжение..."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Вот это, например, очень продвинутое устройство"])
+      ShowText(["связи. Без сомнений, в нашем мире нет таких"])
+      ShowText(["технологий."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Чей же это труп...?"])
+      ShowText(["Что? Тебе тоже любопытно...?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>А когда это тело сюда доставили?"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Сегодня, в час дня... а что такое?"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Час дня..."])
+      ShowText(["Время, когда я возвращаюсь назад..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Этот таинственный труп..."])
+      ShowText(["Чувствую, он как-то причастен к инциденту."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Эмм..."])
+      ShowText(["Я могу одолжить тот механизм, который был у него?"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Я не против..."])
+      ShowText(["Только аккуратней с вещами покойного."])
+      PlaySE(["RPG::SE(@name=\"Item1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Я получил Таинственный Механизм!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Узнав, что это за механизм, возможно удастся выяснить"])
+      ShowText(["личность владельца. Нужно показать его союзникам,"])
+      ShowText(["которые могут знать больше, и собрать информацию..."])
+      ControlVariables([1105, 1105, 0, 0, 3])
+      ControlSwitches([2365, 2365, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 3, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Узнав, что это за механизм, возможно удастся выяснить"])
+      ShowText(["личность его владельца. Нужно показать его союзникам,"])
+      ShowText(["которые могут знать больше, и собрать информацию..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Я выяснил, что за механизм был у этого трупа."])
+      ShowText(["Теперь надо сообщить Промештейн..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 5, 0])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Это труп из мира Мюски..."])
+      ShowText(["Кем же он был...?"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Лука осмотрел тело..."])
+      ShowText(["...Однако, поскольку он не специалист, ничего не понял."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Все-таки ничего не узнать, да?"])
+      ShowText(["Если бы я хоть как-то мог с ним поговорить..."])
+      SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Поговорить с мертвым...?"])
+      ShowText(["Это легко."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Что..!?"])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Магическое искусство - это как раз тот вид "])
+      ShowText(["искусства, что заставляет трупы танцевать,"])
+      ShowText(["духов - говорить, а куклы - играть."])
+      ShowText(["Вызывать души умерших - проще простого."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Ты забыл что я талантливая наследница дома"])
+      ShowText(["Артистэ? Даже не специализируясь на некромантии,"])
+      ShowText(["я все равно лучше обычного спиритиста."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Тогда, прошу."])
+      ShowText(["Мне надо чтобы ты вызвала дух этого трупа."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Обычно это плохо - вызывать духов при аутопсии..."])
+      ShowText(["Но ничего не поделаешь, такая уж ситуация."])
+      ShowTextAttributes(["chrom_fc2", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Что же, начнем!"])
+      ShowText(["Неупокоенная душа, вернись обратно в этот мир...!"])
+      PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Душа реагирует на некромантию Курому..."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowAnimation([18, 51, false])
+      Wait([60])
+      ControlVariables([1105, 1105, 0, 0, 6])
+      Wait([60])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Рядом с трупом появился призрак!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Таинственный Призрак\\C[0]>Я... здесь..."])
+      ShowTextAttributes(["chrom_fc2", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>Ну, а теперь спрашивай то, что нужно."])
+      ShowText(["Только побыстрее, это сильно утомляет."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1105, 0, 7, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Я знаю личность этого трупа."])
+      ShowText(["И что он - источник инцидента..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Пора сообщить Промештейн."])
+      ShowText(["Она должна найти верное решение."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Ммм, что такое?"])
+    ShowText(["Если решил поглазеть, старайся не мешать."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...Какая жуткая комната."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Как бы то ни было, что-то да попадется."])
+    ShowText(["Надо осмотреть тут все..."])
+    ControlVariables([1105, 1105, 0, 0, 2])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Таинственный Призрак\\C[0]>......"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Кто... ты такой...?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Таинственный Призрак\\C[0]>Мое имя - Тору..."])
+    ShowText(["Тот суккуб... Мюска, забрал мою жизнь..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Тору\\C[0]>Снова... и снова... Мюска..."])
+    ShowText(["Немеа, Винум..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Тору\\C[0]>Каждый раз, когда меня высасывали, время"])
+    ShowText(["отматывалось... Снова... и снова..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Мюска и остальные..."])
+    ShowText(["Все-таки это они..."])
+    ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Курому\\C[0]>Будь покороче."])
+    ShowText(["Как уже сказала, я не долго смогу его"])
+    ShowText(["поддерживать..."])
+    Label(["メイン"])
+    Script(["ex_choice_add(\"異変について相談する\",2,"])
+    ScriptMore(["\"s[2341]\",0)"])
+    ScriptMore(["ex_choice_add(\"後悔していることについて聞く\",3,"])
+    ScriptMore(["\"s[2342]\",0)"])
+    ScriptMore(["ex_choice_add(\"時を繰り返す道具について聞く\",4,"])
+    ScriptMore(["\"s[2343]\",0)"])
+    ScriptMore(["ex_choice_add(\"ピザを注文したか聞く\",5,"])
+    ScriptMore(["\"s[2345]\",0)"])
+    ScriptMore(["ex_choice_add(\"謎のマキナについて聞く\",6,"])
+    ScriptMore(["\"s[2365]\",0)"])
+    Script(["ex_choice_show(0,11,[0,0])"])
+    ConditionalBranch([1, 9, 0, 2, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Лука посоветовался насчет инцидента..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Со мной то же самое..."])
+      ShowText(["Все повторяется снова и снова..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Каждый раз меня высасывают, иссушают..."])
+      ShowText(["Снова и снова..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>Как начался этот пространственно-временной"])
+      ShowText(["инцидент...?"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Одно и то же время... снова и снова..."])
+      ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Лука\\C[0]>В моем мире..."])
+      ShowTextAttributes(["chrom_fc2", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Курому\\C[0]>...Бесполезно, этот дух близок к помешательству."])
+      ShowText(["Не ожидай от него логического мышления..."])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 3, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>......"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Я хотел спастись сам..."])
+      ShowText(["Мне пришлось пожертвовать другим."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Много раз я возвращался во времени и искал."])
+      ShowText(["Способ спасти его жизнь..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Но как бы я не пытался, ничего не получалось."])
+      ShowText(["В том доме, он продолжал умирать за меня."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Я хотел помочь ему, чье имя даже не знаю..."])
+      ShowText(["Это мое сожаление..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Тору множество раз повторял время, чтобы спасти жизнь"])
+      ShowText(["того человека... Это точно связано с инцидентом..."])
+      ControlSwitches([2359, 2359, 0])
+      ConditionalBranch([0, 2360, 0])
+        ConditionalBranch([0, 2361, 0])
+          CallCommonEvent([544])
+          ExitEventProcessing([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Я подобрал его в том доме..."])
+      ShowText(["С этой статуэткой, время повторяется снова..."])
+      ConditionalBranch([1, 1102, 0, 5, 2])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Тору\\C[0]>Я чувствую... Она должна быть..."])
+        ShowText(["Эта статуэтка рядом..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Тору\\C[0]>Наверное, тот же эффект..."])
+        ShowText(["С этой статуэткой, время повторяется... снова..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Видимо, Тору использовал силу статуэтки чтобы повторять"])
+        ShowText(["время раз за разом. Если он причастен к этому инциденту,"])
+        ShowText(["то надо достать такую же."])
+        ControlSwitches([2360, 2360, 0])
+        ConditionalBranch([0, 2359, 0])
+          ConditionalBranch([0, 2361, 0])
+            CallCommonEvent([544])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        JumpToLabel(["メイン"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 1102, 0, 6, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Призрак Тору посмотрел на статуэтку в руках Луки."])
+        ShowText(["Чувствуется, как слабый отблеск разума возвращается"])
+        ShowText(["в его застывшие глаза..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Тору\\C[0]>Это не та статуэтка, что у меня..."])
+        ShowText(["Но очень похожая..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Тору\\C[0]>Наверное, тот же эффект..."])
+        ShowText(["С этой статуэткой, время повторяется... снова..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Похоже, Тору получил подобную же статуэтку."])
+        ShowText(["Могло ли это повлиять на инцидент...?"])
+        ControlSwitches([2360, 2360, 0])
+        ConditionalBranch([0, 2359, 0])
+          ConditionalBranch([0, 2361, 0])
+            CallCommonEvent([544])
+            ExitEventProcessing([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        JumpToLabel(["メイン"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>...Я - тот, кто заказал пиццу."])
+      ShowText(["Чтобы привлечь другого человека в этот"])
+      ShowText(["дьявольский дом."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>И... пожертвовать им вместо меня..."])
+      ShowText(["Того доставщика пиццы... я..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Я убил его..."])
+      ShowText(["Я сожалею, но не могу жалеть..."])
+      ControlSwitches([2361, 2361, 0])
+      ConditionalBranch([0, 2359, 0])
+        ConditionalBranch([0, 2360, 0])
+          CallCommonEvent([544])
+          ExitEventProcessing([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 9, 0, 6, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Тору\\C[0]>Это..."])
+      ShowText(["Мой смартфон..."])
+      JumpToLabel(["メイン"])
+      Empty([])
+
+    BranchEnd([])
+    ExitEventProcessing([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    CallCommonEvent([552])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 77, 3, 18, 6, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])

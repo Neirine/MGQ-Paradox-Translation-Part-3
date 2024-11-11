@@ -1,0 +1,23 @@
+CommonEvent 603
+Name = "イベント：ミニ"
+
+  999([603])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 69, 0])
+    ShowTextAttributes(["phoenix_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Девочка-Феникс\\C[0]>С этим ты сможешь летать как феникс!"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["phoenix_fc1", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Девочка-Феникс\\C[0]>Я дарю тебе свою силу феникса!"])
+  ControlSwitches([69, 69, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Получена Сила Феникса от Девочки-Феникса!"])
+  ShowText(["До следующего босса активирован эффект Авто-Воскрешения!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,33 @@
+CommonEvent 371
+Name = "忘れられし塔3"
+
+  999([371])
+  ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+  ShowText(["\\n<\\C[6]Девушка-Таракан\\C[0]>Подкрепления от армии Владыки Монстров..?"])
+  ShowText(["Мы вас не пропустим!"])
+  ShowTextAttributes(["cockroachb_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Скоростной Таракан\\C[0]>Мы защитим Королеву..."])
+  ConditionalBranch([4, 213, 0])
+    ShowTextAttributes(["kerberos_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Цезара\\C[0]>Из них не выйдет достойных соперников..."])
+    ShowText(["Но похоже, что у нас нет другого выбора, кроме как избить их!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc6", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Мы должны добраться до Королевы и остановить это глупое восстание!"])
+    ShowText(["Если придётся, мы прорвёмся силой!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Мы должны добраться до Королевы и остановить это восстание!"])
+    ShowText(["Нам придётся прорваться силой!"])
+    Empty([])
+
+  BranchEnd([])
+  BattleProcessing([0, 1456, false, false])
+  ControlSwitches([2438, 2438, 0])
+  Empty([])

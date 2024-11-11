@@ -1,0 +1,17 @@
+CommonEvent 503
+Name = "コラボC2：ループ脱出"
+
+  999([503])
+  ControlVariables([1202, 1202, 0, 0, 9])
+  ConditionalBranch([1, 1222, 0, 0, 0])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["kazuya_fc2", 6, 0, 2])
+  ShowText(["\\n<\\C[6]Казуя\\C[0]>Ура! Наконец-то вырвался из петли!"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Затеявший эту игру демон придумал очень неприятный трюк."])
+  ShowText(["Скорей всего дальше будет еще что-то подобное..."])
+  ExitEventProcessing([])
+  Empty([])

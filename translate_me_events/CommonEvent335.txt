@@ -1,0 +1,19 @@
+CommonEvent 335
+Name = "レド山戦闘封鎖"
+
+  999([335])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Дальше лучше не подходить, а то нас может утянуть"])
+    ShowText(["в сражение. Нам это бессмысленно, Лука..."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc4", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>В этом месте монстры сражаются друг с другом..."])
+    ShowText(["Нам лучше не вмешиваться, Лука."])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

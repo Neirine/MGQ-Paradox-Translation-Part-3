@@ -1,0 +1,955 @@
+Display Name = "Эста"
+Parallax Name = "BlueSky"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 7, 38, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Дверь закрыта..."])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 62, 32, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 63, 32, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([0, 2188, 1])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Собор еще закрыт."])
+      ShowText(["Пожалуйста, возвращайся, когда услышишь колокол."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2188, 0])
+      PlaySE(["RPG::SE(@name=\"Open3\", @pitch=80, @volume=80)"])
+      SetMoveRoute([41, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      TransferPlayer([0, 712, 9, 7, 8, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([0, 2188, 1])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Собор еще закрыт."])
+      ShowText(["Пожалуйста, возвращайся, когда услышишь колокол."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2188, 0])
+      PlaySE(["RPG::SE(@name=\"Open3\", @pitch=80, @volume=80)"])
+      SetMoveRoute([41, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      TransferPlayer([0, 712, 9, 7, 8, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Добро пожаловать в Эсту, город Небесного Мира."])
+    ShowText(["Раз ты здесь, значит, ты тоже избранный."])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Этот город - Рай, где живут лучшие граждане."])
+    ShowText(["Сама Богиня гарантирует чистоту твоей души."])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная\\C[0]>Следуй учениям Илиас и тебе будет уготовано счастье."])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 32, 70, 0, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 11, 68, 0, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Кузнец\\C[0]>Ты рановато. Я еще не открылся,"])
+    ShowText(["почему бы тебе пока не помолиться в соборе?"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 124, 15, 6, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 598, 90, 70, 0, 0])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Ох, у тебя неспокойное выражение лица. Ты, должно быть,"])
+    ShowText(["один из тех людей, что недавно прибыли из Рубианы или Эсты."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Полагаю, ты думаешь, что предпочел бы сделать в жизни свой"])
+    ShowText(["собственный выбор, а не предоставить все Богине, верно?"])
+    ShowChoices([["\"Именно.\"", "\"Ее слово - закон.\""], 0])
+    When([0, "\"Именно.\""])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>И все же человеческая жизнь - большая игра, полная рисков."])
+      ShowText(["Мы не можем видеть будущее, поэтому нам никак не узнать,"])
+      ShowText(["были ли наши решения хорошими или плохими."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Однако, Богиня видит прошлое, настоящее и будущее."])
+      ShowText(["Поэтому она может принимать наилучшие для всех нас решения."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Не слушаясь ее, разве вы намерено не выбираете себе путь"])
+      ShowText(["несчастья? В конце концов, именно Богиня укажет нам лучший"])
+      ShowText(["для всех нас выбор."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Занимайся работой, которую указала тебе Богиня."])
+      ShowText(["Женись на той, на кого указала тебе Богиня."])
+      ShowText(["Это лучшая жизнь, какую ты можешь получить."])
+      Empty([])
+
+    When([1, "\"Ее слово - закон.\""])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Прости мое дерзкое предположение. Раз ты здесь, в раю,"])
+      ShowText(["вместе с нами, - тебе гарантировано счастье."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>На поверхности я был сыном владельца гостиницы."])
+    ShowText(["Но у меня не было способностей к бизнесу, так что это"])
+    ShowText(["был вопрос времени - когда мы разорились бы..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Как только я пришел сюда, я осознал свои таланты к жречеству."])
+    ShowText(["Мое истиное призвание было - вести других словом."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Если бы всевидящая Богиня не показала мне этот путь..."])
+    ShowText(["Возможно, я бы окончил свои дни у обочины."])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Люди совершают ошибки, Богиня - нет."])
+    ShowText(["Она дает всем нам лучшую жизнь, среди всех возможных."])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Старик\\C[0]>В этом мире нет дискриминации и нищеты."])
+    ShowText(["Все равны и все счастливы."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Старик\\C[0]>Мы все должны быть благодарны Илиас за это."])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 22, 58, 8, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 22, 58, 8, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 22, 58, 8, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Люди строят общество, основанное на накоплении богатства,"])
+    ShowText(["где сильный отнимает у слабого."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Но, как ты знаешь, подобные вещи тут не случаются."])
+    ShowText(["Следуя воле Богини, мы все обретем свое счастье."])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Magic1\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 733, 1, 25, 6, 1])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...А? Что происходит?"])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная Девочка\\C[0]>Мне сказали, что мое призвание - быть флористом."])
+    ShowText(["Так я смогу принести больше пользы людям!"])
+    Empty([])
+
+CommonEvent 41
+Name = "聖堂扉"
+
+  Page 0
+    ConditionalBranch([0, 2188, 1])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Избранный Жрец\\C[0]>Собор еще закрыт."])
+      ShowText(["Пожалуйста, возвращайся, когда услышишь колокол."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2188, 0])
+      PlaySE(["RPG::SE(@name=\"Open3\", @pitch=80, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlSwitches([31, 31, 1])
+      ControlSwitches([32, 32, 1])
+      TransferPlayer([0, 712, 9, 7, 8, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Comment(["<Extile:pick_up,1565>"])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Comment(["<Extile:pick_up,1565>"])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная\\C[0]>На днях я получила послание от Богини."])
+    ShowText(["Я узнала, что призвание моей дочери - стать флористом."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная\\C[0]>Честно говоря, я надеялась, что она унаследует лавку ее отца,"])
+    ShowText(["но отказ от божественного призвания нанес бы вред обществу."])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Раньше я жил в Эсте на поверхности, я слышал людей,"])
+    ShowText(["которые говорили, что жизнь спланированная Богиней"])
+    ShowText(["была бы для них невыносима."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Но если ты следуешь ее слову, тебе гарантировано абсолютное"])
+    ShowText(["счастье. Делать собственный выбор это путь к несчастью."])
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Старик\\C[0]>Я последовал слову Богини и женился на этой прекрасной леди."])
+    ShowText(["Я не могу и подумать, что нашел бы кого-то лучше нее,"])
+    ShowText(["не важно, сколько жизней я бы провел в поисках."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная Старушка\\C[0]>Я согласна, дорогой..."])
+    ShowText(["Я не смогла бы стать счастливей, чем сейчас."])
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Старик\\C[0]>Я последовал слову Богини и женился на этой прекрасной леди."])
+    ShowText(["Я не могу и подумать, что нашел бы кого-то лучше нее,"])
+    ShowText(["не важно, сколько жизней я бы провел в поисках."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная Старушка\\C[0]>Я согласна, дорогой..."])
+    ShowText(["Я не смогла бы стать счастливей, чем сейчас."])
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Мастер\\C[0]>......"])
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Мастер\\C[0]>Мой коллега - очень тихий, неуклюжий тугодум, но лучшего"])
+    ShowText(["дровосека я не видел. Говорит, что может даже разговаривать"])
+    ShowText(["с деревьями."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Мастер\\C[0]>Если бы Богиня не подсказала нам наши работы, что бы с этим"])
+    ShowText(["парнем стало? Его бы точно признали бесполезным."])
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Мы работаем по шесть часов в день, а выходные проводим"])
+    ShowText(["с семьей. Все в этом раю живут настолько благословенной"])
+    ShowText(["жизнью."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Свобода выбора?"])
+    ShowText(["Если оставить все свободной воле - сильный будет заставлять"])
+    ShowText(["слабого работать на износ."])
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Мальчик\\C[0]>Мне суждено жениться на девочке по-соседству."])
+    ShowText(["Я делаю букет, чтобы подарить ей."])
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная\\C[0]>Я все гадаю изо дня в день - заслуживаю ли я такую идеальную"])
+    ShowText(["жизнь? Там, на поверхности, я была нищей рыбачкой в Рубиане."])
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Старик\\C[0]>Почти пора снова воздать свои молитвы Илиас..."])
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная\\C[0]>Гостиница открывается в 9. Пожалуйста, возвращайтесь позже."])
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная\\C[0]>Ох, в раю есть даже путешественники?"])
+    ShowText(["Простите мою грубость, я сама только недавно прибыла..."])
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Торговец\\C[0]>Мои извинения, мне нужно пополнить ассортимент."])
+    ShowText(["Даже в раю, мечи и щиты не растут на деревьях."])
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ангел-Солдат\\C[0]>Не подходи близко к Тартару, а не то падешь"])
+    ShowText(["на поверхность... Ну, учитывая, что у тебя нет"])
+    ShowText(["крыльев, ты все равно близко к нему не подойдешь."])
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ангел-Солдат\\C[0]>Мы держим Тартар полностью под контролем."])
+    ShowText(["Вы можете проживать свою жизнь в спокойствии"])
+    ShowText(["и безопасности."])
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ангел-Солдат\\C[0]>Сион и Гнозис работают на этой адской поверхности."])
+    ShowText(["Мне так их жалко..."])
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Парень\\C[0]>Богиня управляет обществом и экономикой."])
+    ShowText(["Что в этом такого?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный Парень\\C[0]>На поверхности, обществом и экономикой управляет правящий"])
+    ShowText(["класс. Если такова свобода, то уж лучше пусть правит Богиня."])
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная Девочка\\C[0]>Ураа, ураа!"])
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная Собака\\C[0]>Гав! Гав!"])
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранная Поэтесса\\C[0]>Я написала поэму, славящую Богиню."])
+    ShowText(["Все искусство должно быть посвящено Богине."])
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>В этом мире нет дискриминации."])
+    ShowText(["В глазах Богини мы все равны."])
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ослушавшийся\\C[0]>Не дай им себя обмануть путешественник!"])
+    ShowText(["Что будет с теми, кого не избра..."])
+    ShowAnimation([0, 515, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ослушавшийся\\C[0]>Гах!"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ангел-Солдат\\C[0]>О, посетитель? Как необычно. Пока ты здесь,"])
+    ShowText(["расширь свой кругозор, чтобы лучше послужить Илиас."])
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Избранный\\C[0]>Лучше не подходить к гавани."])
+    ShowText(["Не стоит вмешиваться в работу ангелов."])
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Валькирия\\C[0]>Что такое...?"])
+    ShowText(["Тебе стоит выполнять работу, порученную Илиас."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ангел-Солдат\\C[0]>Апоптозы еще не здесь..."])
+    ShowText(["Но мы, солдаты, готовы к битве в любой момент."])
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    ShowTextAttributes(["angels_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ангел-Солдат\\C[0]>Не броди слишком долго по гавани."])
+    ShowText(["Ты можешь помешать..."])
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    CallCommonEvent([337])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    ControlSwitches([2271, 2271, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это же..."])
+    ScrollMap([6, 25, 6])
+    Wait([120])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Тартар плавает прямо в небе?!"])
+    ScrollMap([4, 25, 6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    ControlSwitches([2271, 2271, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это же..."])
+    ScrollMap([6, 25, 6])
+    Wait([120])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Тартар плавает прямо в небе?!"])
+    ScrollMap([4, 25, 6])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    ControlSwitches([2271, 2271, 0])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Это же..."])
+    ScrollMap([6, 25, 6])
+    Wait([120])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Тартар плавает прямо в небе?!"])
+    ScrollMap([4, 25, 6])
+    Empty([])
+
+  Page 1
+    Empty([])

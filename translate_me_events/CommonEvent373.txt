@@ -1,0 +1,47 @@
+CommonEvent 373
+Name = "忘れられし塔5"
+
+  999([373])
+  ShowTextAttributes(["cockroacha_fc1", 2, 0, 2])
+  ShowText(["\\n<\\C[6]Девушка-Таракан\\C[0]>Это наша последняя линия обороны..."])
+  ShowText(["Мы не должны сдержать их любой ценой!"])
+  ShowTextAttributes(["cockroachb_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Скоростной Таракан\\C[0]>Ради Королевы..."])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Королева прямо за ними..."])
+    ShowText(["Ради их же блага, нам придётся прорваться!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Королева прямо за ними..."])
+    ShowText(["Истребление тараканов почти подошло к концу!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([4, 141, 0])
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Мина\\C[0]>Ещё один бой! Уооо!"])
+    Empty([])
+
+  BranchEnd([])
+  BattleProcessing([0, 1457, false, false])
+  ControlSwitches([2440, 2440, 0])
+  ConditionalBranch([4, 268, 0])
+    ShowTextAttributes(["queenant_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Антин-Анн\\C[0]>Королева Тараканов..."])
+    ShowText(["Убедить её будет не так и просто."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([4, 294, 0])
+    ShowTextAttributes(["emily_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Эмили\\C[0]>Я уже устала от тараканов..."])
+    ShowText(["Давайте поскорее закончим с этим."])
+    Empty([])
+
+  BranchEnd([])
+  ExitEventProcessing([])
+  Empty([])

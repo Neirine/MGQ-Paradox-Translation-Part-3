@@ -1,0 +1,23 @@
+CommonEvent 641
+Name = "イベント：SP軽減"
+
+  999([641])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 71, 0])
+    ShowTextAttributes(["youko_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Двухвостая Кицунэ\\C[0]>С ним ты сможешь использовать кучу навыков ♪"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["youko_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Двухвостая Кицунэ\\C[0]>Я спасу тебя своим лисьим танцем ♪"])
+  ControlSwitches([71, 71, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Получено Лисье Благословение от Двухвостой Кицунэ!"])
+  ShowText(["Потребление SP в битвах ополовинено до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

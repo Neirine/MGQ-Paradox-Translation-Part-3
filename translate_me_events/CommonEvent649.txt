@@ -1,0 +1,24 @@
+CommonEvent 649
+Name = "イベント：サキュバス"
+
+  999([649])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 428, 0])
+    ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Если вы проголодались, вот, возьмите картофеля."])
+    ShowText(["...Не надо?"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["succubus_fc1", 4, 0, 2])
+  ShowText(["\\n<\\C[6]Суккуб\\C[0]>Давайте, я поделюсь с вами аурой суккуба."])
+  ControlSwitches([428, 428, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Суккуб дала вам магическую силу!"])
+  ShowText(["Сила Секс-Техник удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

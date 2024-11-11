@@ -1,0 +1,23 @@
+CommonEvent 612
+Name = "イベント：サラマンダー"
+
+  999([612])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 64, 0])
+    ShowTextAttributes(["salamander_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Саламандра\\C[0]>Иди, моя сила с тобой."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["salamander_fc1", 1, 0, 2])
+  ShowText(["\\n<\\C[6]Саламандра\\C[0]>Ничего не поделаешь, надо помочь тебе!"])
+  ControlSwitches([64, 64, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Похоже, Саламандра делится с вами силой!"])
+  ShowText(["До следующего босса вам даровано покровительство огня!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

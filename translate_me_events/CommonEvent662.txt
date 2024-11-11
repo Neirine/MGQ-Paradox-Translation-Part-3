@@ -1,0 +1,23 @@
+CommonEvent 662
+Name = "イベント：ドラゴン娘"
+
+  999([662])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 441, 0])
+    ShowTextAttributes(["dragon_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Дракон\\C[0]>Надеюсь, ты не сгоришь!"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["dragon_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Девушка-Дракон\\C[0]>Получи силу дракона!"])
+  ControlSwitches([441, 441, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Девушка-Дракон дала вам магическую силу!"])
+  ShowText(["Сила навыков Дыхания удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

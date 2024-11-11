@@ -1,0 +1,25 @@
+CommonEvent 653
+Name = "イベント：ねこまた"
+
+  999([653])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 432, 0])
+    ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя ♪ Няя ♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Некомата катается по земле..."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["nekomata_fc1", 2, 0, 2])
+  ShowText(["\\n<\\C[6]Некомата\\C[0]>Няя~♪ Муррр..."])
+  ControlSwitches([432, 432, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Некомата дала вам магическую силу!"])
+  ShowText(["Сила навыков Зверя удвоена до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

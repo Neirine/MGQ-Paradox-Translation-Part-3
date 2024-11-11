@@ -1,0 +1,430 @@
+Display Name = ""
+Parallax Name = "白地"
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 882, 7, 9, 0, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 882, 27, 9, 0, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 886, 40, 20, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 886, 51, 20, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["kazuya_fc2", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>А... Ангелы?!"])
+    ShowTextAttributes(["cupid_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Купидон\\C[0]>Меня во сне посетила Владыка Снов..."])
+    ShowText(["После чего я сразу же полетела сюда."])
+    ShowTextAttributes(["cupid_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Купидон\\C[0]>Тут так весело, правда же? ♪"])
+    ShowText(["Вот бы всегда у меня были такие сны ♪"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Раньше здесь был фонтан..."])
+    ShowText(["Но он не перенесся с нами."])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 3, 2])
+      ShowTextAttributes(["succubusm_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Кошмар\\C[0]>Эй, не мешайте моему танцу..."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1208, 0, 4, 0])
+      ControlVariables([1208, 1208, 0, 0, 5])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Кошмар\\C[0]>Где выключатель барьера?"])
+    ShowText(["Он за стеной позади меня... посмотрите"])
+    ShowText(["внимательно."])
+    ExitEventProcessing([])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Отлично! Отлииично~!"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>У нас тут столько гостей из других миров."])
+    ShowText(["Мы как следует повеселимся♡"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["lanpass_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лампада\\C[0]>В этом замке так весело~♪"])
+    ShowText(["Надо было взять с собой баргестов."])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Владыка Снов, да...?"])
+    ShowText(["Если это весело, то почему бы не присоединиться"])
+    ShowText(["к ней?"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Похоже, в этом мире тоже весело... уфуфу♡"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Ешь, пей, спи, играй..."])
+    ShowText(["Это настоящий мир мечты~!"])
+    ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Магацу\\C[0]>Тебе не обязательно идти в другой мир, чтобы"])
+    ShowText(["заниматься саморазложением."])
+    ShowTextAttributes(["youkosan_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Гах, это же Магацу!"])
+    ShowText(["Почему ты здесь~?!"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Я видела некоторых из союзников Владыки Снов..."])
+    ShowText(["Похоже, они не очень друг друга любят~"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowTextAttributes(["lanpass_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лампада\\C[0]>Это будто ежедневный фестиваль ♪"])
+    ShowText(["Эй-эй, давайте потанцуем ♪"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["succubusm_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб\\C[0]>Какой интересный этот Край Ночи..."])
+    ShowText(["Словно рай для Кошмаров ♪"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Эй... Ты разве не Хакунен?"])
+    ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Хакунен\\C[0]>Да, только вот..."])
+    ShowText(["Всем лисам лучше бы вернуться на Махоробу."])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Дай мне еще немного повеселиться."])
+    ShowText(["Я вернусь как только выпью здесь все саке..."])
+    ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Хакунен\\C[0]>...Все-таки, ты не планируешь возвращаться?"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    ShowTextAttributes(["monk_sucubuss_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Суккуб-Боец\\C[0]>Этот замок лучше чем у Владыки Монстров."])
+    ShowText(["Тут каждый день проходят вечеринки ♪"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Мимик\\C[0]>Сюда пришло много мимиков после того как мы"])
+    ShowText(["получили откровение в своих снах. У нас у всех"])
+    ShowText(["затворнический характер, так что в Крае Ночи нам"])
+    ShowText(["будут рады."])
+    ShowTextAttributes(["mimic_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Мимик\\C[0]>Но здешняя веселая атмосфера нам не подходит."])
+    ShowText(["Так что многие ушли в подземелье замка."])
+    ShowTextAttributes(["kazuya_fc2", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Казуя\\C[0]>Получается, среди сундуков в подвале замка много"])
+    ShowText(["мимиков. Нужно быть осторожнее..."])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    ConditionalBranch([1, 1208, 0, 4, 2])
+      ShowTextAttributes(["byakunen_fc3", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Хакунен\\C[0]>Эта стена..."])
+      ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Муко\\C[0]>Что такое...?"])
+      ShowText(["Ты просто так глядишь в стену..."])
+      ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Хакунен\\C[0]>Да нет... Что-то задумался."])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1208, 0, 5, 0])
+      ControlVariables([1208, 1208, 0, 0, 6])
+      ShowTextAttributes(["byakunen_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Хакунен\\C[0]>Ага... Здесь скрытая дверь!"])
+      PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$!mazyou_door\\\", 0])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$!mazyou_door\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      ShowTextAttributes(["kazuya_fc2", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Казуя\\C[0]>Молодец, Хакунен."])
+      ShowText(["Наверное, здесь отменяющее устройство..."])
+      ShowTextAttributes(["magatu_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Магацу\\C[0]>Эта трещина и есть проход в скрытую комнату?"])
+      ShowText(["Надо теперь обращать на них внимание."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 887, 10, 11, 0, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$!mazyou_door\\\", 0])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$!mazyou_door\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 887, 10, 11, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ShowTextAttributes(["valkyrie_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Валькирия\\C[0]>Я здесь только чтобы сопровождать купидона."])
+    ShowText(["У меня нет желания принимать в этом участия..."])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>Меее... Меееее..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Эта овечка, похоже, грустно плачет..."])
+    ConditionalBranch([0, 2914, 0])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Риджео\\C[0]>...Пьяная овечка?"])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>Во сне меня пригласила к себе Владыка Снов..."])
+      ShowText(["Я думала, что будет хорошо прийти сюда."])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>Но здесь я оказалась совсем не к месту..."])
+      ShowText(["И вот теперь я напиваюсь от сожаления..."])
+      ShowTextAttributes(["byakunen_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Хакунен\\C[0]>Мне жаль тебя..."])
+      ShowText(["Может, я смогу чем-нибудь помочь?"])
+      ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>Дай мне саке..."])
+      ShowText(["Вкусного..."])
+      ShowTextAttributes(["magatu_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Магацу\\C[0]>Да уж, какая беспомощная..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([8, 431])
+      ShowChoices([["Дать ей Саке Яматая", "Не давать"], 2])
+      When([0, "Дать ей Саке Яматая"])
+        ChangeItems([431, 1, 0, 1])
+        ControlSwitches([2914, 2914, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Мы дали овечке Саке Яматая!"])
+        ShowTextAttributes(["hituzi_fc1", 7, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>*Глап-глап-глап*"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>......"])
+        ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+        ShowText(["\\n<\\C[6]Риджео\\C[0]>...Лучше?"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>......"])
+        ShowTextAttributes(["hituzi_fc1", 3, 0, 2])
+        ShowText(["\\n<\\C[6]Девушка-Овечка\\C[0]>Меее... Мееее..."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Эта овечка, похоже, грустно плачет..."])
+        Empty([])
+      When([1, "Не давать"])
+        ExitEventProcessing([])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ExitEventProcessing([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["s_mermaid_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Русалка-Торговка\\C[0]>Не знаю, что тут происходит, но я здесь,"])
+    ShowText(["потому что меня позвала Владыка Снов."])
+    ShowText(["Давайте, взгляните на мои товары!"])
+    ShopProcessing([1, 74, 0, 0, false])
+    ShopItem([1, 276, 0, 0])
+    ShopItem([1, 316, 0, 0])
+    ShopItem([1, 427, 0, 0])
+    ShopItem([1, 534, 0, 0])
+    ShopItem([1, 609, 0, 0])
+    ShopItem([1, 644, 0, 0])
+    ShopItem([1, 743, 0, 0])
+    ShopItem([2, 12, 0, 0])
+    ShopItem([2, 25, 0, 0])
+    ShopItem([2, 90, 0, 0])
+    ShopItem([2, 137, 0, 0])
+    ShopItem([2, 219, 0, 0])
+    ShopItem([2, 251, 0, 0])
+    ShopItem([2, 268, 0, 0])
+    ShopItem([2, 274, 0, 0])
+    ShopItem([2, 314, 0, 0])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Я слышала, что кто-то прячется в самой глубине"])
+    ShowText(["этого замка. Говорят, это какая-то игрушка"])
+    ShowText(["Кошмаров."])
+    ShowTextAttributes(["rejeo_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Риджео\\C[0]>Неужели..."])
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    ShowTextAttributes(["lanpass_fc2", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лампада\\C[0]>Так как Кошмары жадны до удовольствий, они"])
+    ShowText(["очень легко возбуждаются. Лучше запомнить это,"])
+    ShowText(["если вы будете с ними сражаться."])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Когда возбуждаешься, ты получаешь больше урона"])
+    ShowText(["удовольствием... Но и сами возбужденные наносят"])
+    ShowText(["немного больше этого урона."])
+    ShowTextAttributes(["youkosan_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Йоко\\C[0]>Правда совсем чуть-чуть."])
+    ShowText(["Но это все равно полезно знать, ведь так?"])
+    Empty([])

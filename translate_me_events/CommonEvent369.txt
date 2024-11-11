@@ -1,0 +1,57 @@
+CommonEvent 369
+Name = "忘れられし塔1"
+
+  999([369])
+  ShowTextAttributes(["cockroacha_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Девушка-Таракан\\C[0]>Замечены враги!"])
+  ShowText(["Вы вас не пропустим!"])
+  ConditionalBranch([4, 529, 0])
+    ShowTextAttributes(["sara_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Сара\\C[0]>Мы пришли к вам на помощь, а вы на нас нападаете..."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc6", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Мы же уже сказали, мы на вашей стороне..."])
+    ShowText(["Отойдите в сторону и дайте нам пройти!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Как вы думаете, кто пришёл к вам на помощь, а!?"])
+    ShowText(["Я сейчас накажу вас за вашу глупость!"])
+    ConditionalBranch([4, 36, 0])
+      ShowTextAttributes(["rucyfinac_fc1", 1, 0, 2])
+      ShowText(["\\n<\\C[6]Люцифина-чан\\C[0]>Наказывать весело ♪"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  BattleProcessing([0, 1452, false, false])
+  ControlSwitches([2436, 2436, 0])
+  ConditionalBranch([0, 4, 0])
+    ShowTextAttributes(["alice_fc5", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Тараканы атакуют нас лишь завидев..."])
+    ShowText(["Похоже, что нам придётся сражаться с обеими сторонами."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 5, 0])
+    ShowTextAttributes(["iriasu_fc5", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Мы пришли сюда помочь тараканам, но..."])
+    ShowText(["Вместо того, чтобы встретить нас с распростёртыми объятиями, они атакуют нас!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([4, 538, 0])
+    ShowTextAttributes(["heinrich_fc1", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Генрих\\C[0]>Те, кого ты спасаешь, обнажают против тебя клинки..."])
+    ShowText(["Такое часто случается, когда ты путешествуешь, как герой."])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

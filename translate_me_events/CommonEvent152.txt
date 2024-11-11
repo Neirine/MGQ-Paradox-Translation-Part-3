@@ -1,0 +1,30 @@
+CommonEvent 152
+Name = "死神：スキルを忘れる/思い出す"
+
+  999([152])
+  ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Жнец\\C[0]>Ты можешь забыть выученные навыки и способности..."])
+  ShowText(["Но, те, что были получены за уровень персонажа,"])
+  ShowText(["профессии или расы ты сможешь потом восстановить."])
+  ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Жнец\\C[0]>Однако, навыки, полученные во время событий"])
+  ShowText(["я не смогу тебе возвратить. Их ты сможешь"])
+  ShowText(["вернуть лишь снова пройдя то же событие."])
+  ErasePicture([5])
+  ShowChoices([["Забыть Навыки", "Вернуть Навыки", "Выход"], 3])
+  When([0, "Забыть Навыки"])
+    Script(["SceneManager.call(Scene_Forget)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([1, "Вернуть Навыки"])
+    Script(["SceneManager.call(Scene_InitSkill)"])
+    ExitEventProcessing([])
+    Empty([])
+
+  When([2, "Выход"])
+    ExitEventProcessing([])
+    Empty([])
+
+  ChoicesEnd([])
+  Empty([])

@@ -1,0 +1,423 @@
+Display Name = "Замок Владыки Монстров 4 Этаж"
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ControlVariables([1001, 1001, 0, 0, 40])
+    ControlVariables([1142, 1142, 0, 0, 1])
+    ShowTextAttributes(["iriasu_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Прекрасный выбор, Лука..."])
+    ShowText(["Ты и вправду тот, кому я могу доверять больше всего."])
+    ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Саджа\\C[0]>Разрушитель Миров, ты решил последовать за Богиней навстречу концу..?"])
+    ShowText(["В таком случае, мне не остаётся ничего другого, кроме как уничтожить тебя, даже против своей воли."])
+    ErasePicture([5])
+    ErasePicture([6])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Таким образом, я сделал свой выбор."])
+    ShowText(["Я и маленькая Илиас встанем на сторону Богини Созидания..."])
+    PlayBGM(["RPG::BGM(@name=\"boss0-4\", @volume=100, @pitch=100)"])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_alice15th_st53", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["alice15th_fc3", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Алисфиз 15-ая\\C[0]>Герой Лука, я не позволю тебе покинуть замок Владыки Монстров живым."])
+      ShowText(["Ты падёшь здесь..."])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowPicture([5, "80_lilith2_st06b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lilith2_fc1", 5, 0, 2])
+    ShowText(["\\n<\\C[6]Лилит\\C[0]>Это неприятно, но нам придётся действовать соотвественно запасному плану..."])
+    ShowText(["Нам придётся избавиться от тебя здесь и сейчас."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["От Лилит и других стала исходить убийственная аура!"])
+    ShowText(["Похоже, что они хотят нас убить прямо сейчас..."])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Кх, они всё-таки решили действовать..!"])
+    ConditionalBranch([4, 383, 0])
+      ShowTextAttributes(["eden_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Эдем\\C[0]>Как подло, пешки Тёмной Богини..!"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowTextAttributes(["rafaera_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Рафаэла\\C[0]>Не переживай, Илиас."])
+    ShowText(["Мы также подготовились."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["И как только Рафаэла сделала увернный шаг вперёд..."])
+    ConditionalBranch([0, 5, 0])
+      ShowPicture([5, "80_alice15th_st51", 0, 0, 0, 0, 100, 100, 0, 0])
+      MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+      ShowTextAttributes(["alice15th_fc3", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алисфиз 15-ая\\C[0]>Ваша подготовка была впустую."])
+      ShowText(["Ограничивающий магический круг уже был активирован..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["lilith2_fc1", 3, 0, 2])
+      ShowText(["\\n<\\C[6]Лилит\\C[0]>Ограничивающий магический круг, оставленный Алисфиз 15-ой..."])
+      ShowText(["Должен активироваться прямо сейчас!"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Wait([30])
+    ShowAnimation([5, 578, false])
+    Wait([90])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Внезапно, весь замок Владыки Монстров окружил странный барьер."])
+      ShowText(["Похоже, что Алисфиз 15-ая использовала некую технику..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Внезапно, весь замок Владыки Монстров окружил странный барьер."])
+      ShowText(["Похоже, что Лилит использовала некую технику..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["rafaera_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Рафаэла\\C[0]>Что это за техника..!?"])
+    ShowText(["Не может быть, вмешательство из других миров было запечатано..."])
+    PlaySE(["RPG::SE(@name=\"Fog1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Проекция Рафаэлы исчезла..."])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Саджа\\C[0]>...Полагаюсь на тебя, Алисфиз 15-ая."])
+      ShowText(["Убей Илиас и её спутников..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["sazya_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Саджа\\C[0]>...Полагаюсь на вас, Сёстры Лилит."])
+      ShowText(["Убейте Илиас и её спутников..."])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Fog1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Сказав это, проекция Саджи исчезла..."])
+    ShowPicture([5, "80_morrigan_st05b", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["morrigan_fc1", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Морриган\\C[0]>Это секретная техника, в тайне разработанная Владыкой Монстров?"])
+    ShowText(["Это впечатляет, Рафаэла полностью исчезла..."])
+    ShowPicture([5, "80_morrigan_st07b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["morrigan_fc1", 6, 0, 2])
+    ShowText(["\\n<\\C[6]Морриган\\C[0]>...Постой-ка, Саджа тоже исчезла!?"])
+    ShowPicture([5, "80_morrigan_st07b", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_astaroth_st04b", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["astaroth_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Астарот\\C[0]>Эта секретная техника блокирует доступ из других миров."])
+    ShowText(["Она блокирует любые связи, а не лишь лишь наших врагов."])
+    ErasePicture([6])
+    ShowPicture([5, "80_lilith2_st01b", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лилит\\C[0]>Но теперь у нас есть преимущество..."])
+    ShowText(["Я уверена, что сторона Богини готовилась захватить замок, послав сюда целые отряды ангелов."])
+    ShowTextAttributes(["lilith2_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лилит\\C[0]>А теперь, они не смогут сюда попасть."])
+    ShowText(["А вы же, Лука... Илиас... Загнаны в угол."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Кх..!"])
+    ConditionalBranch([4, 34, 0])
+      ShowTextAttributes(["micaelac_fc1", 2, 0, 2])
+      ShowText(["\\n<\\C[6]Микаэла-чан\\C[0]>Это нехорошо..."])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([5])
+    Wait([30])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Сёстры Лилит приближаются..."])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Wind1\", @pitch=100, @volume=80)"])
+    ControlVariables([1140, 1140, 0, 0, 1])
+    SetMoveRoute([20, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -9])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -9])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    SetMoveRoute([21, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -9])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -9])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    SetMoveRoute([26, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -9])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -9])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Внезапно, три тени прыгают в бой, чтобы остановить их!"])
+    ShowPicture([5, "80_eden_st35", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["eden_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Эдем\\C[0]>Илиас! Лука! Мы задержим сестёр!"])
+    ShowText(["Быстрее убирайтесь из замка Владыки Монстров!"])
+    ShowPicture([5, "80_shion_st02", 0, 0, -150, 0, 100, 100, 255, 0])
+    ShowPicture([6, "80_gnosis_st04", 0, 0, 150, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["shion_fc1", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Сион\\C[0]>Ну же, время для насилия!"])
+    ShowText(["Я наконец выпущу пар за всё это время, что мне пришлось сидеть в сторонке!"])
+    ShowTextAttributes(["gnosis_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Гнозис\\C[0]>Наши силы равны..."])
+    ShowText(["Мы применим сдерживающую тактику, чтобы позволить группе Илиас отступить..."])
+    ConditionalBranch([4, 383, 0])
+      ShowTextAttributes(["eden_fc1", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Эдем\\C[0]>Серафимы Небесного Царства..."])
+      ShowText(["Сколь верная и преданная группа..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Серафимы... Я надеюсь на вас!"])
+    ShowText(["Лука, мы уходим!"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>...Ладно! Вперёд, отступаем!"])
+    ErasePicture([5])
+    ErasePicture([6])
+    ScrollMap([2, 5, 4])
+    Wait([90])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Нам не оставили другого выбора, кроме как бежать."])
+    ShowText(["Нужно поскорее выбраться из замка Владыки Монстров..."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ControlSwitches([100, 100, 0])
+    ChangeSaveAccess([0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "リリス"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "アスタロト"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "モリガン"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "立ち入り禁止"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "エデン"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "グノーシス"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "シオン"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "ラファエラ"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "沙蛇"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    CallCommonEvent([381])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    CallCommonEvent([381])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    CallCommonEvent([381])
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])

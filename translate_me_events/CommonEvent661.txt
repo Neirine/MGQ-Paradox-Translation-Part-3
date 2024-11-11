@@ -1,0 +1,24 @@
+CommonEvent 661
+Name = "イベント：クィーンフェアリー"
+
+  999([661])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 440, 0])
+    ShowTextAttributes(["queenfairy_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Королева Фей\\C[0]>Берегите природу."])
+    ShowText(["Если не будете - познаете ее клыки."])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([440, 440, 0])
+  ShowTextAttributes(["queenfairy_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Королева Фей\\C[0]>Позволь мне дать вам силу природы... блеск☆"])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Королева Фей дала вам магическую силу!"])
+  ShowText(["Сила навыков Природы удвоена до следующего боя!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

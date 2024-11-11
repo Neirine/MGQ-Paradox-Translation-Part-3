@@ -1,0 +1,408 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Как раз, начало эксперимента."])
+    ShowText(["Я уже говорила, что для нас это не опасно."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Отсюда ни я, ни она не сможем вмешаться."])
+    ShowText(["Это ведь всего лишь фрагмент прошлого."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Вот почему вы сможете безопасно посмотреть на это."])
+    ShowText(["В отличие от бедных ученых перед нами..."])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>......"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    GatherFollowers([])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>Начинаю обратный отсчет."])
+    ShowText(["Пять... Четыре... Три..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор А\\C[0]>......"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор В\\C[0]>Пожалуйста, умоляю..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>Два... Один... Ноль!"])
+    PlaySE(["RPG::SE(@name=\"mon_earth1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 120, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор А\\C[0]>Зарегистрирован скачок энергии..."])
+    ShowText(["Отметка превышает 2400Cz!"])
+    ShowText(["Отлично, потрясающе...!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор В\\C[0]>Успех!"])
+    ShowText(["Оруэлл, скорость пополнения заряда устройства призыва?!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>Скорость достаточная!"])
+    ShowText(["Начинаю процедуру призыва...!"])
+    ShowAnimation([2, 542, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>Врата призыва открываются!"])
+    ShowText(["Обнаружено энергетическое тело объекта Г..."])
+    PlaySE(["RPG::SE(@name=\"mon_earth1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 120, true])
+    PlayBGM(["RPG::BGM(@name=\"kiki2\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор А\\C[0]>Подождите, на консоли странное значение."])
+    ShowText(["Показатель маны упал до 0Cz..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор В\\C[0]>Что происходит? Он уходит в минусовое значение!"])
+    ShowText(["Оборудование вышло из строя?!"])
+    PlaySE(["RPG::SE(@name=\"mon_earth1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 120, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>Энергетический объект Г приближается..."])
+    ShowText(["...Э? Что это такое...? Обнаружена масса!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>Врата не закрываются, они раскрываются оттуда..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор А\\C[0]>Масса?! Это не душа, а материальное тело?!"])
+    ShowText(["Прекратить эксперимент!"])
+    ShowText(["Уничтожьте врата, отправьте объект Г назад!!"])
+    PlaySE(["RPG::SE(@name=\"mon_earth1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 120, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>...Объект Г это... это не душа Генриха!"])
+    ShowText(["Что же это...?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор В\\C[0]>Что происходит?! Что мы вызвали?!!"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([10, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    SetMoveRoute([9, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowAnimation([7, 547, false])
+    Wait([60])
+    ControlSwitches([31, 31, 0])
+    FadeoutBGM([1])
+    Wait([120])
+    ShowPicture([5, "80_alice8th4_st02", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>......"])
+    PlayBGM(["RPG::BGM(@name=\"dungeon_labo3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Где...?"])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Я поглотила Илиас..."])
+    ShowText(["И ее святая сила... в этом теле..."])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Но потом я проиграла герою..."])
+    ShowText(["В тот момент, когда моя жизнь утекала..."])
+    Wait([30])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>...Они вызвали не героя Генриха."])
+    ShowText(["На призыв отреагировала кровь Черной Алисы"])
+    ShowText(["на его мече..."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Кроме того, они призвали не Черную Алису"])
+    ShowText(["из времен пятисотлетней давности..."])
+    ShowText(["Вместо этого была призвана Черная Алиса"])
+    ShowText(["из будущего на 30 лет вперед."])
+    ConditionalBranch([0, 4, 0])
+      ShowTextAttributes(["alice_fc6", 0, 0, 2])
+      ShowText(["\\n<\\C[6]Алиса\\C[0]>Это Черная Алиса?"])
+      ShowText(["Но, эта ужасная сила..."])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 5, 0])
+      ShowTextAttributes(["iriasu_fc4", 5, 0, 2])
+      ShowText(["\\n<\\C[6]Илиас\\C[0]>Глупцы, эта Черная Алиса..."])
+      ShowText(["Она с невероятной святой силой..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Эта Черная Алиса до того момента, когда была"])
+    ShowText(["побеждена героем Лукой... Ее тело впитало"])
+    ShowText(["Богиню Илиас."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Однако, нельзя сказать, что она полностью"])
+    ShowText(["научилась слиянию святой и темной сил."])
+    ShowText(["А после поражения герою Луке она погибла..."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>...Это была ее судьба в истинной истории."])
+    ShowText(["Но причинно-следственная связь была нарушена."])
+    Wait([30])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Теперь, наконец-то..."])
+    ShowText(["Свет и тьма смешиваются во мне..."])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Нет... Это сила Хаоса..."])
+    ShowText(["Сила, существовавшая в самом начале, в период,"])
+    ShowText(["когда не было времени и пространства..."])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Изначально... был только Хаос..."])
+    ShowText(["И только потом Хаос разделился на свет и тьму..."])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Из света родилась Богиня..."])
+    ShowText(["И из тьмы родилась Богиня..."])
+    ShowText(["Обе Богини были рождены..."])
+    ShowText(["Обе разделили свои силы..."])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Но я... та сила, что была изначально..."])
+    ShowText(["Фуфуфуфуу..."])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Уфуфуфуфуу..."])
+    ShowTextAttributes(["alice8th_fc2", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Фуфуфуу... Ахахахахахаха..."])
+    ControlSwitches([32, 32, 0])
+    PlayBGM(["RPG::BGM(@name=\"scene_chaos1\", @volume=100, @pitch=100)"])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    ShowPicture([10, "sys_noise", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowPicture([5, "80_alice8th6_st05", 0, 0, 0, 0, 100, 100, 255, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([10])
+    ShowTextAttributes(["alice8th_fc4", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Ахахахах■ахах■ахахахаха■■ах■■"])
+    ShowText(["■ха■■■ха■■■■■■■■■■■!!!"])
+    ErasePicture([5])
+    PlaySE(["RPG::SE(@name=\"mon_bom1\", @pitch=100, @volume=100)"])
+    ShakeScreen([7, 7, 180, false])
+    ShowPicture([10, "sys_noise", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ChangeTransparency([0])
+    TransferPlayer([0, 726, 12, 17, 8, 2])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 0, 0, 60, true])
+    ErasePicture([10])
+    ShowTextAttributes(["alice8th_fc4", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■!!!"])
+    Wait([30])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>...И вот, была рождена третья Богиня."])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    ControlSwitches([33, 33, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор А\\C[0]>Уааа! Что это за монстр...?!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор В\\C[0]>Хьяяя... Мое тело..."])
+    ShowText(["С-сливается со стеной..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Ассистент\\C[0]>В-вы живы?"])
+    ShowText(["Тело исч■■т, ■о происх■■■■■■■■■■■ааа!!"])
+    ShowPicture([5, "iv_catas1", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 30, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор А\\C[0]>Спас■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Профессор В\\C[0]>Аа■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【助手】"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowPicture([6, "iv_catas2", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([6, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Вот так Ремина стала центром катастрофы."])
+    ShowText(["Она была проглочена Хаосом и стала фрагментом,"])
+    ShowText(["сформировавшим Тартар."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Однако, разрушения не ограничились Реминой..."])
+    ShowPicture([7, "iv_catas3", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["alice8th_fc4", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowText(["■■■■■■■■■■■■■■■■■■■■■■■■■■■"])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Сила Черной Алисы разносила потоки Хаоса."])
+    ShowText(["Преисполненный Хаос пробил брешь во времени"])
+    ShowText(["и пространстве, а затем разорвал мир."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Небеса также попали под удар и Илиас скончалась"])
+    ShowText(["от повреждений. После смерти Илиас была нарушена"])
+    ShowText(["причинно-следственная связь."])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>Время и пространство были искажены и разъедены..."])
+    ShowText(["И родилось множество параллельных миров."])
+    ShowText(["Пространственно-временной разрыв стал Тартаром,"])
+    ShowText(["превратившимся в туннели, соединяющие миры..."])
+    ErasePicture([6])
+    ShowPicture([5, "iv_catas4", 0, 0, 0, 0, 100, 100, 255, 0])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 0, 0, 90, true])
+    ErasePicture([7])
+    PlayBGM(["RPG::BGM(@name=\"kuroalice\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["alice8th_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Уфуфуфу..."])
+    Wait([30])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>...Родилась третья Богиня, Черная Алиса."])
+    ShowText(["Еще с Эры Богов не было других Богинь,"])
+    ShowText(["кроме изначальных двух."])
+    Wait([30])
+    ShowTextAttributes(["alice8th_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Этот мир - моя любимая игрушка."])
+    ShowText(["А теперь, во что бы мне поиграть...?"])
+    ShowTextAttributes(["alice8th_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>...О? Это же..."])
+    ShowPicture([6, "iv_6so", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([6, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["alice8th_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Я чувствую это, мир тьмы..."])
+    ShowText(["Я хочу этот мир со всем, что там живет..."])
+    ShowTextAttributes(["alice8th_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Уфуфу, вы станете моими..."])
+    ShowText(["Те, кто в этом мире..."])
+    ShowPicture([7, "iv_7angel", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, true])
+    ShowTextAttributes(["alice8th_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Уфуфу, есть еще и другие..."])
+    ShowText(["Те, кто живет в мире света, тоже станут моими..."])
+    ShowTextAttributes(["alice8th_fc4", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Вы ведь тоже хотите в мой мир...?"])
+    ShowText(["Уфуфу... Это будет очень веселое чаепитие..."])
+    ErasePicture([6])
+    MovePicture([7, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+    ErasePicture([7])
+    ShowTextAttributes(["alice8th_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Фуфуфу... Уфуфуфуфу..."])
+    FadeoutBGM([1])
+    Wait([30])
+    ShowTextAttributes(["sirousagi_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>...Вот то, что произошло в тот день."])
+    ShowText(["Больше оставаться не нужно, пора возвращаться..."])
+    ShowPicture([6, "80_alice8th6_st01", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([6, nil, 0, 0, 0, 0, 100, 100, 255, 0, 60, false])
+    PlayBGM(["RPG::BGM(@name=\"boss0-3\", @volume=100, @pitch=100)"])
+    ShowTextAttributes(["alice8th_fc4", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>...Подожди, кроличек!"])
+    ShowText(["И вы, кто путешествует во времени..."])
+    ShowPicture([6, "80_alice8th6_st05", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["alice8th_fc4", 4, 0, 2])
+    ShowText(["\\n<\\C[6]Черная Алиса\\C[0]>Вы хотите уйти, даже не поздоровавшись...?"])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Лука\\C[0]>Не может быть, она нас видит...?"])
+    ShowTextAttributes(["sirousagi_fc1", 2, 0, 2])
+    ShowText(["\\n<\\C[6]Белый Кролик\\C[0]>...Плохо дело! Нас обнаружили! Возвращаемся!"])
+    FadeoutBGM([1])
+    PlaySE(["RPG::SE(@name=\"Magic7\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ErasePicture([5])
+    ErasePicture([6])
+    Wait([120])
+    ControlVariables([1075, 1075, 0, 0, 14])
+    ControlSwitches([31, 31, 1])
+    ControlSwitches([32, 32, 1])
+    ControlSwitches([33, 33, 1])
+    TransferPlayer([0, 138, 32, 9, 8, 2])
+    PlayBGM(["RPG::BGM(@name=\"irias\", @volume=100, @pitch=100)"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])

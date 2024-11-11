@@ -1,0 +1,23 @@
+CommonEvent 610
+Name = "イベント：シルフ"
+
+  999([610])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 61, 0])
+    ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Сильфа\\C[0]>Сила ветра такая классная!"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["sylph_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Сильфа\\C[0]>Вааа, я помогу тебе!"])
+  ControlSwitches([61, 61, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Похоже, Сильфа делится с вами силой!"])
+  ShowText(["До следующего босса вам даровано покровительство ветра!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

@@ -1,0 +1,16 @@
+CommonEvent 146
+Name = "死神：難易度変更"
+
+  999([146])
+  ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Жнец\\C[0]>Ты хочешь изменить основы мира?"])
+  ShowText(["Как бы ты хотел, чтобы все было?"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Пожалуйста, выберите новый уровень сложности."])
+  CallCommonEvent([110])
+  ShowTextAttributes(["sinigami_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Жнец\\C[0]>А теперь уходи..."])
+  MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 30, true])
+  ErasePicture([5])
+  ExitEventProcessing([])
+  Empty([])

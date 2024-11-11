@@ -1,0 +1,220 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Wait([60])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>Ого, плюшевый медвежонок ♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Демоница\\C[0]>Я нашла его, когда искала еду в подвале..."])
+    ShowText(["Я подумала, что он тебе понравится, так что взяла его с собой."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старшая Сестра Девочки\\C[0]>Лина, не забудь поблагодарить."])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>Спасибо, госпожа демоница ♪"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старшая Сестра Девочки\\C[0]>Спасибо вам большое."])
+    ShowText(["Мы все время на вас полагаемся..."])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старшая Сестра Девочки\\C[0]>...А, Уууу..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Демоница\\C[0]>Что такое? Плохо себя чувствуешь?"])
+    ShowText(["Не может быть, ты..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старшая Сестра Девочки\\C[0]>Нет, я в порядке..."])
+    ShowText(["Просто немного голова КррУЖитс■■■■■■"])
+    ShowText(["ВЧ■■■няЛА■■■ви■■■ЛИ■■■райН■■■КЛ■■■МУ■■■"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Старшая Сестра Девочки\\C[0]>ЯВ■■■ХАОС■■■■■МЕСТ■■■ГД■■■■■■■ИДЕТ■■■■..."])
+    ShowText(["особенно■■■■■ЧИСТЫЙ■■■■Ⅶ■■■■■ТА■■■■хаОС■■."])
+    ShowText(["КОНЕ■■■■■■■■■■■■■■."])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    ControlSwitches([31, 31, 0])
+    ShotBalloonIcon([51, 1, false])
+    ShotBalloonIcon([52, 1, false])
+    ShotBalloonIcon([54, 1, false])
+    SetMoveRoute([55, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([54, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    SetMoveRoute([57, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([58, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]■■■■\\C[0]>Стереть..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Демоница\\C[0]>Кх, явление апоптоза!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Вампир\\C[0]>Это опасно! Девочка, отойди!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Девочка\\C[0]>НЕЕЕЕЕееет...НЕЕЕеееет... ■■■ВБНФ■■■■■■!"])
+    ShowText(["ХАОС■■■■СТАНОВИТСЯ■■■■■■■■■■■■ПС■■■■■■!!"])
+    PlaySE(["RPG::SE(@name=\"Darkness1\", @pitch=100, @volume=80)"])
+    ControlSwitches([32, 32, 0])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Демоница\\C[0]>Черт...!"])
+    Wait([30])
+    ShowAnimation([53, 501, false])
+    Wait([30])
+    ControlSwitches([31, 31, 1])
+    ShowAnimation([51, 501, false])
+    Wait([30])
+    ControlSwitches([32, 32, 1])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Wait([60])
+    ShotBalloonIcon([52, 1, false])
+    ShotBalloonIcon([54, 1, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女の姉】"])
+    ShowText(["あれ……？　私は……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【少女】"])
+    ShowText(["どうしたの……？　今、何が……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【ヴァンパイア】"])
+    ShowText(["どうなっている……？"])
+    ShowText(["アポトーシスに変異した者が、元に戻るなど……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【妖魔】"])
+    ShowText(["ありえない……何が起きたというのだ？"])
+    Wait([30])
+    SetMoveRoute([51, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([53, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([52, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([54, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([55, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性の声】"])
+    ShowText(["ねぇ、見て！　外が、外が……！！"])
+    Wait([30])
+    TransferPlayer([0, 965, 0, 0, 0, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性】"])
+    ShowText(["海が……森が戻ってる！！"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【子供】"])
+    ShowText(["すごい……とても、キレイ……"])
+    Wait([60])
+    ShowPicture([5, "sys_black", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 150, 0, 60, true])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["\\>製作　：　とろとろレジスタンス\\|\\|\\|\\|\\^"])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 0, 0, 60, true])
+    ErasePicture([5])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【女性】"])
+    ShowText(["混沌が、晴れた……"])
+    ShowText(["いったい、どうして……"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["【男性】"])
+    ShowText(["これは、奇跡か……？"])
+    ShowText(["神様が、我等を救ってくれたのか……？"])
+    Wait([60])
+    ShowTextAttributes(["ruka_fc1", 0, 0, 2])
+    ShowText(["【ルカ】"])
+    ShowText(["神じゃない……"])
+    ShowText(["君達が遺してくれた希望の種が、ついに実ったのさ。"])
+    ShowTextAttributes(["chaos_fc1", 0, 0, 2])
+    ShowText(["【カオス】"])
+    ShowText(["希望の種は、豊潤なる未来を実らせた……"])
+    ShowText(["もう、混沌がその実りを刈り取る事はない。"])
+    ShowTextAttributes(["chaos_fc1", 0, 0, 2])
+    ShowText(["【カオス】"])
+    ShowText(["我は混沌。"])
+    ShowText(["そして父よ、あなたは――"])
+    Wait([30])
+    ShowPicture([10, "logo3_6", 0, 0, 0, -100, 100, 100, 0, 0])
+    MovePicture([10, nil, 0, 0, 0, -100, 100, 100, 255, 0, 30, true])
+    Wait([60])
+    ShowPicture([5, "logo3_5", 0, 0, 0, 0, 100, 100, 0, 0])
+    MovePicture([5, nil, 0, 0, 0, 0, 100, 100, 255, 0, 120, false])
+    MovePicture([10, nil, 0, 0, 0, 0, 100, 100, 255, 0, 120, true])
+    Wait([240])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText([" "])
+    FadeoutBGM([1])
+    FadeoutScreen([])
+    ErasePicture([5])
+    ErasePicture([10])
+    Script(["off_ssw(:op1)"])
+    ScriptMore(["off_ssw(:op2)"])
+    ScriptMore(["off_ssw(:op3)"])
+    ScriptMore(["on_ssw(:op4)"])
+    Wait([120])
+    TransferPlayer([0, 967, 0, 0, 0, 0])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 51
+Name = "幼女"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 52
+Name = "妖魔"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "女性"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 54
+Name = "吸血鬼"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "モブ少女"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "モブ少年"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "ラディオ"
+
+  Page 0
+    Empty([])

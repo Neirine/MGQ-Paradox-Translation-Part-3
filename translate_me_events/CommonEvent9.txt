@@ -1,0 +1,56 @@
+CommonEvent 9
+Name = "降参"
+
+  999([9])
+  ConditionalBranch([0, 1525, 0])
+    ShowTextAttributes(["sonia_fc2", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Соня\\C[0]>И-извращенец! Какого черта ты делаешь?!"])
+    ShowText(["Знаешь что? Мне плевать. Ты омерзителен!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1005, 0])
+    ShowTextAttributes(["alice_fc6", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Пал жертвой соблазна монстра? Ты жалок."])
+    ShowText(["Хмпф, все равно. Как будто меня это волнует!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1006, 0])
+    ShowTextAttributes(["alice_fc2", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Пал жертвой соблазна монстра? Ты жалок."])
+    ShowText(["Хмпф, все равно. Как будто меня это волнует!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1007, 0])
+    ShowTextAttributes(["alice_fc8", 1, 0, 2])
+    ShowText(["\\n<\\C[6]Алиса\\C[0]>Пал жертвой соблазна монстра? Ты жалок."])
+    ShowText(["Хмпф, все равно. Как будто меня это волнует!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1026, 0])
+    ShowTextAttributes(["iriasu_fc4", 7, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Как ты мог осквернить себя прямо перед своей"])
+    ShowText(["Богиней? Я ухожу. Делай что хочешь."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1027, 0])
+    ShowTextAttributes(["iriasu_fc1", 3, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Как ты мог осквернить себя прямо перед своей"])
+    ShowText(["Богиней? Я ухожу. Делай что хочешь."])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1028, 0])
+    ShowTextAttributes(["iriasu_fc3", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Илиас\\C[0]>Как ты мог осквернить себя прямо перед своей"])
+    ShowText(["Богиней? Я ухожу. Делай что хочешь."])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["С отвращением соратники Луки оставили его на произвол судьбы..."])
+  Empty([])

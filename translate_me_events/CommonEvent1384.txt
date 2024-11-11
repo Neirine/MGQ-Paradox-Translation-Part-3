@@ -1,0 +1,11 @@
+CommonEvent 1384
+Name = "会話：玉藻"
+
+  999([1384])
+  ControlVariables([25, 25, 0, 0, 0])
+  ShowTextAttributes(["tamamo_fc3", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Тамамо-но Маэ\\C[0]>Разговоры ни к чему..."])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Тамамо-но Мае отказывается разговаривать!"])
+  ExitEventProcessing([])
+  Empty([])

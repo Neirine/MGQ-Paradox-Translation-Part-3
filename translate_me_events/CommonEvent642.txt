@@ -1,0 +1,23 @@
+CommonEvent 642
+Name = "イベント：ミノタウロス"
+
+  999([642])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 72, 0])
+    ShowTextAttributes(["mino_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Минотаврия\\C[0]>Ну как? Появились силы?!"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["mino_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Минотаврия\\C[0]>Ну ка, поешь-ка говядинки!"])
+  ControlSwitches([72, 72, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Минотаврия накормила вас говядиной!"])
+  ShowText(["В начале боя у вас увеличенная сила до следующего босса!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])

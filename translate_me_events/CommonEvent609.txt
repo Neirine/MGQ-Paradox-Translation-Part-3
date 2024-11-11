@@ -1,0 +1,23 @@
+CommonEvent 609
+Name = "イベント：ノーム"
+
+  999([609])
+  ControlSwitches([73, 73, 0])
+  ConditionalBranch([0, 62, 0])
+    ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+    ShowText(["\\n<\\C[6]Гнома\\C[0]>......"])
+    ControlSwitches([73, 73, 1])
+    ExitEventProcessing([])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["gnome_fc1", 0, 0, 2])
+  ShowText(["\\n<\\C[6]Гнома\\C[0]>......"])
+  ControlSwitches([62, 62, 0])
+  PlaySE(["RPG::SE(@name=\"Heal7\", @pitch=100, @volume=80)"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Похоже, Гнома делится с вами силой!"])
+  ShowText(["До следующего босса вам даровано покровительство земли!"])
+  ControlSwitches([73, 73, 1])
+  ExitEventProcessing([])
+  Empty([])
